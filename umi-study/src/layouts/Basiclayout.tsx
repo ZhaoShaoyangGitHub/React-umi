@@ -1,18 +1,34 @@
 import React, { useEffect } from 'react';
 import BottomNav from '@/conponents/BottomNav/index';
 import '@/static/iconfont/iconfont.css';
+import { Location, connect, Dispatch } from 'umi';
+import styles from './Basiclayout.less';
 
-interface BasiclayoutProps {}
+interface BasiclayoutProps {
+  location: Location;
+  dispatch: Dispatch;
+  user: any;
+}
 
 const Basiclayout: React.FC<BasiclayoutProps> = props => {
-  const { children } = props;
-  useEffect(() => {}, []);
+  const { children, location, dispatch, user } = props;
+  console.log(props);
+  useEffect(() => {
+    //获取用户基本信息
+    dispatch &&
+      dispatch({
+        type: 'user/getUserInfo',
+      });
+    return;
+  }, []);
   return (
-    <div>
+    <div className={styles.main}>
       <article>{children}</article>
-      <BottomNav />
+      <footer>
+        <BottomNav pathname={location.pathname} />
+      </footer>
     </div>
   );
 };
 
-export default Basiclayout;
+export default connect(({ user }) => ({ user }))(Basiclayout);

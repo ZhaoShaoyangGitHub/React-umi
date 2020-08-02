@@ -26,7 +26,7 @@ const menu = [
 ];
 
 interface BottomNavProps {
-  pathname: string;
+  pathname?: string;
 }
 
 export default class BottomNav extends Component<BottomNavProps> {

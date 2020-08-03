@@ -1,0 +1,31 @@
+@import "~@/assets/style/global.scss";
+
+.toy_detail-swiper {
+  width: 100%;
+}
+.toy_detail_swiper_box {
+  width: 100%;
+}
+.toy_detail-silder {
+  position: relative;
+  height: px(332);
+  overflow: hidden;
+}
+.toy_detail-pagination {
+  margin-top: px(10);
+  text-align: center;
+  .swiper-pagination-bullet {
+    width: px(6);
+    height: px(6);
+    transition: width 0.3s;
+    background-color: $c_white;
+    opacity: 1;
+    margin-right: px(4);
+    border-radius: px(100);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $c_vi;
+    width: px(16);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,24 @@
+@import "~@/assets/style/global.scss";
+
+.screen3-swiper {
+  width: 100%;
+  height: px(104 * 3+16 * 2);
+}
+.screen3-pagination {
+  margin-left: px(16);
+  margin-top: px(10);
+  .swiper-pagination-bullet {
+    width: px(6);
+    height: px(6);
+    transition: width 0.3s;
+    background-color: $c_white;
+    opacity: 1;
+    margin-right: px(4);
+    border-radius: px(100);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $c_vi;
+    width: px(16);
+    opacity: 1;
+  }
+}

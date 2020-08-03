@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.compatible_wrapper {
+  font-family: "Yuanti SC";
+  width: 100%;
+  height: 100%;
+  background-color: #e8f2fc;
+  position: relative;
+}
+.compatible_wrapper div {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.compatible_wrapper .compatible_bg {
+  width: 100%;
+}
+.compatible_wrapper .compatible_logo {
+  width: 0.76rem;
+  position: absolute;
+  left: 0.16rem;
+  top: 0.16rem;
+}
+.compatible_wrapper .compatible_content {
+  position: absolute;
+  bottom: 1.2rem;
+}
+.compatible_wrapper .compatible_txt1 {
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+  margin: 0 0.16rem;
+  font-weight: bold;
+}
+
+.compatible_wrapper .compatible_txt2 {
+  font-size: 0.16rem;
+  line-height: 0.24rem;
+  margin: 0.12rem 0.16rem;
+}
+.compatible_download {
+  margin: 0 0.16rem;
+  margin-top: 0.16rem;
+  display: block;
+  background-color: #753fff;
+  border-radius: 0.16rem;
+  color: #ffffff;
+  font-size: 0.16rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  box-shadow: 0 0.07rem 0.18rem rgba(55, 45, 208, 0.3);
+}

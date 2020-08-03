@@ -1,0 +1,13 @@
+@import "@/assets/style/global.scss";
+
+.originalLocation {
+  color: #564de2;
+  font-weight: 500;
+  line-height: px(18);
+  @include fs_overflow(1);
+  .localIcon2 {
+    width: px(20);
+    vertical-align: bottom;
+    margin-right: px(2);
+  }
+}

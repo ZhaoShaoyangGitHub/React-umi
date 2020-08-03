@@ -1,0 +1,157 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: px(230);
+}
+.leftBox {
+}
+
+.rightBox {
+  margin-left: px(130);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: px(88);
+  .label {
+    width: px(70);
+    height: px(70);
+
+    background: linear-gradient(290.52deg, #554ce1 0%, #7067ff 100%);
+    border-radius: px(16);
+
+    font-size: px(40);
+    font-style: italic;
+    color: $c_white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .value {
+    width: px(534);
+    margin-left: px(12);
+    font-weight: bold;
+    font-size: px(24);
+    line-height: px(36);
+  }
+}
+
+.selectBox {
+  white-space: nowrap;
+  margin-top: px(55);
+  margin-left: px(88);
+  .selectItem {
+    cursor: pointer;
+    width: px(104);
+    display: inline-block;
+    margin-right: px(24);
+    &:last-child {
+      margin-right: 0;
+    }
+    .screen {
+      @extend .cover;
+      width: 100%;
+      height: px(104);
+      overflow: hidden;
+      position: relative;
+      border-radius: px(16);
+      border: px(1) solid rgba(0, 0, 0, 0.05);
+      .status {
+        position: absolute;
+        right: px(8);
+        bottom: px(8);
+        width: px(22);
+        height: px(22);
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .str {
+      font-size: px(12);
+      line-height: px(18);
+      color: #2c3033;
+      text-align: center;
+      padding-top: px(5);
+      @include fs_overflow(1);
+    }
+  }
+}
+
+.listBox {
+  display: flex;
+  .item {
+    width: px(343);
+    background: $c_white;
+    border-radius: px(32);
+    box-shadow: px(0) px(7) px(18) rgba(55, 45, 208, 0.3);
+    padding: px(16px);
+    box-sizing: border-box;
+    margin-right: px(40);
+
+    .cover {
+      @extend .cover;
+      display: block;
+      width: px(311);
+      height: px(311);
+      overflow: hidden;
+      border-radius: px(16);
+      position: relative;
+      .font {
+        font-size: px(12);
+        font-weight: bold;
+        color: $c_white;
+        border-radius: px(4);
+        display: inline-block;
+        padding: px(4) px(5);
+      }
+      .typeLabel {
+        word-break: break-all;
+        text-align: right;
+        margin-right: px(16);
+        padding-top: px(16);
+        .newIcon {
+          @extend .font;
+          background: linear-gradient(301.48deg, #554ce1 0%, #7067ff 100%);
+          margin-right: px(4);
+        }
+        .limticon {
+          @extend .font;
+          background: linear-gradient(152.35deg, #5d6265 0%, #2c3033 86.54%),
+            #2c3033;
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .strBox {
+      width: px(311);
+      overflow: hidden;
+      font-size: px(12);
+      line-height: px(30);
+      .des {
+        font-weight: 500;
+        color: #2c3033;
+        margin-top: px(10);
+        margin-bottom: px(8);
+      }
+      .link {
+        @include fs_overflow(1);
+        color: #564de2;
+        .linkicon {
+          vertical-align: top;
+          width: px(18);
+          margin-left: px(2);
+          margin-right: px(4);
+        }
+      }
+    }
+  }
+}

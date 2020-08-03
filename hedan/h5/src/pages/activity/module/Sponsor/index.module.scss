@@ -1,0 +1,49 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  padding-bottom: px(144);
+}
+
+.moudleTitle {
+  height: px(178);
+}
+
+.logoBox {
+  .title {
+    font-size: px(16);
+    color: #2d210d;
+    text-align: center;
+    margin-bottom: px(16);
+  }
+  .imgList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @extend .wordBreak;
+    .logo {
+      margin: 0 px(12);
+      margin-bottom: px(20);
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.pageEnd {
+  text-align: center;
+  color: #2d210d;
+  font-size: px(12);
+  margin-top: px(-4);
+  opacity: 0.5;
+}
+
+.b20 {
+  margin-bottom: px(20);
+}
+
+.contentBox {
+  position: relative;
+  z-index: 30;
+}

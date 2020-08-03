@@ -1,0 +1,86 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: px(58 * 2);
+  background-position: px(14 * 2) px(0);
+  overflow: hidden;
+}
+
+.strBox {
+  position: absolute;
+  z-index: 10;
+  top: px(249);
+  left: px(80);
+}
+
+.title {
+  font-size: px(80);
+  line-height: px(100);
+  color: $c_vi;
+  span {
+    font-weight: bold;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.title2 {
+  font-size: px(60);
+  line-height: px(60);
+  margin-top: px(24);
+}
+
+.toyChest {
+  position: absolute;
+  width: px(642);
+  height: px(318);
+  left: px(80);
+  top: px(682);
+  background: #ffffff;
+  border-radius: px(48);
+  box-shadow: px(0) px(20) px(60) rgba(0, 0, 0, 0.08);
+  .toyChest_title {
+    font-size: px(44);
+    line-height: px(40);
+    color: #2c3033;
+    margin: px(40) px(30);
+    margin-bottom: px(32);
+  }
+  .toyChest_cover {
+    display: block;
+    margin: 0 auto;
+    width: px(575);
+  }
+}
+
+.videBox {
+  position: absolute;
+  bottom: px(-77 * 2);
+  right: px(294);
+  width: px(552);
+  z-index: 3;
+  .playText {
+    position: absolute;
+    left: px(-134 * 2);
+    top: px(180 * 2);
+    width: px(331);
+  }
+  .start {
+    position: absolute;
+    width: px(116);
+    height: px(116);
+    left: 50%;
+    top: 45%;
+    margin-left: px(-116/2);
+    cursor: pointer;
+    z-index: 999;
+  }
+  .video {
+    display: block;
+    width: 100%;
+  }
+}

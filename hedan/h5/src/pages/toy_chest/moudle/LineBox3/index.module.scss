@@ -1,0 +1,9 @@
+@import "@/assets/style/global.scss";
+@import "../lineBox.scss";
+.wrapper {
+  text-align: left;
+  background-image: url("../../img/3.png");
+  background-size: px(312);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}

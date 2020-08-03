@@ -1,0 +1,87 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .labelBox {
+    .label {
+      font-size: px(12);
+      padding: px(0) px(10);
+      height: px(30);
+      border-radius: px(8);
+      line-height: px(30);
+      background: linear-gradient(312.06deg, #554ce1 0%, #7067ff 100%);
+      font-weight: 500;
+      color: #ffffff;
+      font-size: px(12);
+    }
+    .triangleBox {
+      height: px(15);
+      text-align: center;
+      margin-top: px(-7);
+      .triangle {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: px(12) solid transparent;
+        border-right: px(12) solid transparent;
+        border-top: px(15) solid #6057ed;
+      }
+    }
+  }
+}
+
+.mapLabel {
+  box-shadow: 0px px(7) px(18) rgba(0, 0, 0, 0.15);
+  border-radius: px(16);
+  background: linear-gradient(312.06deg, #554ce1 0%, #7067ff 100%);
+  width: px(343);
+  height: px(76);
+  padding: px(16);
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    img {
+      width: px(20);
+    }
+  }
+
+  .cover {
+    width: px(44);
+    height: px(44);
+    border-radius: px(8);
+    margin-right: px(6);
+  }
+
+  .info {
+    color: #fff;
+    font-weight: 500;
+    .name {
+      font-size: px(16);
+      margin-bottom: px(4);
+    }
+    .desc {
+      font-size: px(12);
+    }
+  }
+}

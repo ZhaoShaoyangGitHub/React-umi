@@ -1,0 +1,90 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: px(164);
+  margin-bottom: px(20);
+  display: inline-block;
+  text-align: left;
+  .cover {
+    width: px(164);
+    height: px(164);
+    margin-bottom: px(8);
+    position: relative;
+    border-radius: px(16);
+  }
+
+  .info {
+    font-size: px(12);
+    @extend .wordBreak;
+    line-height: px(18);
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+}
+
+.linkIcon {
+  width: px(14);
+  vertical-align: middle;
+  margin-left: px(4);
+  margin-right: px(2);
+}
+
+.blue {
+  color: #564de2;
+}
+
+.rightList {
+  text-align: right;
+}
+
+.typeLabel {
+  position: absolute;
+  right: px(10);
+  top: px(10);
+  text-align: right;
+
+  .font {
+    font-size: px(14);
+    line-height: px(14);
+    font-weight: bold;
+    color: $c_white;
+    border-radius: px(4);
+    display: inline-block;
+  }
+
+  .newIcon {
+    @extend .font;
+    background: linear-gradient(301.48deg, #554ce1 0%, #7067ff 100%);
+    padding: px(4) px(5);
+    margin-bottom: px(4);
+  }
+  .limticon {
+    @extend .font;
+    background: linear-gradient(152.35deg, #5d6265 0%, #2c3033 86.54%), #2c3033;
+    opacity: 0.9;
+    padding: px(4) px(8);
+    margin-right: px(4);
+  }
+}
+
+.more {
+  position: absolute;
+  width: px(24);
+  height: px(24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #564de2;
+  right: px(10);
+  bottom: px(10);
+  img {
+    width: px(16);
+  }
+}

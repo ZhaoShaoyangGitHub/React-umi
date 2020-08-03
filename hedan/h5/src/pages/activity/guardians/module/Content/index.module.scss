@@ -1,0 +1,84 @@
+@import "@/assets/style/global.scss";
+@import "../../guardians.scss";
+.wrapper {
+  font-family: "Yuanti SC";
+  padding-bottom: px(48-12);
+}
+.contnetBox {
+  padding: px(1) px(16);
+  position: relative;
+  z-index: 10;
+}
+.title {
+  font-weight: normal;
+  font-size: px(16);
+  line-height: px(24);
+  color: #2d210d;
+  font-weight: normal;
+  @extend .wordBreak;
+  span {
+    font-weight: bolder;
+  }
+}
+
+.chart {
+  margin-top: px(24);
+  margin-bottom: px(16);
+}
+
+.listBox {
+  display: flex;
+  width: px(378);
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .item {
+    margin-right: px(17);
+    margin-bottom: px(16);
+  }
+}
+
+.draft {
+  font-size: px(16);
+  color: #564de2;
+  display: flex;
+  align-items: center;
+  height: px(50);
+  .draftIcon {
+    width: px(16);
+    margin-right: px(4);
+  }
+}
+
+.endTitle {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: px(24);
+  color: #ffffff;
+  height: px(59);
+}
+
+.speech {
+  margin-top: px(8);
+  margin-bottom: px(24-12);
+  font-size: px(16);
+  line-height: px(24);
+  color: #2d210d;
+}
+
+.footerBox {
+  box-shadow: 0px px(4) px(20) #ff8a00;
+}
+
+.bgImg {
+  width: px(350);
+  position: absolute;
+  z-index: 1;
+  bottom: px(-60);
+  right: px(-49);
+}
+
+.titleBox {
+  margin-top: px(20px);
+  margin-bottom: px(8);
+}

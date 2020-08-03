@@ -1,0 +1,53 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  display: flex;
+  align-items: center;
+  .Btn {
+    cursor: pointer;
+    height: px(80);
+    border-color: #000000;
+    border-width: px(1);
+    border-style: solid;
+    color: #000000;
+    font-weight: bold;
+    font-size: px(18);
+    border-radius: px(17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: px(24);
+    box-sizing: border-box;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:last-child.Btn {
+      margin-right: px(0);
+    }
+    // 颜色
+    &.white {
+      border-color: #fff;
+      background-color: #fff;
+    }
+    img {
+      width: px(40);
+    }
+    &.ios {
+      width: px(200);
+      img {
+        margin-right: px(0);
+      }
+    }
+    &.android {
+      width: px(209);
+      img {
+        margin-right: 2px;
+      }
+    }
+    &.code {
+      width: px(182);
+      img {
+        margin-right: 2px;
+      }
+    }
+  }
+}

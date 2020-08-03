@@ -1,0 +1,19 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  background-color: $c_vi;
+  width: 100%;
+  height: 100%;
+  .cont {
+    padding-top: px(126);
+    text-align: center;
+    .btn {
+      font-size: px(30);
+      line-height: px(40);
+      color: #fff;
+      margin-bottom: px(48);
+    }
+    .downBtn {
+      color: $c_yellow;
+    }
+  }
+}

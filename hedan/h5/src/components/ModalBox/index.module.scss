@@ -1,0 +1,63 @@
+@import "~@/assets/style/global.scss";
+
+.modal {
+  .modal_mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 890;
+    background: rgba(45, 33, 13, 0.9);
+  }
+  .modal_wraper {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 900;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateZ(1px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    &.modal_wraper_overflow {
+      padding: px(50) 0;
+    }
+  }
+  .modal_content {
+    width: px(343);
+  }
+  .close {
+    width: px(64);
+    height: px(64);
+    margin: px(10) auto 0;
+    img {
+      width: 100%;
+    }
+  }
+  .back {
+    position: fixed;
+    left: px(104);
+    bottom: px(20);
+    font-size: px(16);
+    line-height: px(24);
+    color: #ffd202;
+    z-index: 999;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    img {
+      width: px(18);
+      height: px(18);
+      margin-right: px(4);
+    }
+  }
+}

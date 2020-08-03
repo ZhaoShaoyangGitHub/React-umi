@@ -1,0 +1,155 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding: px(15);
+  padding-top: px(50+18);
+  background-color: #f5f8fb;
+  position: relative;
+  padding-bottom: px(48 * 2);
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.robot {
+  position: relative;
+  width: 100%;
+  height: px(110);
+  background: linear-gradient(319.67deg, #554ce1 0%, #7067ff 100%);
+  border-radius: px(24);
+  overflow: hidden;
+
+  .robotTitle {
+    position: absolute;
+    left: px(16);
+    top: px(16);
+    width: px(195);
+    height: px(28);
+    border-radius: px(16) px(16) 0 px(16);
+    background-color: $c_white;
+    font-size: px(16);
+    color: #564de2;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: center;
+  }
+
+  .robotDesc {
+    position: absolute;
+    width: px(184);
+    left: px(16);
+    top: px(56);
+    color: $c_white;
+    font-size: px(14);
+    line-height: px(18);
+  }
+
+  .robot_bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: px(152);
+  }
+}
+
+//source
+
+.source {
+  margin-top: px(18);
+  display: flex;
+  justify-content: space-between;
+  .sourceDate {
+    width: px(60);
+    .day {
+      font-size: px(16);
+      color: #2c3033;
+    }
+
+    .year {
+      font-size: px(12);
+      color: #aaafb7;
+    }
+  }
+
+  .sourceDesc {
+    display: block;
+    width: px(283);
+    color: #2c3033;
+    .imgWrapper {
+      display: block;
+      position: relative;
+      width: px(283);
+      height: px(283);
+      border-radius: px(16);
+      overflow: hidden;
+      @extend .cover;
+      .font {
+        font-size: px(14);
+        line-height: px(14);
+        font-weight: bold;
+        color: $c_white;
+        border-radius: px(4);
+        display: inline-block;
+      }
+      .typeLabel {
+        position: absolute;
+        right: px(10);
+        top: px(10);
+        text-align: right;
+        width: px(60);
+        .newIcon {
+          @extend .font;
+          background: linear-gradient(301.48deg, #554ce1 0%, #7067ff 100%);
+          padding: px(4) px(5);
+          margin-bottom: px(4);
+        }
+        .limticon {
+          @extend .font;
+          background: linear-gradient(152.35deg, #5d6265 0%, #2c3033 86.54%),
+            #2c3033;
+          opacity: 0.9;
+          padding: px(4) px(8);
+        }
+      }
+      .more {
+        position: absolute;
+        width: px(24);
+        height: px(24);
+        border-radius: 100%;
+        background-color: $c_white;
+        color: #564de2;
+        right: px(10);
+        bottom: px(10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .moreIcon {
+          width: px(16);
+        }
+      }
+    }
+
+    .strBox {
+      font-weight: 500;
+      font-size: 12px;
+      .des {
+        margin-top: px(10);
+        margin-bottom: px(6);
+      }
+      .link {
+        color: #564de2;
+        a {
+          color: #564de2;
+        }
+        word-break: break-all;
+        word-wrap: break-word;
+        .linkicon {
+          display: inline-block;
+          vertical-align: bottom;
+          width: px(16);
+          margin: px(0) px(2);
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

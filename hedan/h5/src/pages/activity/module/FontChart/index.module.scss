@@ -1,0 +1,152 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  height: px(40);
+  &.small {
+    height: px(20);
+    .fontImg {
+      transform: scale(0.5);
+    }
+    .statusBox {
+      transform: scale(0.5);
+    }
+    .numBox {
+      width: px(25/2);
+      height: px(40/2);
+      margin-right: px(6/2);
+    }
+    .dotbox {
+      width: px(8/2);
+      height: px(40/2);
+      margin-left: px((6-7)/2);
+      margin-right: px(7/2);
+    }
+    .linebox {
+      width: px(33/2);
+      height: px(40/2);
+      margin-left: px((20-7)/2);
+      margin-right: px(20/2);
+    }
+    .colonbox {
+      width: px(8/2);
+      height: px(40/2);
+      margin-left: px((12-7)/2);
+      margin-right: px(12/2);
+    }
+    .num_1 {
+      width: px(12/2);
+    }
+  }
+}
+
+.fontBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.statusBox {
+  margin-left: px(12);
+  img {
+    display: block;
+  }
+  .notStart {
+    width: px(68);
+  }
+  .now {
+    width: px(46);
+  }
+  .end {
+    width: px(56);
+  }
+}
+
+.posi {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.numBox {
+  width: px(25);
+  height: px(40);
+  position: relative;
+  margin-right: px(6);
+  .fontImg {
+    @extend .posi;
+    margin-left: px(-60/2);
+    margin-top: px(-76/2);
+    width: px(60);
+    height: px(76);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//dot
+
+.dotbox {
+  width: px(8);
+  height: px(40);
+  position: relative;
+  margin-left: px(6-7);
+  margin-right: px(7);
+  .fontImg {
+    @extend .posi;
+    width: px(40);
+    height: px(76);
+    margin-left: px(-40/2);
+    margin-top: px(-76/2);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.linebox {
+  width: px(33);
+  height: px(40);
+  position: relative;
+  margin-left: px(20-7);
+  margin-right: px(20);
+  .fontImg {
+    @extend .posi;
+    width: px(60);
+    height: px(76);
+    margin-left: px(-60/2);
+    margin-top: px(-76/2);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.colonbox {
+  width: px(8);
+  height: px(40);
+  position: relative;
+  margin-left: px(12-7);
+  margin-right: px(12);
+  .fontImg {
+    @extend .posi;
+    width: px(40);
+    height: px(76);
+    margin-left: px(-40/2);
+    margin-top: px(-76/2);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.num_1 {
+  width: px(12);
+}

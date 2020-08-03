@@ -1,0 +1,8 @@
+@import "@/assets/style/global.scss";
+@import "../lineBox.scss";
+.wrapper {
+  text-align: left;
+}
+.toy2BG {
+  @extend .ml;
+}

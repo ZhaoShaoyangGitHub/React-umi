@@ -1,0 +1,24 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  background-color: #1a2033;
+  box-sizing: border-box;
+  padding-top: px(24+56-10);
+  .h1 {
+    font-family: "Yuanti SC";
+    font-size: px(56/2);
+    color: $c_vi;
+    margin: px(16/2) px(16);
+  }
+  .h2 {
+    font-family: "Yuanti SC";
+    font-size: px(32/2);
+    color: $c_white;
+    margin: px(0) px(16);
+  }
+  .swiperBox {
+    margin-top: px(32/2);
+    height: px(370);
+  }
+}

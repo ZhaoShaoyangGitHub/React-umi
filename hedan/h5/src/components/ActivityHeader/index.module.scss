@@ -1,0 +1,45 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  &.white {
+    .openApp {
+      box-shadow: 0px 4px 20px #ff8a00;
+    }
+  }
+  &.black {
+    .openApp {
+      box-shadow: 0px 4px 20px #2e1e03;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: px(16);
+  width: 100%;
+  height: px(62);
+  box-sizing: border-box;
+  .logo {
+    width: px(120);
+  }
+  .openApp {
+    width: px(110);
+    height: px(30);
+    border-radius: px(8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    .icon {
+      width: px(20);
+      margin-right: px(7);
+    }
+    span {
+      font-size: px(12);
+      color: #2d210d;
+    }
+  }
+}

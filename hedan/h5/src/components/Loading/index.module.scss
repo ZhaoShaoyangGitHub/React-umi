@@ -1,0 +1,30 @@
+@import "~@/assets/style/global.scss";
+
+.wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: px(200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.lodingIcon {
+  width: px(36);
+  height: px(36);
+}
+
+.lodingIcon {
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

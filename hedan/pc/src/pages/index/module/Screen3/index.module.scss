@@ -1,0 +1,26 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a2033;
+  .fontBox {
+    position: absolute;
+    top: px(347);
+    left: px(80);
+    .h1 {
+      font-size: px(120);
+      color: $c_vi;
+      margin: px(16) px(0);
+    }
+    .h2 {
+      font-size: px(68);
+      color: $c_white;
+      margin: px(16) px(0);
+    }
+  }
+  .swiperBox {
+    position: absolute;
+    right: px(224);
+    top: px(180);
+  }
+}

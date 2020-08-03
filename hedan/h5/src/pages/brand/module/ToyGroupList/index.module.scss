@@ -1,0 +1,56 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  // background-color: red;
+  padding: px(1) px(0);
+}
+
+.toyYearList {
+  margin-bottom: px(10);
+  .yearTitle {
+    font-weight: 500;
+    font-size: px(12);
+    line-height: px(18);
+    color: #2c3033;
+    padding: px(0) px(17);
+    padding-bottom: px(8);
+  }
+}
+
+.screenBox {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: px(17);
+  text-align: left;
+}
+
+.toyItem {
+  display: inline-block;
+  width: px(104);
+  margin-right: px(10);
+  vertical-align: middle;
+  .cover {
+    width: px(104);
+    height: px(104);
+    border-radius: px(16);
+    @extend .cover;
+    border: px(1) solid #ffffff;
+  }
+
+  .desc {
+    height: px(36);
+    font-weight: 500;
+    font-size: px(12);
+    line-height: px(18);
+    color: #2c3033;
+    margin-top: px(4);
+    margin-bottom: px(8);
+    @include fs_overflow(2);
+  }
+
+  .info {
+    font-weight: 500;
+    font-size: px(12);
+    color: #564de2;
+  }
+}

@@ -1,0 +1,49 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  width: px(343);
+  min-height: px(100);
+  padding: px(12) px(24);
+  box-shadow: 0px 4px 20px #ff8a00;
+  background-color: #fffbe9;
+  box-sizing: border-box;
+  border-radius: px(24);
+  margin-bottom: px(16);
+  img {
+    object-fit: cover;
+  }
+}
+
+.brandLogo {
+  height: px(22);
+  margin-bottom: px(8);
+  img {
+    height: 100%;
+  }
+}
+
+.descBox {
+  font-size: px(14);
+  line-height: px(22);
+  color: #2d210d;
+  margin-bottom: px(8);
+  @extend .wordBreak;
+}
+
+.memberBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .userBox {
+    font-weight: 500;
+    font-size: px(14);
+    display: flex;
+    align-items: center;
+    margin-right: px(10);
+    margin-bottom: px(8);
+    .avatar {
+      width: px(22);
+      height: px(22);
+      margin-right: px(4);
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(279.81deg, #554ce1 0%, #7067ff 100%);
+  position: relative;
+  padding: px(1);
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  width: px(684);
+  margin: 0 auto;
+  margin-top: px(249);
+  margin-bottom: px(40);
+}
+.buttonList {
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: px(77);
+  text-align: center;
+  width: 100%;
+  font-size: px(18);
+  color: $c_white;
+  .hd {
+    display: inline-block;
+    letter-spacing: 0.1em;
+    .btn {
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+.records {
+  position: absolute;
+  bottom: px(77);
+  right: px(80);
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
+  font-size: px(18);
+  color: $c_white;
+  .link {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .icon {
+    width: px(20);
+    height: px(23);
+    transform: translateY(4px);
+    margin-left: px(8);
+  }
+}
+
+.bottomBg {
+  position: absolute;
+  z-index: 1;
+  width: px(929/2);
+  left: 0;
+  bottom: 0;
+}

@@ -1,0 +1,44 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: px(140);
+  box-sizing: border-box;
+  padding: px(0) px(80);
+  padding-right: px(25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: px(136);
+}
+.btnBox {
+  flex-grow: 2;
+  margin-left: px(130);
+  display: flex;
+  align-items: center;
+  .item {
+    margin-right: px(90);
+    font-weight: bold;
+    font-size: px(14);
+    padding: px(10) px(30);
+    cursor: pointer;
+    color: #131621;
+    border-radius: px(8);
+    &.white {
+      color: #fff;
+    }
+    &.active {
+      background-color: #fff;
+      color: #753fff;
+    }
+  }
+}
+.downloadNow {
+  width: px(201);
+  cursor: pointer;
+}

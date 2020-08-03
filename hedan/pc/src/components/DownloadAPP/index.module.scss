@@ -1,0 +1,25 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: px(48);
+  background-color: $c_white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 px(16);
+  z-index: 2;
+
+  .download {
+    width: px(80);
+    height: px(30);
+    background: linear-gradient(314.94deg, #554CE1 0%, #7067FF 100%);
+    color: $c_white;
+    border-radius: px(8);
+    text-align: center;
+    line-height: px(30);
+  }
+}

@@ -1,0 +1,55 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  background-color: $c_pressed;
+  position: relative;
+  overflow: hidden;
+  .bg {
+    position: absolute;
+    width: px(884);
+    left: px(-146);
+    top: px(-10);
+    z-index: 1;
+  }
+  .text {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    left: px(16);
+    img {
+      display: block;
+    }
+  }
+  .text1 {
+    font-family: "Yuanti SC";
+    @extend .text;
+    top: px(145);
+    padding: px(3);
+    padding-right: px(8);
+    font-weight: bold;
+    font-size: px(32);
+    line-height: px(32);
+    color: #131621;
+  }
+  .text2 {
+    font-family: "Yuanti SC";
+    @extend .text;
+    top: px(190);
+    padding: px(3);
+    padding-right: px(30);
+    font-weight: bold;
+    font-size: px(56);
+    line-height: px(56);
+    color: #753fff;
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+  bottom: px(30);
+  text-align: center;
+}

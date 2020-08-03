@@ -1,0 +1,12 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: px(160);
+  height: px(48);
+  box-shadow: 0px px(7) px(18) rgba(228, 0, 44, 0.3);
+  color: #fff;
+  display: inline-block;
+  border-radius: px(16);
+  text-align: center;
+  line-height: px(48);
+  background: linear-gradient(284.87deg, #ff7b95 7.38%, #fb607e 92.62%);
+}

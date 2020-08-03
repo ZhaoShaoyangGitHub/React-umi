@@ -1,0 +1,59 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  width: px(343);
+  background-color: #fff;
+  box-shadow: 0px px(7) px(18) rgba(0, 0, 0, 0.15);
+  border-radius: px(24);
+  position: relative;
+  padding: px(1);
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url(./img/dan.svg);
+  background-repeat: no-repeat;
+  background-size: px(86);
+  background-position: px(343-86+17) px(-13);
+}
+.title {
+  color: #635af0;
+  font-weight: 600;
+  font-size: px(24);
+  padding-top: px(22);
+}
+
+.info {
+  background-color: #f5f8fb;
+  font-size: px(14);
+  line-height: px(28);
+  color: #2c3033;
+  padding: px(16);
+  margin: 0;
+  @extend .wordBreak;
+}
+.table {
+  padding: px(16);
+  .tr {
+    display: flex;
+    align-items: center;
+    margin-bottom: px(24);
+    &:last-child {
+      margin-bottom: px(10);
+    }
+    .td {
+      width: px(98);
+      .lable {
+        font-weight: 500;
+        font-size: px(14);
+        color: #aaafb7;
+        margin-bottom: px(8);
+      }
+      .value {
+        color: #2c3033;
+        font-weight: 500;
+        font-size: px(16);
+        width: px(94);
+        @include fs_overflow(2);
+      }
+    }
+  }
+}

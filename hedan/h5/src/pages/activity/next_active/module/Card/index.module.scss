@@ -1,0 +1,68 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  display: inline-block;
+  img {
+    // object-fit: cover;
+  }
+  &.black {
+    .brandBox {
+      box-shadow: none;
+      .cover {
+        box-shadow: none;
+      }
+    }
+    .descBox {
+      color: #ffffff;
+    }
+  }
+}
+
+.brandBox {
+  position: relative;
+  width: px(163);
+  height: px(146);
+  .coverBg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .cover {
+    position: absolute;
+    left: 15px;
+    top: 9px;
+    z-index: 5;
+    display: block;
+    width: px(133);
+  }
+  .logoBox {
+    position: absolute;
+    width: 100%;
+    height: px(36);
+    display: flex;
+    align-items: center;
+    z-index: 12;
+    bottom: px(15);
+
+    .logo {
+      width: 100%;
+      height: px(22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.descBox {
+  color: #2d210d;
+  width: px(163);
+  font-size: px(14);
+  line-height: px(22);
+  min-height: px(66);
+  @extend .wordBreak;
+}

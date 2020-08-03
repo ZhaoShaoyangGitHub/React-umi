@@ -1,0 +1,37 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 99;
+  .white {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 100%
+    );
+    height: px(171);
+  }
+  .footerCont {
+    height: px(148);
+    background-color: #fff;
+    padding: px(1);
+    position: relative;
+
+    .footerStr {
+      text-align: center;
+      margin: px(20) px(0);
+      font-size: px(14);
+      color: #aaafb7;
+    }
+    .songIcon {
+      width: px(60);
+      margin-left: px(-60/2);
+      left: 50%;
+      top: px(-42);
+      position: absolute;
+    }
+  }
+}

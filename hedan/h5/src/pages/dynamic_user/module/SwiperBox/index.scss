@@ -1,0 +1,43 @@
+@import "@/assets/style/global.scss";
+
+.dynamic-container {
+  width: 100vw;
+  height: px(283);
+}
+
+.dynamic-silder {
+  width: px(283);
+  height: px(283);
+  padding: px(0) px(10);
+  &:first-child {
+    padding-left: px(16);
+  }
+  &:last-child {
+    padding-right: px(16);
+  }
+}
+.dynamic-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  @extend .cover;
+}
+.dynamic-pagination {
+  text-align: center;
+  margin-left: px(16);
+  margin-top: px(10);
+  .swiper-pagination-bullet {
+    width: px(6);
+    height: px(6);
+    transition: width 0.3s;
+    background-color: #aaafb7;
+    opacity: 1;
+    margin-right: px(4);
+    border-radius: px(100);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $c_vi;
+    width: px(16);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,94 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(50);
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(279.81deg, #554ce1 0%, #7067ff 100%);
+}
+
+.contentBox {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffffff;
+  border-radius: px(24) px(24) 0 0;
+  width: px(343);
+  background-image: url("./img/bg.png");
+  background-size: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: px(130);
+  padding-bottom: px(80);
+  .titleBox {
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    width: px(238);
+    height: px(145);
+    margin-left: px(-238/2);
+  }
+}
+.titleBox {
+  .titleCover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .titleStr {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: px(51);
+    top: px(36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: px(24);
+    color: #fff;
+  }
+  .titleCont {
+    position: absolute;
+    z-index: 2;
+    height: px(27);
+    left: 0;
+    top: px(87);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: px(12);
+    color: #fff;
+  }
+}
+
+.userDetail {
+  background: linear-gradient(335.69deg, #554ce1 0%, #7067ff 100%);
+  opacity: 0.9;
+  border-radius: px(12);
+  width: px(343);
+  height: px(58);
+  box-shadow: 0px px(7) px(18) rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: px(14);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: px(14);
+  .nickname {
+    margin-right: px(10);
+  }
+  .userCover {
+    width: px(22);
+    height: px(22);
+    border-radius: px(100);
+    margin-right: px(4);
+  }
+}

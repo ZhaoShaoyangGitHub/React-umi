@@ -1,0 +1,50 @@
+@charset 'utf-8';
+$htmlFontSize: 100px;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function px($values...) {
+  $max: length($values);
+  $remValues: "";
+
+  @for $i from 1 through $max {
+    $item: strip-units(nth($values, $i)) / strip-units($htmlFontSize) * 1rem;
+    $remValues: #{$remValues + " " + $item};
+  }
+
+  @return $remValues;
+}
+
+@mixin fs_overflow($num: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $num>1 {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  } @else {
+    white-space: nowrap;
+  }
+}
+
+//定制一波color
+
+$c_vi: #753fff;
+$c_vi2: #753fff;
+$c_pressed: #e8f2fc;
+$c_font: #131621;
+$c_white: #ffffff;
+$c_yellow: #ffda69;
+$c_pressed: #e8f2fc;
+
+//常用的继承样式
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

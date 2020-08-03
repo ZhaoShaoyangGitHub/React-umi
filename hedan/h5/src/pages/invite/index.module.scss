@@ -1,0 +1,99 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  background-color: #fff;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+  font-size: px(20);
+  line-height: px(20);
+  margin-bottom: px(16);
+}
+
+.cont {
+  font-size: px(16);
+  line-height: px(24);
+}
+
+.box {
+  border-radius: px(24);
+  padding: px(24);
+  margin: px(0) px(16);
+}
+
+.question {
+  @extend .box;
+  background-color: #e8f2fc;
+  color: #2c3033;
+  margin-bottom: px(12);
+}
+
+.how {
+  @extend .box;
+  color: #ffffff;
+  background: linear-gradient(285.09deg, #554ce1 0%, #7067ff 100%);
+  margin-bottom: px(81);
+}
+.q {
+  font-weight: 600;
+}
+
+.item {
+  margin-top: px(16);
+}
+
+.footer {
+  margin: px(0) px(16);
+  padding-bottom: px(30);
+  position: relative;
+  z-index: 2;
+  .str1 {
+    font-weight: 500;
+    font-size: px(30);
+    line-height: px(40);
+    margin-bottom: px(16);
+  }
+  .str2 {
+    font-weight: 500;
+    font-size: px(16);
+    line-height: px(22);
+  }
+}
+
+.blue {
+  color: #564de2;
+}
+
+.egg1 {
+  position: absolute;
+  right: px(0);
+  top: px(127);
+}
+
+.egg2 {
+  position: absolute;
+  left: px(0);
+  top: px(625);
+}
+
+.egg_big {
+  position: absolute;
+  right: px(0);
+  bottom: px(62);
+  z-index: 1;
+}
+.BUG {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: px(-52/2);
+    margin-top: px(-1);
+    width: px(52);
+    height: px(2);
+    background-color: #ffc102;
+  }
+}

@@ -1,0 +1,76 @@
+@import "~@/assets/style/global.scss";
+
+.addMoneyAnim1 {
+  background: url("./imgs/img_01.png") no-repeat;
+  background-size: px(1000/3) px(100/3);
+  width: px(100/3);
+  height: px(100/3);
+  animation: rotateMoney 0.45s step-start infinite;
+}
+.addMoneyAnim2 {
+  background: url("./imgs/img_02.png") no-repeat;
+  background-size: px(1000/3) px(100/3);
+  width: px(100/3);
+  height: px(100/3);
+  animation: rotateMoney 0.4s step-start infinite;
+}
+.addMoneyAnim3 {
+  background: url("./imgs/img_03.png") no-repeat;
+  background-size: px(1000/3) px(100/3);
+  width: px(100/3);
+  height: px(100/3);
+  animation: rotateMoney 0.5s step-start infinite;
+}
+@keyframes rotateMoney {
+  100% {
+    background-position: px(-1000/3) 0;
+  }
+  90% {
+    background-position: px(-900/3) 0;
+  }
+  80% {
+    background-position: px(-800/3) 0;
+  }
+  70% {
+    background-position: px(-700/3) 0;
+  }
+  60% {
+    background-position: px(-600/3) 0;
+  }
+  50% {
+    background-position: px(-500/3) 0;
+  }
+  40% {
+    background-position: px(-400/3) 0;
+  }
+  30% {
+    background-position: px(-300/3) 0;
+  }
+  20% {
+    background-position: px(-200/3) 0;
+  }
+  10% {
+    background-position: px(-100/3) 0;
+  }
+  0% {
+    background-position: 0 0;
+  }
+}
+
+.snow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.snowChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.snowRotate {
+  transform-origin: center center;
+}

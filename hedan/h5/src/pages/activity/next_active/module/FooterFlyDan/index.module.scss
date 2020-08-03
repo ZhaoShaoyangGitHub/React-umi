@@ -1,0 +1,43 @@
+@import "@/assets/style/global.scss";
+@import "../../guardians/guardians.scss";
+.wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.dan_fly {
+  position: absolute;
+  left: px(120);
+  top: px(40);
+  width: px(160);
+}
+
+.cloud_1 {
+  position: absolute;
+  left: px(-10);
+  top: px(46);
+  width: px(83);
+}
+
+.cloud_2 {
+  position: absolute;
+  top: px(-26);
+  left: px(300);
+  width: px(89);
+  filter: blur(0);
+}
+
+.cloud_3 {
+  position: absolute;
+  left: px(20);
+  top: px(66);
+  width: px(196);
+}
+
+.cloud_4 {
+  position: absolute;
+  top: px(125);
+  left: px(300);
+  width: px(86);
+  filter: blur(8px);
+}

@@ -1,0 +1,82 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(50);
+  padding-bottom: px(1);
+  background-color: #dbcddd;
+  min-height: 100%;
+  transition: background 1s;
+  padding-bottom: px(80);
+}
+
+.title {
+  padding: px(18) px(16);
+  font-size: px(30);
+  line-height: px(40);
+  font-weight: 500;
+  color: #2c3033;
+  @extend .wordBreak;
+}
+
+.toyImg {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.swiperBox {
+  .coop {
+    width: px(53);
+    height: px(22);
+    background: linear-gradient(312.04deg, #554ce1 0%, #7067ff 100%);
+    color: #ffffff;
+    border-radius: px(4);
+    font-weight: bold;
+    font-size: px(14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: px(16);
+    top: 0;
+  }
+}
+
+.table {
+  margin-top: px(10);
+  margin-bottom: px(24);
+}
+
+.rightNav {
+  width: px(52+16);
+  position: fixed;
+  right: px(0);
+  bottom: px(98);
+  z-index: 999;
+
+  .btn {
+    width: px(52);
+    height: px(52);
+    border-radius: px(100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .btnHeart {
+    @extend .btn;
+    background: #ffffff;
+    margin-bottom: px(16);
+    img {
+      width: px(20);
+    }
+  }
+
+  .btnBook {
+    @extend .btn;
+    img {
+      width: px(24);
+    }
+    background: linear-gradient(141.65deg, #ffc102 -0.68%, #ff8a00 103.11%);
+  }
+}

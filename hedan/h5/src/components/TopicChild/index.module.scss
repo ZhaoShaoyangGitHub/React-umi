@@ -1,0 +1,38 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  background-color: #f5f6f5;
+  padding: px(19) px(15);
+  margin-top: px(16);
+  margin-bottom: px(8);
+  font-size: px(14);
+  color: #2c3033;
+}
+
+.itemBox {
+  padding-top: px(1);
+  .coverBox {
+    @extend .cover;
+    width: px(343);
+    height: px(343);
+    border-radius: px(16);
+    position: relative;
+    .pic {
+      position: absolute;
+      width: px(24);
+      right: px(16);
+      top: px(16);
+    }
+  }
+}
+
+.contentText {
+  margin-bottom: px(16);
+  line-height: px(28);
+  .cont_desc {
+    display: inline;
+  }
+  .userName {
+    color: #564de2;
+  }
+}

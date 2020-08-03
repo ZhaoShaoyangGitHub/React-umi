@@ -1,0 +1,100 @@
+@import "~@/assets/style/global.scss";
+.IndexWrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  .swiper_index_box {
+    width: 100vw;
+    height: 100vh;
+    .swiper_index_slide {
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+  }
+}
+.IndexWrapper {
+  .maskPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .downLoadPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .downLoadPage_bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(282.15deg, #554ce1 0%, #7067ff 100%);
+      opacity: 0.9;
+    }
+    .downImg {
+      position: absolute;
+      width: px(746);
+      height: px(893);
+      z-index: 4;
+      left: 50%;
+      top: 50%;
+      margin-left: px(-746/2);
+      margin-top: px(-893/2);
+    }
+    .closeBtn {
+      position: absolute;
+      cursor: pointer;
+      z-index: 5;
+      left: 50%;
+      top: 50%;
+      $w: 80;
+      width: px($w);
+      height: px($w);
+      margin-top: px(37 * 2);
+      margin-left: px(-14 * 2);
+    }
+  }
+}
+
+.index-pagination {
+  position: absolute;
+  z-index: 9999;
+  right: px(80);
+  top: 50%;
+  height: px(308);
+  width: px(44);
+  margin-top: px(-308/2);
+  .swiper-pagination-bullet {
+    width: px(44);
+    height: px(44);
+    transition: 0.3s;
+    background-color: transparent;
+    opacity: 1;
+    border-radius: px(100);
+    background-image: url("~@/assets/image/circle.png");
+    @extend .cover;
+    margin-bottom: px(30);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: transparent;
+    opacity: 1;
+    background-image: url("~@/assets/image/circle-active.png");
+    @extend .cover;
+    background-size: 100%;
+  }
+}

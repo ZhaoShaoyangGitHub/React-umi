@@ -1,0 +1,79 @@
+@charset 'utf-8';
+$htmlFontSize: 100px;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function px($values...) {
+  $max: length($values);
+  $remValues: "";
+
+  @for $i from 1 through $max {
+    $item: strip-units(nth($values, $i)) / strip-units($htmlFontSize) * 1rem;
+    $remValues: #{$remValues + " " + $item};
+  }
+
+  @return $remValues;
+}
+
+@mixin fs_overflow($num: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @extend .wordBreak;
+
+  @if $num>1 {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  } @else {
+    white-space: nowrap;
+  }
+}
+
+//定制一波color
+
+$c_vi: #753fff;
+$c_vi2: #753fff;
+$c_pressed: #e8f2fc;
+$c_font: #131621;
+$c_white: #ffffff;
+$c_yellow: #ffda69;
+$c_pressed: #e8f2fc;
+
+//常用的继承样式
+
+.cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wordBreak {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+#footerMask {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.footerOpenBtn {
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  bottom: px(30);
+  margin-left: px(-343/2);
+  display: block;
+  color: red;
+  width: px(343);
+  height: px(48);
+  text-align: center;
+  line-height: px(48);
+  color: #fff;
+  background-color: #5149d0;
+  border-radius: px(8);
+  @include fs_overflow(1);
+}

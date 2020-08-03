@@ -1,0 +1,42 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(40);
+}
+
+.wxCode {
+  display: block;
+  margin: 0 auto;
+  width: px(260);
+}
+
+.title {
+  border-top: px(1) solid #2d210d;
+  width: px(343);
+  border-bottom: px(1) solid rgba($color: #2d210d, $alpha: 0.3);
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: px(24);
+  color: #2d210d;
+  height: px(60);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: px(8);
+}
+
+.desc {
+  width: px(343);
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: px(16);
+  color: #2d210d;
+  line-height: px(24);
+}
+
+.des1 {
+  margin-bottom: px(24);
+}
+
+.blue {
+  color: #564de2;
+}

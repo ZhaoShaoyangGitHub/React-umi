@@ -1,0 +1,113 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(50);
+  position: relative;
+  padding-bottom: px(1);
+  min-height: 100%;
+}
+
+.details {
+  background-color: #f6f0e8;
+  padding-bottom: px(1);
+}
+
+.focus {
+  display: flex;
+  justify-content: space-between;
+  padding: px(15) px(16);
+  align-items: center;
+  color: #2c3033;
+  .left {
+    display: flex;
+    align-items: center;
+    .avatar {
+      width: px(44);
+      height: px(44);
+      margin-right: px(8);
+    }
+    .avatar8 {
+      @extend .avatar;
+      border-radius: px(8);
+      img {
+        border-radius: px(8) !important;
+      }
+    }
+    .avatar14 {
+      @extend .avatar;
+      border-radius: px(14);
+      img {
+        border-radius: 0 !important;
+      }
+    }
+
+    .info {
+      font-weight: 500;
+      .name {
+        font-size: px(16);
+        margin-bottom: px(4);
+      }
+      .des {
+        font-size: px(12);
+      }
+    }
+  }
+
+  .right {
+    .btn {
+      width: px(64);
+      height: px(40);
+      line-height: px(40);
+      text-align: center;
+      border-radius: px(8);
+      border: px(1) solid #564de2;
+      color: #564de2;
+    }
+  }
+}
+
+.listBox {
+  background-color: #fff;
+  padding-top: px(4);
+  padding-bottom: px(1);
+
+  .originalTitle {
+    margin: px(16);
+  }
+}
+
+.originalTitle {
+  font-size: px(18);
+  color: #2c3033;
+  margin-bottom: px(16);
+  .originalTitle_item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -4px;
+      height: px(3);
+      width: px(22);
+      margin-left: px(-22/2);
+      background: linear-gradient(339.98deg, #554ce1 0%, #7067ff 100%);
+      border-radius: px(100);
+    }
+  }
+}
+
+.TopicCardScreenBox {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-left: px(17);
+  text-align: center;
+  .TopicCardItem {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: px(17);
+    width: px(303);
+    &.theOne {
+      width: px(343);
+    }
+  }
+}

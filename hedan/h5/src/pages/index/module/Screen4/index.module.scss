@@ -1,0 +1,89 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  background-size: px(76);
+  background-position: px(0) px(-24);
+}
+
+.title {
+  position: relative;
+  padding-top: px(68);
+  font-size: px(56);
+  line-height: px(64);
+  padding-left: px(16);
+  color: $c_vi;
+  span {
+    font-weight: bold;
+  }
+  p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+  }
+  z-index: 10;
+}
+
+.title2 {
+  position: relative;
+  font-size: px(32);
+  padding-left: px(16);
+  z-index: 10;
+}
+
+.videoBox {
+  position: absolute;
+  z-index: 1;
+  width: px(270);
+  height: px(518);
+  left: px(53);
+  bottom: px(-62);
+  .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+  }
+  .start {
+    position: absolute;
+    width: px(68);
+    left: 50%;
+    top: px(224);
+    margin-left: px(-68/2);
+    z-index: 4;
+  }
+
+  .playText {
+    position: absolute;
+    left: px(-38);
+    top: px(198);
+    width: px(140);
+    z-index: 4;
+  }
+}
+
+.playVideo {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 999999;
+  background-color: #000;
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+  .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: px(24);
+  }
+}
+.playStart {
+  display: block;
+}

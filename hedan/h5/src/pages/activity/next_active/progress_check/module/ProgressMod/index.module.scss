@@ -1,0 +1,67 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  font-family: Yuanti SC;
+  width: px(343);
+  min-height: px(172);
+  background-color: #ffffff;
+  box-shadow: 0px px(10) px(40) #2e1e03;
+  border-radius: px(40);
+  color: #2d210d;
+  box-sizing: border-box;
+  padding: px(24) 0;
+  padding-bottom: px(6);
+}
+
+.title {
+  font-family: Yuanti SC;
+  font-size: px(16);
+  line-height: px(24);
+  font-weight: bold;
+  margin: 0 px(24);
+  color: #2d210d;
+  span {
+    color: #564de2;
+  }
+}
+
+.rangeBox {
+  width: px(295);
+  height: px(22);
+  background-color: #e9ecef;
+  border-radius: px(100);
+  display: flex;
+  align-items: stretch;
+  margin: px(10) auto;
+  margin-bottom: px(20);
+  .block {
+    position: relative;
+    flex-grow: 1;
+    box-sizing: border-box;
+    .rangIcon {
+      position: absolute;
+      width: px(64);
+      height: px(48);
+      left: 50%;
+      margin-left: px(-64/2);
+      top: 50%;
+      margin-top: px(-48/2);
+      z-index: 1;
+    }
+  }
+
+  .blue {
+    background-color: #564de2;
+    &:first-child {
+      border-top-left-radius: px(100);
+      border-bottom-left-radius: px(100);
+    }
+    &:last-child {
+      border-top-right-radius: px(100);
+      border-bottom-right-radius: px(100);
+    }
+    &.blueLast {
+      border-top-right-radius: px(100);
+      border-bottom-right-radius: px(100);
+    }
+  }
+}

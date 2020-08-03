@@ -1,0 +1,30 @@
+/*
+* @LastEditors: Mark
+* @Description: reset 的样式规范
+* @Author: Mark
+* @Date: 2019-05-05 11:53:31
+* @LastEditTime: 2019-07-03 02:21:33
+ */
+
+@charset 'utf-8';
+@import "./global.scss";
+
+html,
+body {
+  font-family: "PingFangSC-Light", "Microsoft YaHei", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #131621;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  font-size: $htmlFontSize;
+  body {
+    font-size: px(16);
+  }
+}

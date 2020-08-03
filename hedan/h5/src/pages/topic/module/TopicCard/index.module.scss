@@ -1,0 +1,110 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: px(24);
+  overflow: hidden;
+  margin-bottom: px(16);
+}
+
+.cardInfo {
+  height: px(200);
+  border-radius: px(24);
+  @extend .cover;
+  overflow: hidden;
+  position: relative;
+  .cont {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    .cont_header {
+      padding: px(14);
+      display: flex;
+      justify-content: space-between;
+      .cont_title {
+        width: px(184);
+        text-align: left;
+        @extend .wordBreak;
+        font-weight: 500;
+        font-size: px(30);
+        line-height: px(40);
+        color: #fff;
+      }
+      .btnImg {
+        width: px(52);
+      }
+    }
+
+    .linkBox {
+      padding: px(14);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #ffffff;
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.userList {
+  background-color: #fff;
+  padding: px(16);
+  padding-top: px(35-16);
+  margin-top: px(-18);
+  text-align: left;
+  .userItem {
+    margin-top: px(16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info {
+      color: #2c3033;
+      font-weight: 500;
+      max-width: px(187);
+      .name {
+        font-size: px(16);
+        margin-bottom: px(6);
+      }
+      .desc {
+        width: px(187);
+        font-size: px(12);
+        @include fs_overflow(1);
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.avatarBox {
+  width: px(54);
+  height: px(54);
+  position: relative;
+  margin-right: px(7);
+  flex-shrink: 0;
+  .avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: px(100);
+  }
+  .danicon {
+    position: absolute;
+    right: 0;
+    width: px(18);
+    bottom: 0;
+    border-radius: px(100);
+    border: px(1) solid rgba(0, 0, 0, 0.05);
+  }
+}

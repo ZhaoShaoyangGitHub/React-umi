@@ -1,0 +1,370 @@
+@import "~@/assets/style/global.scss";
+@import "../guardians/guardians.scss";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #2d210d;
+  padding-bottom: px(40);
+  padding-top: px(62);
+}
+.wrapperMask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.1;
+  background-size: cover;
+  z-index: 1;
+}
+
+.wrapperBox {
+  z-index: 10;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Yuanti SC";
+  position: relative;
+  width: px(375);
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 auto;
+  &.mobile {
+    overflow: hidden;
+  }
+}
+
+// content
+
+.chartTitle {
+  margin: px(24) px(16);
+  margin-bottom: px(12);
+}
+
+.titleStr {
+  display: block;
+  font-weight: bold;
+  font-size: px(24);
+  width: px(343);
+  margin: 0 auto;
+  padding: px(8) px(0);
+  box-sizing: border-box;
+  padding-top: px(0);
+}
+
+.title_desc {
+  font-size: px(16);
+  line-height: px(24);
+  padding: px(0) px(16);
+  padding-bottom: px(13);
+}
+
+//cardBox
+.cardBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: px(1) px(16);
+}
+
+.card {
+  position: relative;
+  width: px(163);
+  height: px(211);
+  margin-bottom: px(16);
+  .bgImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card_cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: px(16) px(14);
+    padding-bottom: px(0);
+    color: #2d210d;
+    .card_title {
+      font-size: px(14);
+      display: block;
+      margin-bottom: px(4);
+    }
+    .card_cont_des {
+      font-style: normal;
+      font-weight: normal;
+      font-family: "Yuanti SC";
+      font-size: px(16);
+      line-height: px(24);
+      word-break: break-all;
+      .explain {
+        font-size: px(12);
+        line-height: px(16);
+        margin-top: px(8);
+      }
+    }
+  }
+}
+
+.badge_r1 {
+  width: px(80);
+  display: block;
+  margin: 0 auto;
+  margin-top: px(9);
+}
+
+.badge_r2 {
+  width: px(68);
+  display: block;
+  margin: 0 auto;
+  margin-top: px(14);
+}
+.blue {
+  color: #564de2;
+}
+
+.cardLeft {
+  @extend .card;
+}
+
+.cardR2Box {
+  @extend .card;
+  .card_cont {
+    color: #fff;
+  }
+}
+
+.cardLeft3 {
+  @extend .card;
+  // .card_cont {
+  //   .card_cont_des {
+  //   }
+  // }
+}
+
+.cardR3Box {
+  @extend .card;
+  .card_cont {
+    color: #fff;
+    .cardStrBox {
+      position: relative;
+      width: px(72);
+      .badge_r3 {
+        position: absolute;
+        left: px(74);
+        top: px(-40);
+        width: px(110);
+      }
+    }
+  }
+}
+
+.cardR4Box {
+  @extend .card;
+  .card_cont {
+    color: #fff;
+    .cardStrBox {
+      position: relative;
+      width: px(137);
+      text-align: left;
+      .badge_r4 {
+        width: px(172/2);
+        position: absolute;
+        right: px(-22);
+        bottom: px(-83);
+      }
+    }
+  }
+}
+
+//cardBox - end
+
+.cardBoxBStr {
+  padding-left: px(16);
+  width: px(280);
+  font-size: px(16);
+  line-height: px(24);
+  margin-bottom: px(15);
+}
+
+.cardBoxBStr2 {
+  font-size: px(14);
+  line-height: px(22);
+  padding: px(0) px(16);
+}
+
+.cardBoxMargin {
+  margin-bottom: 0;
+}
+
+.contImg {
+  width: 100%;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.logo_x {
+  display: block;
+  margin: px(20) auto;
+  height: px(160/2);
+}
+
+.ruleStr {
+  font-size: px(14);
+  line-height: px(22);
+  padding: px(0) px(16);
+  &.ruleStrtrSmall {
+    font-size: px(12);
+  }
+}
+
+.declare {
+  font-size: px(12);
+  text-align: center;
+  margin-bottom: px(24);
+  opacity: 0.5;
+  margin-top: px(24);
+}
+
+.activeBox {
+  padding: px(24) px(16) px(50);
+  .activeAxplain {
+    font-size: px(16);
+    margin-top: px(12);
+    margin-bottom: px(16);
+  }
+  .listBox {
+    display: flex;
+    width: px(378);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .item {
+      margin-right: px(17);
+      margin-bottom: px(16);
+    }
+  }
+}
+
+.backBtn {
+  position: relative;
+  width: px(163);
+  height: px(146);
+  .backBtnBG {
+    position: absolute;
+    z-index: 1;
+    width: px(202);
+    left: px(-20);
+    top: px(-16);
+  }
+  .danFly {
+    position: absolute;
+    z-index: 10;
+    width: px(152);
+    left: px(35);
+    top: px(16);
+  }
+  .cloud_1 {
+    position: absolute;
+    z-index: 2;
+    width: px(57);
+    left: px(-5);
+    top: px(-12);
+  }
+  .cloud_2 {
+    position: absolute;
+    z-index: 3;
+    width: px(71);
+    left: px(129);
+    top: px(-25);
+  }
+  .cloud_3 {
+    position: absolute;
+    z-index: 12;
+    width: px(148);
+    left: px(-40);
+    top: px(30);
+  }
+
+  .cloud_4 {
+    position: absolute;
+    z-index: 4;
+    width: px(86);
+    left: px(112);
+    top: px(94);
+    filter: blur(3px);
+  }
+  .backStr {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    bottom: px(-30);
+    width: px(170);
+  }
+}
+
+.fixedBtnBox {
+  position: fixed;
+  left: px(0);
+  bottom: px(16);
+  width: 100%;
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+}
+
+.checkProg {
+  width: px(343);
+  height: px(48);
+  box-shadow: 0px px(7) px(18) rgba(55, 45, 208, 0.3);
+  background: #5e55dd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: px(16);
+  color: #fff;
+}
+
+.model_content {
+  width: px(343);
+  background-color: #ffffff;
+  box-shadow: 0px 10px 40px #2e1e03;
+  border-radius: 40px;
+  padding: px(24) px(0);
+  box-sizing: border-box;
+  .titleBox {
+    font-size: px(24);
+    line-height: px(30);
+    color: #2d210d;
+    font-weight: bold;
+    padding: px(0) px(24);
+  }
+  .checkProg {
+    width: px(295);
+    margin: 0 auto;
+    margin-bottom: px(8);
+  }
+}
+
+.ProgressMod {
+  box-shadow: none !important;
+}
+
+.modalTxt {
+  padding: px(0) px(24);
+  padding-top: px(8);
+  font-size: px(16);
+  line-height: px(24);
+  .yellow {
+    color: #564de2;
+  }
+}

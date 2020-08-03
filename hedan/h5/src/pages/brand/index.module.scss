@@ -1,0 +1,132 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(50);
+  min-height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.brandBox {
+  background-color: #eaeaeb;
+}
+
+.brandTitle {
+  display: flex;
+  align-items: center;
+  padding: px(17);
+  .cover {
+    border-radius: px(16);
+    width: px(88);
+    height: px(88);
+    margin-right: px(10);
+  }
+  .name {
+    font-weight: 500;
+    font-size: px(30);
+    line-height: px(40);
+    @extend .wordBreak;
+    @include fs_overflow(2);
+  }
+}
+
+.introduce {
+  padding: px(0) px(17);
+  font-size: px(14);
+  color: #2c3033;
+  padding-bottom: px(14);
+
+  .title {
+    font-weight: 500;
+    font-size: px(16);
+    margin-bottom: px(8);
+  }
+  .introductionBox {
+    position: relative;
+    max-height: px(112);
+    // max-height: auto;
+    overflow: hidden;
+    padding: px(1) px(0);
+    .showStyleBtn {
+      position: absolute;
+      right: px(0);
+      bottom: px(6);
+      color: #564de2;
+      background-color: #eaeaeb;
+      font-size: px(14);
+      padding-left: px(2);
+      .diandiandian {
+        font-size: px(12);
+        color: #2c3033;
+      }
+    }
+  }
+  .introduction {
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    @extend .wordBreak;
+  }
+}
+
+.member {
+  padding-top: px(8);
+  padding-bottom: px(24);
+  .title {
+    font-weight: 500;
+    font-size: px(16);
+    line-height: px(22);
+    padding: px(0) px(17);
+    margin-bottom: px(10);
+  }
+}
+
+.toyList {
+  background-color: #fff;
+  padding-top: px(20);
+  min-height: px(300);
+  padding-bottom: px(190);
+  .title {
+    padding: px(0) px(17);
+    padding-bottom: px(12);
+    font-weight: 500;
+    font-size: px(24);
+    color: #2c3033;
+    @extend .wordBreak;
+  }
+}
+
+.otherInfo {
+  padding: px(17);
+  .title {
+    font-weight: 500;
+    font-size: px(16);
+    color: #2c3033;
+    margin-bottom: px(16);
+  }
+
+  .iconBox {
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: px(52);
+      height: px(52);
+      margin-right: px(8);
+      @extend .wordBreak;
+    }
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .a {
+      font-size: px(16);
+      width: px(300);
+      display: block;
+      color: #2c3033;
+      @include fs_overflow(1);
+    }
+    .icon {
+      width: px(24);
+    }
+  }
+}

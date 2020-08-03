@@ -1,0 +1,29 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerBox {
+  width: 100%;
+  .icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .str {
+    text-align: center;
+    margin-top: px(12);
+    color: #aaafb7;
+    font-weight: 500;
+    font-size: px(14);
+  }
+}

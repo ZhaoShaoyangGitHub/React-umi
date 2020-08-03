@@ -1,0 +1,31 @@
+@import "~@/assets/style/global.scss";
+
+.screen3_swiper_box {
+  $w: px(240 * 3+40 * 2 + 30);
+  width: $w;
+  height: $w;
+}
+.screen3-silder {
+  padding: px(15);
+  box-sizing: border-box;
+}
+
+.screen3-pagination {
+  position: absolute;
+  left: px(80);
+  bottom: px(100);
+  .swiper-pagination-bullet {
+    width: px(12);
+    height: px(12);
+    transition: width 0.3s;
+    background-color: $c_white;
+    opacity: 1;
+    margin-right: px(8);
+    border-radius: px(100);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $c_vi;
+    width: px(32);
+    opacity: 1;
+  }
+}

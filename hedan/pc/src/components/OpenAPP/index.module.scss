@@ -1,0 +1,18 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  position: fixed;
+  width: calc(100% - #{px(30)});
+  left: px(15);
+  height: px(48);
+  bottom: px(59);
+  background: linear-gradient(339.5deg, #554CE1 0%, #7067FF 100%);
+  border-radius: px(8);
+  color: $c_white;
+  text-align: center;
+  line-height: px(48);
+  font-weight: 500;
+  font-size: px(16);
+  box-sizing: border-box;
+  z-index: 2;
+}

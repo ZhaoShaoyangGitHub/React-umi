@@ -1,0 +1,88 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding-top: px(50);
+  position: relative;
+}
+
+.mapBg {
+  width: 100%;
+  display: block;
+  height: px(124);
+}
+
+.listBox {
+  background-color: #fff;
+  padding-top: px(4);
+  padding-bottom: px(1);
+
+  .originalTitle {
+    margin: px(16);
+  }
+}
+
+.originalTitle {
+  font-size: px(18);
+  color: #2c3033;
+  margin-bottom: px(16);
+  .originalTitle_item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -4px;
+      height: px(3);
+      width: px(22);
+      margin-left: px(-22/2);
+      background: linear-gradient(339.98deg, #554ce1 0%, #7067ff 100%);
+      border-radius: px(100);
+    }
+  }
+}
+
+.DrawerBox {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+  .contBox {
+    width: 100%;
+    min-height: px(80);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    padding: px(1) px(16);
+    padding-bottom: px(34);
+    border-radius: px(24) px(24) 0 0;
+    box-sizing: border-box;
+    .d_item {
+      height: px(48);
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: px(16);
+      color: #564de2;
+    }
+    .cancel {
+      color: #2c3033;
+      background: #f5f8fb;
+      border-radius: px(8);
+    }
+  }
+}

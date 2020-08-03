@@ -1,0 +1,70 @@
+@import "@/assets/style/global.scss";
+@import "../lineBox.scss";
+.toyBox {
+  display: inline-block;
+  width: px(104);
+  padding-bottom: px(34);
+  vertical-align: middle;
+}
+.toyBox.toyBoxNull {
+  background-size: 0;
+  .title {
+    opacity: 0;
+  }
+}
+.imgBox {
+  height: px(162);
+  position: relative;
+  box-sizing: border-box;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: px(104);
+  }
+  .bg {
+    z-index: 1;
+  }
+  .image {
+    position: absolute;
+    width: px(80);
+    height: px(94);
+    transform: rotate(-0.9deg);
+    top: px(42);
+    left: px(15);
+    z-index: 2;
+    @extend .cover;
+  }
+  .clamp {
+    z-index: 3;
+  }
+}
+
+.toyCover {
+  width: px(104);
+  height: px(104);
+  display: block;
+}
+
+.title {
+  display: block;
+  font-size: px(12);
+  background: #ffffff;
+  /* card-shadow-down */
+  box-shadow: 0px px(2) px(5) rgba(0, 0, 0, 0.03);
+  border-radius: px(14);
+  width: px(88);
+  height: px(24);
+  @include fs_overflow(1);
+  text-align: center;
+  line-height: px(24);
+  color: #2c3033;
+  margin: 0 auto;
+}
+
+.titleNull {
+  display: block;
+  width: px(88);
+  height: px(24);
+  margin: 0 auto;
+}

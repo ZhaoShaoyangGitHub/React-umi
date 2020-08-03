@@ -1,0 +1,44 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: $c_pressed;
+  position: relative;
+  .bg {
+    position: absolute;
+    width: px(970 * 2);
+    left: px(274 * 2);
+    top: px(-46 * 2);
+    z-index: 1;
+  }
+  .text {
+    position: absolute;
+    z-index: 2;
+    left: px(80);
+  }
+  .text1 {
+    @extend .text;
+    top: px(384);
+    font-weight: bold;
+    font-size: px(80);
+    color: #131621;
+  }
+  .text2 {
+    @extend .text;
+    top: px(488);
+    font-weight: bold;
+    font-size: px(148);
+    color: #753fff;
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+  top: px(708);
+  .buttonList {
+    margin-left: px(88);
+  }
+}

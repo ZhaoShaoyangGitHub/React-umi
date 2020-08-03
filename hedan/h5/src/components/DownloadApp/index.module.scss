@@ -1,0 +1,55 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .box {
+    display: flex;
+    align-items: center;
+  }
+
+  padding: px(8) px(16);
+  .logBox {
+    width: px(30);
+    height: px(30);
+    background-color: #ffffff;
+    border-radius: px(8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      width: px(20);
+    }
+    margin-right: px(8);
+  }
+
+  .des {
+    .logoText {
+      width: px(50);
+    }
+    .appDesc {
+      font-size: px(12);
+      line-height: px(16);
+      color: #2c3033;
+    }
+  }
+
+  .download {
+    width: px(80);
+    height: px(30);
+    background: linear-gradient(314.94deg, #554ce1 0%, #7067ff 100%);
+    color: $c_white;
+    border-radius: px(8);
+    text-align: center;
+    line-height: px(30);
+    font-size: px(14);
+  }
+}

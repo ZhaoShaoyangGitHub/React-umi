@@ -1,0 +1,99 @@
+@import "~@/assets/style/global.scss";
+@import "../../guardians.scss";
+
+.wrapper {
+  font-family: "Yuanti SC";
+  position: relative;
+}
+
+.titleBox {
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  width: 100%;
+  top: px(403);
+  .title {
+    font-size: px(24);
+    color: #ffffff;
+    padding: 0 px(16);
+    width: 100%;
+    span {
+      font-weight: bolder;
+      margin: 0 px(6);
+    }
+  }
+  .titleImg {
+    width: px(375);
+    margin-top: px(8);
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+
+.line {
+  position: absolute;
+  left: px(16);
+  top: px(62);
+}
+
+.topBG {
+  position: relative;
+  width: 100%;
+  height: px(640);
+  .danFly {
+    position: absolute;
+    width: px(383);
+    left: px(24);
+    top: px(106);
+    z-index: 20;
+  }
+  .cloud {
+    position: absolute;
+  }
+  .cloud_1 {
+    @extend .cloud;
+    left: px(-10);
+    top: px(30);
+    z-index: 3;
+  }
+  .cloud_2 {
+    @extend .cloud;
+    left: px(271);
+    top: px(47);
+    z-index: 3;
+    filter: blur(2px);
+  }
+  .cloud_3 {
+    @extend .cloud;
+    top: px(218);
+    left: px(-107);
+    z-index: 23;
+  }
+  .cloud_4 {
+    @extend .cloud;
+    left: px(235);
+    top: px(340);
+    filter: blur(10px);
+    z-index: 3;
+  }
+}
+
+.desc {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 px(16);
+  font-size: px(16);
+  line-height: px(24);
+  margin-top: px(-2);
+  p {
+    margin: 0;
+  }
+  .contB {
+    font-weight: bolder;
+  }
+}

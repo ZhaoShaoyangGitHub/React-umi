@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh" style="font-size: 100px;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no,viewport-fit=cover"
+    />
+
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <meta name="apple-mobile-web-app-capable" content="none" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>盒DAN</title>
+    <link href="%PUBLIC_URL%/mark_comm/swiper.min.css?v=428" rel="stylesheet" />
+    <script src="%PUBLIC_URL%/mark_comm/swiper.min.js?v=428"></script>
+    <script src="%PUBLIC_URL%/mark_comm/comm.js?v=428"></script>
+    <link href="%PUBLIC_URL%/mark_comm/compatible.css?v=428" />
+    <style>
+      body,
+      html {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      #root {
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      #load_public {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        background-color: #fff;
+      }
+      #load_public > img {
+        width: 36px;
+        height: 36px;
+      }
+      #console {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        background-color: green;
+        word-break: break-all;
+        padding: 10px;
+      }
+
+      @-webkit-keyframes rotation {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      #load_public_img {
+        -webkit-transform: rotate(360deg);
+        animation: rotation 1s linear infinite;
+        -moz-animation: rotation 1s linear infinite;
+        -webkit-animation: rotation 1s linear infinite;
+        -o-animation: rotation 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript> 您需要启用JavaScript来运行这个应用程序。 </noscript>
+    <div id="root">
+      <div class="compatible_wrapper">
+        <img
+          class="compatible_logo"
+          src="http://file.hedan.art/logo-s.png"
+          alt=""
+        />
+        <img class="compatible_bg" src="http://file.hedan.art/cry.png" alt="" />
+        <div class="compatible_content">
+          <div class="compatible_txt1">
+            很抱歉●﹏● <br />
+            DAN酱检测到您的手机浏览器不兼容我们的官方网站
+          </div>
+          <div class="compatible_txt2">
+            如果您需要访问我们的官方网站以下载安卓版本的盒DAN APP，
+            <b>可以点击下方按钮直接下载</b>
+          </div>
+          <a
+            class="compatible_download"
+            href="https://m.hedan.art/api/system/android"
+            target="_blank"
+          >
+            下载 盒DAN APP
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="console"></div> -->
+    <div id="load_public">
+      <img
+        id="load_public_img"
+        src="%PUBLIC_URL%/mark_comm/loding.svg"
+        alt=""
+      />
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+<script>
+  var Elem = window.document.getElementById("load_public");
+  if (Elem) {
+    setTimeout(function () {
+      Elem.parentNode.removeChild(Elem);
+    }, 2000);
+  }
+</script>

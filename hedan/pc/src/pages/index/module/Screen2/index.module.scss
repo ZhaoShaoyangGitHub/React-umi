@@ -1,0 +1,96 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eae2ff;
+  position: relative;
+  box-sizing: border-box;
+  padding: px(1);
+}
+.contBox {
+  position: absolute;
+  left: 0;
+  height: px(428);
+  width: 100%;
+  top: px(326);
+  .shadeBox {
+    position: absolute;
+    right: 0;
+    top: px(-326);
+    width: px(466);
+    height: px(891);
+    background: linear-gradient(90deg, rgba(234, 226, 255, 0) 0%, #eae2ff 100%);
+  }
+}
+
+.helloBlock {
+  position: absolute;
+  right: px(80);
+  bottom: px(80);
+  width: px(343);
+  height: px(109);
+  background-color: #bac1d4;
+  background: linear-gradient(319.67deg, #554ce1 0%, #7067ff 100%);
+  border-radius: px(24);
+  overflow: hidden;
+  box-shadow: px(0) px(7) px(18) rgba(55, 45, 208, 0.3);
+  .reboot {
+    position: absolute;
+    width: px(150);
+    right: 0;
+    bottom: 0;
+  }
+  .helloText {
+    background-color: $c_white;
+    width: px(146);
+    height: px(28);
+    border-radius: px(16) px(16) px(0) px(16);
+    margin: px(16);
+    font-size: px(16);
+    color: $c_vi;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    img {
+      display: block;
+      width: px(114);
+    }
+  }
+
+  .cont_txt {
+    margin-left: px(16);
+    width: px(184);
+    font-size: px(14);
+    line-height: px(18);
+    color: $c_white;
+  }
+}
+
+.bar {
+  position: absolute;
+  left: px(88);
+  bottom: px(99);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .more {
+    width: px(70);
+  }
+  .str {
+    width: px(534);
+    margin-left: px(12);
+    word-break: break-all;
+    font-size: px(24);
+    line-height: px(36);
+    color: #131621;
+    font-weight: bold;
+  }
+}
+
+.helloBg {
+  position: absolute;
+  width: px(379);
+  right: px(70);
+  bottom: px(70);
+}

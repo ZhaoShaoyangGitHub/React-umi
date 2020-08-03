@@ -1,0 +1,67 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  width: 100%;
+  height: px(24 * 2+8);
+  padding: 0 px(16);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: px(76);
+  height: px(24);
+}
+.btn {
+  width: px(18);
+  height: px(18);
+  position: relative;
+  z-index: 999;
+
+  .btnItemStyle {
+    width: px(18);
+    display: block;
+    height: px(2);
+    border-radius: px(100);
+    background-color: $c_vi;
+    position: absolute;
+    left: 0;
+    transition: 0.2s;
+  }
+  .top {
+    @extend .btnItemStyle;
+    top: px(5);
+  }
+  .bottom {
+    @extend .btnItemStyle;
+    bottom: px(5);
+  }
+
+  &.active {
+    .top {
+      top: px(8);
+      transform: rotate(45deg);
+    }
+    .bottom {
+      transform: rotate(-45deg);
+      bottom: px(8);
+    }
+  }
+
+  &.vi {
+    .top,
+    .bottom {
+      background-color: $c_vi;
+    }
+  }
+  &.white {
+    .top,
+    .bottom {
+      background-color: $c_white;
+    }
+  }
+}

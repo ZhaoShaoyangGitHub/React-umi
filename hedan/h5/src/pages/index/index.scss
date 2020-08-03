@@ -1,0 +1,67 @@
+@import "~@/assets/style/global.scss";
+.IndexWrapper {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  .swiper_index_box {
+    width: 100vw;
+    height: 100%;
+    .swiper_index_slide {
+      width: 100vw;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+  }
+}
+.IndexWrapper {
+  .maskPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .downLoadPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100vw;
+    height: 100%;
+    .downLoadPage_bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(282.15deg, #554ce1 0%, #7067ff 100%);
+      opacity: 0.9;
+    }
+    .downImg {
+      position: absolute;
+      left: 0;
+      top: px(74);
+      width: 100%;
+    }
+    .closeBtn {
+      position: absolute;
+      left: px(164);
+      top: px(570);
+      width: px(50);
+      height: px(50);
+    }
+  }
+}
+
+.videoPage {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  .video {
+    // display: block;
+    // margin: 0 auto;
+    // max-height: 100%;
+    max-width: 100%;
+  }
+}

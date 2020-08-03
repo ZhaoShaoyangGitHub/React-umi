@@ -1,0 +1,83 @@
+@import "~@/assets/style/global.scss";
+
+.wrapper {
+  $w: px(520+40+240);
+  width: $w;
+  height: $w;
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  width: px(240);
+  height: px(240);
+  border-radius: px(32);
+  overflow: hidden;
+  @extend .cover;
+  &.item_0 {
+    width: px(520);
+    height: px(520);
+    left: 0;
+    top: 0;
+  }
+  &.item_1 {
+    right: 0;
+  }
+  &.item_2 {
+    right: 0;
+    top: px(240+40);
+  }
+  &.item_3 {
+    left: 0;
+    bottom: 0;
+  }
+  &.item_4 {
+    left: px(240+40);
+    bottom: 0;
+  }
+  &.item_5 {
+    left: px((240+40) * 2);
+    bottom: 0;
+  }
+  .userBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    .userInfo {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      font-size: px(9);
+      padding-left: px(24);
+      padding-bottom: px(24);
+      box-sizing: border-box;
+      @include fs_overflow(1);
+      color: $c_white;
+
+      .userIcon {
+        vertical-align: sub;
+        width: px(18);
+        height: px(18);
+        border-radius: px(100);
+        margin-right: px(4);
+      }
+
+      .userName {
+        vertical-align: sub;
+      }
+
+      .dan {
+        margin-left: px(8);
+        vertical-align: sub;
+      }
+    }
+  }
+}

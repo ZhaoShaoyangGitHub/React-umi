@@ -1,0 +1,113 @@
+@import "@/assets/style/global.scss";
+.wrapper {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: px(40) px(80);
+  box-sizing: border-box;
+  .logo {
+    width: px(136);
+  }
+  .cloes {
+    cursor: pointer;
+    width: px(40);
+  }
+}
+
+.contBox {
+  position: absolute;
+  padding-top: px(160);
+  box-sizing: border-box;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: px(380);
+  position: relative;
+  .header {
+    margin-left: px(80);
+    width: px(224);
+    .title {
+      font-weight: bold;
+      font-size: px(24);
+      margin-bottom: px(40);
+    }
+    .nav {
+      .tab {
+        font-weight: 500;
+        font-size: px(20);
+        margin-bottom: px(40);
+        cursor: pointer;
+        &.active {
+          color: #753fff;
+        }
+      }
+    }
+    .location {
+      font-weight: 500;
+      font-size: px(14);
+      line-height: px(22);
+    }
+  }
+
+  .bottom {
+    width: px(224);
+    position: absolute;
+    left: px(80);
+    bottom: px(80);
+    .contactWay {
+      font-weight: 500;
+      font-size: px(24);
+    }
+    .lineMe {
+      color: $c_vi;
+    }
+  }
+}
+.nill {
+  height: px(22);
+}
+.right {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  .content {
+    width: px(680);
+    .title {
+      font-weight: bold;
+      font-size: px(20);
+      color: #131621;
+      padding-bottom: px(30);
+    }
+    .detail {
+      color: #2c3033;
+      font-weight: 500;
+      font-size: px(14);
+      line-height: px(22);
+    }
+    .contTxt {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

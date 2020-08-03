@@ -1,0 +1,26 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  min-height: 100%;
+  padding: px(15);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.title {
+  font-weight: 500;
+  font-size: px(20);
+  color: #564de2;
+  margin-bottom: px(8);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: px(15);
+  box-sizing: border-box;
+  z-index: 30;
+  .button {
+    background: linear-gradient(339.5deg, #554ce1 0%, #7067ff 100%);
+    font-size: px(16);
+  }
+}

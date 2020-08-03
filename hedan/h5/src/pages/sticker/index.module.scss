@@ -1,0 +1,125 @@
+@import "~@/assets/style/global.scss";
+
+.stickerWrapper {
+  position: relative;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  .stickerMain {
+    padding: px(66) px(16) px(100);
+    overflow: hidden;
+    .classificationListItem {
+      margin-bottom: px(16);
+      background-color: #ffffff;
+      border-radius: px(24);
+      padding: px(16);
+      overflow: hidden;
+      .listTitle {
+        font-family: 萍方-简;
+        font-style: normal;
+        font-weight: 500;
+        font-size: px(16);
+        line-height: px(22);
+        color: #2c3033;
+        margin-bottom: px(20);
+      }
+    }
+  }
+  .stickerList {
+    .stickerListItem {
+      position: relative;
+      height: px(54);
+      border-radius: px(27);
+      padding-left: px(76);
+      padding-right: px(16);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & + .stickerListItem {
+        margin-top: px(44);
+      }
+      .stickerListImg {
+        width: px(68);
+        height: px(68);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .stickerTitle {
+        font-family: 萍方-简;
+        font-style: normal;
+        font-weight: 500;
+        font-size: px(16);
+        line-height: px(22);
+        color: #2c3033;
+        display: flex;
+        align-items: center;
+        .newTag {
+          font-family: Yuanti SC;
+          font-style: normal;
+          font-weight: bold;
+          font-size: px(12);
+          line-height: px(12);
+          color: #564de2;
+          padding-left: px(4);
+        }
+      }
+      .stickerDesc {
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: px(12);
+        line-height: px(16);
+        position: relative;
+        .free {
+          color: #aaafb7;
+          position: relative;
+        }
+        .price {
+          color: #ef424e;
+          position: relative;
+        }
+        .unlock {
+          color: #564de2;
+          position: relative;
+        }
+        .delete {
+          border-bottom: 1px solid #ef424e;
+          width: 100%;
+          height: 1px;
+          display: inline-block;
+          position: absolute;
+          bottom: px(6);
+          left: 0;
+          z-index: 2;
+        }
+      }
+      .moreIcon {
+        width: px(18);
+        height: px(18);
+        position: absolute;
+        top: 50%;
+        margin-top: px(-9);
+        right: px(16);
+      }
+    }
+  }
+  .openApp {
+    width: px(343);
+    height: px(48);
+    background: linear-gradient(339.5deg, #554ce1 0%, #7067ff 100%);
+    border-radius: px(8);
+    box-shadow: 0px 7px 18px rgba(55, 45, 208, 0.3);
+    position: fixed;
+    left: px(16);
+    bottom: px(34);
+    z-index: 990;
+    font-family: 萍方-简;
+    font-style: normal;
+    font-weight: 500;
+    font-size: px(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+}

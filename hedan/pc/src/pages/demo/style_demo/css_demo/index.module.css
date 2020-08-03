@@ -1,0 +1,59 @@
+/*
+* @LastEditors: Mark
+* @Description: none
+* @Author: Mark
+* @Date: 2019-05-05 11:53:31
+* @LastEditTime: 2019-07-03 03:01:20
+ */
+
+.cover {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid #000;
+  background-image: url("~@/assets/image/15.jpg");
+}
+
+.lessBox {
+  color: red;
+}
+.lessBox .font {
+  font-size: 0.16rem;
+}
+
+.fontOverflow .fontOverflow_1 {
+  width: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.fontOverflow_multi {
+  width: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.margin_1 {
+  width: 1rem;
+  height: 2rem;
+  background-color: red;
+  margin: 1rem auto;
+}
+
+.margin_2 {
+  width: 1rem;
+  height: 2rem;
+  background-color: red;
+  margin: 1rem 0.1rem;
+  border-radius: 0.1rem;
+}
+
+.padding {
+  padding: 0.3rem 0.2rem 0.1rem 0.05rem;
+}

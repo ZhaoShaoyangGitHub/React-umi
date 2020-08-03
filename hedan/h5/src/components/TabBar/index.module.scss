@@ -1,0 +1,55 @@
+/*
+* @LastEditors: Mark
+* @Description: In User Settings Edit
+* @Author: Mark
+* @Date: 2019-05-05 14:59:32
+* @LastEditTime: 2019-05-25 15:23:49
+ */
+@import "@/assets/style/global.scss";
+.null {
+  height: px(50);
+}
+.showRoute {
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  top: 0;
+  background-color: red;
+  color: #fff;
+}
+
+.tabBar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: px(50);
+  background-color: #fff;
+  border: 1px solid rgba(238, 238, 238, 1);
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  .item {
+    cursor: pointer;
+    text-align: center;
+    &.active {
+      .name {
+        color: #3989eb;
+      }
+    }
+
+    .icon {
+      display: block;
+      width: px(20);
+      height: px(20);
+      margin: 0 auto;
+      margin-bottom: px(3);
+    }
+    .name {
+      display: block;
+      font-size: px(10);
+      color: #999999;
+    }
+  }
+}

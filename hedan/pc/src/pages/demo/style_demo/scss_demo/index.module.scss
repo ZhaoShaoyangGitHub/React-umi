@@ -1,0 +1,62 @@
+@import "~@/assets/style/global.scss";
+.cover {
+  width: px(100);
+  height: px(100);
+  border: px(10) solid #000;
+  background-image: url("~@/assets/image/15.jpg");
+}
+
+.lessBox {
+  color: red;
+  .font {
+    font-size: px(16);
+  }
+}
+
+.fontOverflow {
+  width: px(100);
+}
+
+.fontOverflow_1 {
+  @extend .fontOverflow;
+  @include fs_overflow(3);
+}
+
+.fontOverflow_multi {
+  @extend .fontOverflow;
+  @include fs_overflow(1);
+  position: fixed;
+  top: 0;
+}
+
+.magin {
+  width: px(200);
+  height: px(200);
+  background-color: red;
+}
+.margin_1 {
+  @extend .magin;
+  margin: px(100) auto;
+}
+
+.margin_2 {
+  @extend .magin;
+  margin: px(100, 10);
+  border-radius: px(10);
+}
+
+.padding {
+  padding: px(30, 20, 10, 5);
+}
+
+.pxfunc {
+  font-size: px(80);
+  width: px(1800);
+  background-color: red;
+}
+
+.px {
+  font-size: 80px;
+  width: 1800px;
+  background-color: green;
+}

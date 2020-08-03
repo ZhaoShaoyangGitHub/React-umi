@@ -1,0 +1,72 @@
+@import "~@/assets/style/global.scss";
+.wrapper {
+  padding: px(15);
+  min-height: 100%;
+  color: #2c3033;
+  background-color: #fff;
+  box-sizing: border-box;
+  .textareaWrapper {
+    margin-bottom: px(20);
+    textarea {
+      color: #000;
+      font-size: 16px;
+      line-height: 26px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+      overflow: visible;
+      display: block;
+      resize: none;
+      word-break: break-word;
+      word-wrap: break-word;
+      height: 225px;
+    }
+    .textareaCount {
+      display: flex;
+      justify-content: flex-end;
+      color: #bbb;
+      font-size: 14px;
+      span {
+        color: #333333;
+      }
+    }
+  }
+}
+.title {
+  font-weight: 500;
+  font-size: px(20);
+  margin-bottom: px(16);
+}
+
+.detail {
+  font-size: px(14);
+  line-height: px(28);
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: px(15);
+  .button {
+    background: linear-gradient(300.91deg, #554ce1 0%, #7067ff 100%);
+    font-size: px(16);
+  }
+}
+.uploadImg {
+  margin-top: px(18);
+}
+
+.myUploadImg {
+  @extend .uploadImg;
+}

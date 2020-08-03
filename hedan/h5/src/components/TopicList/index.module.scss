@@ -1,0 +1,127 @@
+@import "@/assets/style/global.scss";
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.itemBox {
+  padding-top: px(1);
+  margin-bottom: px(14);
+  .avatarBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 px(16);
+    margin-bottom: px(10);
+    margin-top: px(14);
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        width: px(30);
+        height: px(30);
+        border-radius: px(100);
+        margin-right: px(6);
+      }
+
+      .name {
+        font-size: px(14);
+      }
+
+      .dan {
+        margin-left: px(2);
+        width: px(16);
+      }
+    }
+    .dian {
+      width: px(24);
+    }
+  }
+
+  .coverBox {
+    @extend .cover;
+    margin: 0 px(16);
+    width: px(343);
+    height: px(343);
+    border-radius: px(16);
+    position: relative;
+    .pic {
+      position: absolute;
+      width: px(24);
+      right: px(16);
+      top: px(16);
+    }
+  }
+}
+
+.cont_desc {
+  margin: 0 px(16);
+  font-size: px(14);
+  line-height: px(28);
+  margin-top: px(12);
+  margin-bottom: px(4);
+}
+
+.local_time {
+  margin: 0 px(16);
+  display: flex;
+  align-items: center;
+  font-size: px(14);
+  color: #aaafb7;
+  .local_time_time {
+    flex-shrink: 0;
+    // width: px(80);
+    white-space: nowrap;
+  }
+  .prep {
+    margin: px(0) px(4);
+  }
+  .local {
+    display: flex;
+    align-items: center;
+    color: #564de2;
+    font-weight: 500;
+    .local_icon {
+      margin-right: px(3);
+      width: px(14);
+    }
+  }
+}
+
+.originalActions {
+  margin: 0 px(16);
+  color: #2c3033;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: px(16);
+  .user {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #2c3033;
+    .avatar {
+      width: px(30);
+      height: px(30);
+      margin-right: p(8);
+      border-radius: px(100);
+      margin-right: px(8);
+    }
+  }
+  .interact {
+    display: flex;
+    align-items: center;
+    .icon {
+      width: px(22);
+      margin-right: px(2);
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      margin-right: px(18);
+    }
+  }
+}

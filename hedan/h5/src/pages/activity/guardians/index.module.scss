@@ -1,0 +1,116 @@
+@import "~@/assets/style/global.scss";
+@import "./guardians.scss";
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(221.69deg, #ffa217 0%, #ffcf3b 65.88%), #ffc102;
+}
+
+.mobile {
+  overflow: hidden;
+}
+.wrapperBox {
+  font-family: "Yuanti SC";
+  position: relative;
+  width: px(375);
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.footerBox {
+  position: relative;
+  z-index: 30;
+}
+
+.QRbox {
+  box-shadow: 0px 4px 20px #ff8a00;
+  background-color: #fbf7e5;
+  position: relative;
+  z-index: 10;
+}
+
+.sponsorBox {
+  position: relative;
+  z-index: 11;
+}
+
+.conttentBG {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  img {
+    position: absolute;
+  }
+}
+
+.drawGate {
+  right: 0;
+  bottom: px(30);
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+  img {
+    width: px(168/2);
+  }
+}
+
+.model_content {
+  border-radius: 40px;
+  background-color: #ffffff;
+  padding: px(40) px(24);
+  position: relative;
+  overflow: hidden;
+  p {
+    margin: 0;
+  }
+  .font_size_1 {
+    font-size: px(24);
+    line-height: px(30);
+    font-weight: bold;
+    color: #2d210d;
+  }
+  .font_size_2 {
+    margin-top: px(8);
+    font-size: px(16);
+    line-height: px(24);
+    color: #2d210d;
+  }
+  .font_size_3 {
+    margin: px(4) 0;
+    font-size: px(12);
+    line-height: px(16);
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+  .font_size_4 {
+    font-size: px(15);
+  }
+  .font_weight {
+    font-weight: bold;
+  }
+  .no_wrap {
+    white-space: nowrap;
+  }
+  .modal_color {
+    color: #564de2;
+  }
+  .modal_button {
+    width: px(295);
+    height: px(48);
+    border-radius: px(8);
+    background-color: #564de2;
+    font-size: px(16);
+    line-height: 3;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-top: px(16);
+  }
+}

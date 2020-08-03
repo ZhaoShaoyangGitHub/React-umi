@@ -1,0 +1,182 @@
+@import "@/assets/style/global.scss";
+.model_content {
+  border-radius: 40px;
+  background-color: #ffffff;
+  padding: px(40) px(24);
+  position: relative;
+  overflow: hidden;
+  p {
+    margin: 0;
+    b {
+      font-weight: bold;
+    }
+  }
+  .font_size_1 {
+    font-size: px(24);
+    line-height: px(30);
+    font-weight: bold;
+    color: #2d210d;
+  }
+  .font_size_2 {
+    margin-top: px(8);
+    font-size: px(16);
+    line-height: px(24);
+    color: #2d210d;
+    position: relative;
+    z-index: 6;
+  }
+  .font_size_3 {
+    margin: px(4) 0;
+    font-size: px(12);
+    line-height: px(16);
+    color: rgba($color: #000000, $alpha: 0.4);
+  }
+  .font_size_4 {
+    font-size: px(15);
+  }
+  .font_size_5 {
+    font-size: px(12);
+    line-height: px(16);
+    color: rgba($color: #000000, $alpha: 0.4);
+    position: relative;
+    z-index: 6;
+    margin: px(8) 0;
+  }
+  .font_weight {
+    font-weight: bold;
+  }
+  .no_wrap {
+    white-space: nowrap;
+  }
+  .modal_color {
+    color: #564de2;
+  }
+  .modal_button {
+    width: px(295);
+    height: px(48);
+    border-radius: px(8);
+    background-color: #564de2;
+    font-size: px(16);
+    line-height: 3;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-top: px(16);
+  }
+}
+.AddresseeLayer {
+  padding-top: px(24);
+  padding-bottom: px(24);
+  .image {
+    width: 100%;
+    height: px(98);
+    .img {
+      width: 100%;
+      height: px(98);
+    }
+  }
+  .warnTitle {
+    font-size: px(16);
+    line-height: px(24);
+    color: #2d210d;
+    padding: px(8) 0 px(16);
+  }
+  .noFillIAddress {
+    .form {
+      .formGroup {
+        background: #f5f6f5;
+        font-size: px(16);
+        line-height: px(24);
+        color: #000000;
+        border-radius: px(16);
+        padding: px(10) px(16);
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: px(4);
+        .formLabel {
+          flex: 0 0 px(100);
+          font-size: px(16);
+          line-height: px(24);
+          height: px(24);
+        }
+        .formInput {
+          max-width: px(153);
+          flex: 1;
+          font-size: px(16);
+          line-height: px(24);
+          height: px(24);
+          color: #000000;
+          border: 0;
+          outline: none;
+          background-color: transparent;
+          padding: 0;
+        }
+        .formTextarea {
+          max-width: px(153);
+          height: px(68);
+          flex: 1;
+          font-size: px(16);
+          line-height: px(24);
+          color: #000000;
+          border: 0;
+          outline: none;
+          background-color: transparent;
+          resize: none;
+        }
+      }
+    }
+    .submitBtn {
+      height: px(48);
+      box-shadow: 0px px(7) px(18) rgba(55, 45, 208, 0.3);
+      background: linear-gradient(336.5deg, #554ce1 0%, #7067ff 100%);
+      border-radius: px(7);
+      font-size: px(16);
+      line-height: px(48);
+      text-align: center;
+      color: #ffffff;
+      margin-top: px(8);
+    }
+  }
+  .fillInAddress {
+    font-size: px(16);
+    line-height: px(24);
+    color: #000000;
+    .content {
+      background: #f5f6f5;
+      border-radius: px(16);
+      padding: px(16);
+      margin-bottom: px(16);
+      .contentItem {
+        font-size: px(16);
+        line-height: px(24);
+        color: #000000;
+        & + .contentItem {
+          margin-top: px(16);
+        }
+      }
+    }
+  }
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: px(16) px(12);
+  font-size: px(14);
+  line-height: px(22);
+  color: #2d210d;
+  box-shadow: 0px 4px 20px #2e1e03;
+  border-radius: 16px;
+  background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  .icon {
+    width: px(18);
+    margin-right: px(12);
+  }
+}

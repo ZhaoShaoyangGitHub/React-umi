@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import BottomNav from '@/conponents/BottomNav/index';
-import '@/static/iconfont/iconfont.css';
+import BottomNav from '@/components/BottomNav/index';
 import { Location, connect, Dispatch } from 'umi';
-import styles from './Basiclayout.less';
+import '@/static/iconfont/iconfont.css';
+import styles from './BasicLayout.less';
 
-interface BasiclayoutProps {
+interface BasicLayoutProps {
   location: Location;
   dispatch: Dispatch;
   user: any;
 }
 
-const Basiclayout: React.FC<BasiclayoutProps> = props => {
+const BasicLayout: React.FC<BasicLayoutProps> = props => {
   const { children, location, dispatch, user } = props;
   console.log(props);
   useEffect(() => {
@@ -31,4 +31,4 @@ const Basiclayout: React.FC<BasiclayoutProps> = props => {
   );
 };
 
-export default connect(({ user }) => ({ user }))(Basiclayout);
+export default connect(({ user }) => ({ user }))(BasicLayout);

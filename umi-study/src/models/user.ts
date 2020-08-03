@@ -18,10 +18,10 @@ export interface UserModelState {
 }
 
 export interface UserModelType {
-  namespace: 'user';
+  namespace: string;
   state: UserModelState;
   effects: {
-    fetchCurrent: Effect;
+    getUserInfo: Effect;
   };
   reducers: {
     saveUser: Reducer<UserModelState>;

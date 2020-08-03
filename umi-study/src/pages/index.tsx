@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 
-const Home = props => {
+const Home = () => {
   return (
     <div>
       <h1 className={styles.title}>Page index</h1>

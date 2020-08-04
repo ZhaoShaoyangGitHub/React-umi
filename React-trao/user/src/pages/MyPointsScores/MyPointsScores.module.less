@@ -1,0 +1,140 @@
+.MyPointsScoresMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    .banner {
+        width: 100%;
+        height: 514rpx;
+        position: absolute;
+        z-index: 1;
+    }
+    .rule {
+        width: 100rpx;
+        height: 50rpx;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 66rpx;
+    }
+    .allPoint {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        font-size: 40rpx;
+        color: #ffffff;
+        padding-top: 100rpx;
+        margin-bottom: 225rpx;
+        text {
+            font-size: 60rpx;
+        }
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+        background-color: #ffffff;
+        width: 630px;
+        height: 400px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0 auto;
+        padding: 12rpx 30rpx 0;
+        .warning {
+            text-align: center;
+            font-size: 24rpx;
+            line-height: 34rpx;
+            color: #999999;
+            margin-bottom: 30rpx;
+            margin-top: -16rpx;
+        }
+        .signIntegral {
+            font-size: 24rpx;
+            line-height: 34rpx;
+            color: #999999;
+            padding-top: 10rpx;
+            padding-left: 30rpx;
+            text {
+                padding-left: 10rpx;
+                color: #666666;
+            }
+        }
+    }
+    .pointsDetails {
+        padding: 44rpx 30rpx 80rpx;
+        position: relative;
+        z-index: 2;
+        .title {
+            font-size: 32rpx;
+            line-height: 44rpx;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: #666666;
+            margin-bottom: 30rpx;
+            .icon {
+                width: 32rpx;
+                margin: 0 20rpx;
+            }
+        }
+        .pointsList {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30rpx 30rpx 0;
+            overflow: hidden;
+            .listItem {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30rpx;
+                .listTitle {
+                    font-size: 28rpx;
+                    line-height: 40rpx;
+                    color: #666666;
+                    margin-bottom: 10rpx;
+                }
+                .listTime {
+                    font-size: 24rpx;
+                    color: #999999;
+                    line-height: 34rpx;
+                }
+                .number {
+                    display: flex;
+                    align-items: center;
+                }
+                .integral {
+                    line-height: 44rpx;
+                    font-size: 28rpx;
+                    color: #666666;
+                    padding-right: 16rpx;
+                }
+                .icon {
+                    width: 44rpx;
+                    height: 44rpx;
+                }
+            }
+        }
+    }
+    .ruleWrapper {
+        width: 400rpx;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 30rpx 30rpx 0;
+        font-size: 24rpx;
+        color: #666666;
+        line-height: 34rpx;
+        .ruleTitle {
+            font-size: 32rpx;
+            color: #666666;
+            text-align: center;
+            margin-bottom: 30rpx;
+            font-weight: bold;
+            line-height: 40rpx;
+        }
+        .ruleListItem {
+            margin-bottom: 30rpx;
+            text {
+                font-weight: bold;
+            }
+        }
+    }
+}

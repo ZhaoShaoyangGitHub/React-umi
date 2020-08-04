@@ -1,0 +1,89 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-12 16:45:56
+* @LastEditTime: 2019-08-13 16:54:26
+ */
+.AddCommentMain {
+    background-color: #fff;
+    height: 100vh;
+    .commentWrap {
+        margin: 0 30rpx;
+        padding: 30rpx;
+        .technician {
+            display: flex;
+            & > Image {
+                width: 88rpx;
+                height: 88rpx;
+                border-radius: 50%;
+                margin-right: 20rpx;
+                flex-shrink: 0;
+            }
+            & > Text {
+                font-size: 32rpx;
+                line-height: 44rpx;
+                color: #333;
+                font-weight: bold;
+                &:last-child {
+                    font-size: 24rpx;
+                    line-height: 34rpx;
+                    color: #b365b7;
+                    font-weight: normal;
+                    margin-left: 20rpx;
+                    padding-top: 6rpx;
+                }
+            }
+        }
+        & > Textarea {
+            margin-top: 30rpx;
+            border: none;
+            outline: none;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            height: 320rpx;
+        }
+    }
+
+    .level {
+        display: flex;
+        align-items: center;
+        margin: 30rpx;
+        & > Text {
+            font-size: 28rpx;
+            line-height: 40rpx;
+            color: #666;
+            margin-right: 30rpx;
+            flex-shrink: 0;
+        }
+        & > Image {
+            margin-right: 20rpx;
+            width: 46rpx;
+            height: 50rpx;
+            flex-shrink: 0;
+        }
+        .desc {
+            font-size: 28rpx;
+            line-height: 40rpx;
+            color: #999;
+            flex-shrink: 0;
+        }
+    }
+
+    .button {
+        position: fixed;
+        bottom: 60rpx;
+        left: 30rpx;
+        right: 30rpx;
+        z-index: 999;
+        height: 100rpx;
+        font-size: 32rpx;
+        line-height: 42rpx;
+        color: #fff;
+        background-color: #b365b7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60rpx;
+    }
+}

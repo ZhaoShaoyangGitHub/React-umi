@@ -1,0 +1,138 @@
+.MemberServicesDetailsMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9ff;
+    padding: 30rpx;
+    box-sizing: border-box;
+    .comTitle {
+        height: 40rpx;
+        line-height: 40px;
+        color: rgba(51, 51, 51, 1);
+        font-size: 32px;
+        font-family: PingFangSC-Semibold;
+        font-weight: bold;
+        padding-left: 30rpx;
+        position: relative;
+        margin-bottom: 30rpx;
+        &::before {
+            content: '';
+            width: 8rpx;
+            height: 40rpx;
+            background-color: #b365b7;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 4rpx;
+        }
+    }
+    .serviceInfo {
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+        .serviceInfoTop {
+            padding: 30rpx;
+            display: flex;
+            align-items: center;
+            border-bottom: 2rpx solid #eeeeee;
+            .avatar {
+                width: 108rpx;
+                height: 108rpx;
+                background-color: #eeeeee;
+                margin-right: 20rpx;
+            }
+            .name {
+                height: 44rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 32rpx;
+                font-family: PingFang-SC-Bold;
+                font-weight: bold;
+                margin-bottom: 24rpx;
+            }
+            .txt {
+                height: 40rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                font-family: PingFangSC-Regular;
+            }
+        }
+        .serviceInfoMain {
+            padding: 30rpx 30rpx 0;
+            overflow: hidden;
+            margin-bottom: 30rpx;
+            .infoListItem {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30rpx;
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #333333;
+                .title {
+                    color: #666666;
+                }
+                .txt {
+                    color: #333333;
+                }
+            }
+        }
+    }
+    .serviceEvaluation {
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+        .memberInfo {
+            padding: 30rpx;
+            display: flex;
+            align-items: center;
+            border-bottom: 2rpx solid #eeeeee;
+            .memberAvatar {
+                width: 88rpx;
+                height: 88rpx;
+                border-radius: 100%;
+                background-color: #eeeeee;
+                margin-right: 20rpx;
+            }
+            .title {
+                margin-bottom: 12rpx;
+                display: flex;
+                align-items: center;
+                .name {
+                    height: 44rpx;
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 32rpx;
+                    font-family: PingFang-SC-Bold;
+                    font-weight: bold;
+                    margin-right: 20rpx;
+                }
+                .phone {
+                    height: 34px;
+                    color: rgba(179, 101, 183, 1);
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-family: PingFang-SC-Bold;
+                }
+            }
+            .evaluation {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #999999;
+                padding-left: 6rpx;
+                display: flex;
+                align-items: center;
+                .stars {
+                    display: flex;
+                    .star {
+                        width: 36rpx;
+                        height: 36rpx;
+                        margin-right: 14rpx;
+                    }
+                }
+            }
+        }
+        .content {
+            padding: 30rpx 30rpx 52rpx;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            color: #333333;
+        }
+    }
+}

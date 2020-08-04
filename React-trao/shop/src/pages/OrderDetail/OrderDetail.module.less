@@ -1,0 +1,145 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-15 13:52:49
+* @LastEditTime: 2019-08-15 15:16:57
+ */
+.OrderDetailMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+.topWrapper {
+    background-color: #b365b7;
+    box-sizing: border-box;
+    padding: 50rpx 60rpx;
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .title {
+        flex-shrink: 0;
+    }
+    .description {
+        flex: 1;
+        margin-left: 10rpx;
+        font-size: 24rpx;
+    }
+    .extra {
+        flex-shrink: 0;
+        width: 100rpx;
+        .icon {
+            width: 80rpx;
+            height: 80rpx;
+            object-fit: contain;
+        }
+    }
+}
+.contentWrapper {
+    box-sizing: border-box;
+    padding: 30rpx 30rpx 110rpx;
+}
+.itemsWrapper {
+    margin-bottom: 30rpx;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+    background-color: #fff;
+    .itemsTitle {
+        padding: 30rpx;
+        box-sizing: border-box;
+        height: 100rpx;
+        color: #333;
+        font-size: 28rpx;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        .extraButton {
+            position: absolute;
+            right: 30rpx;
+            top: 30rpx;
+            color: #e73f50;
+        }
+    }
+
+    .itemsChildren {
+    }
+    .itemWrapper {
+        margin-top: 60rpx;
+        padding: 30rpx;
+        box-sizing: border-box;
+        &:first-child {
+            margin-top: 0;
+        }
+        .checkboxWrapper {
+            margin-right: 20rpx;
+            flex-shrink: 0;
+        }
+        .cartItemWrapper {
+            flex: 1;
+        }
+    }
+    .itemsStatistic {
+        padding: 30rpx;
+        box-sizing: border-box;
+        font-size: 24rpx;
+        color: #999;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+.blockTitle {
+    font-size: 32rpx;
+    color: #333;
+    box-sizing: border-box;
+    padding-left: 30rpx;
+    position: relative;
+    line-height: 44rpx;
+    margin-bottom: 30rpx;
+    &::before {
+        content: '';
+        background-color: #b365b7;
+        border-radius: 8px;
+        height: 44rpx;
+        width: 8rpx;
+        position: absolute;
+        left: 0rpx;
+    }
+}
+.info {
+    box-sizing: border-box;
+
+    .infoList {
+        box-sizing: border-box;
+        padding: 30rpx 30rpx 0;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8rpx;
+        &:last-child {
+            padding-bottom: 30rpx;
+            margin-bottom: 30rpx;
+        }
+        .infoTitle {
+            color: #666;
+            flex: 1;
+        }
+        .infoValue {
+            flex-shrink: 0;
+            color: #333;
+        }
+        .colorStrong {
+            color: #b365b7;
+        }
+    }
+}
+//  底部按钮和价格
+.bottom {
+    position: fixed;
+    padding: 10rpx 30rpx 10rpx 60rpx;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background-color: #fff;
+}

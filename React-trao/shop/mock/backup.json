@@ -1,0 +1,200 @@
+{
+  "POST /api/passport/signIn": {
+    "timestamp": "2019-09-05 17:10:00",
+    "code": "OK",
+    "message": "登录成功",
+    "path": "/api/passport/signIn",
+    "data": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODYxNjc1NTMzMiIsImNyZWF0ZWQiOjE1Njc2NzQ2MDAwNTAsImV4cCI6MTU2ODI3OTQwMH0.o_aKpfTcwtPdeCelQOabV8eM7o6nmRpAGnqCsfAkgRJYAy3Vn8cM588dOUBFoJgHTQCKgre2hCDoPd2hsY-Lww",
+    "errorDetail": ""
+  },
+  "GET /api/common/getCategory type=2": {
+    "timestamp": "2019-09-05 17:10:12",
+    "code": "OK",
+    "message": "",
+    "path": "/api/common/getCategory",
+    "data": [
+      {
+        "id": 5,
+        "name": "KMKD123",
+        "type": {
+          "value": 2,
+          "description": "品类"
+        }
+      },
+      {
+        "id": 6,
+        "name": "克隆一",
+        "type": {
+          "value": 2,
+          "description": "品类"
+        }
+      },
+      {
+        "id": 7,
+        "name": "克隆二",
+        "type": {
+          "value": 2,
+          "description": "品类"
+        }
+      }
+    ],
+    "errorDetail": ""
+  },
+  "GET /api/user/goods/package/pageList categoryId=5&pageIndex=1": {
+    "timestamp": "2019-09-05 17:10:13",
+    "code": "OK",
+    "message": "",
+    "path": "/api/user/goods/package/pageList",
+    "data": {
+      "pageSize": 20,
+      "pageIndex": 1,
+      "list": [
+        {
+          "id": 16,
+          "name": "胸部护理",
+          "packageImage": "/uploads/image/20190904/1567589249123014801.png",
+          "marketPrice": 4090,
+          "type": 2
+        },
+        {
+          "id": 15,
+          "name": "减肥强化套餐",
+          "packageImage": "/uploads/image/20190904/1567589185056074740.png",
+          "marketPrice": 370,
+          "type": 2
+        },
+        {
+          "id": 13,
+          "name": "测试一号",
+          "packageImage": "/uploads/image/20190904/1567588246625094373.jpg",
+          "marketPrice": 1234,
+          "type": 2
+        }
+      ],
+      "totalRecord": 3,
+      "asc": [],
+      "desc": [
+        "id"
+      ],
+      "totalPage": 1,
+      "searchCount": true,
+      "pages": 1
+    },
+    "errorDetail": ""
+  },
+  "GET /api/user/goods/package/pageList categoryId=6&pageIndex=1": {
+    "timestamp": "2019-09-05 17:10:13",
+    "code": "OK",
+    "message": "",
+    "path": "/api/user/goods/package/pageList",
+    "data": {
+      "pageSize": 20,
+      "pageIndex": 1,
+      "list": [
+        {
+          "id": 16,
+          "name": "胸部护理6",
+          "packageImage": "/uploads/image/20190904/1567589249123014801.png",
+          "marketPrice": 4090,
+          "type": 2
+        },
+        {
+          "id": 15,
+          "name": "减肥强化套餐6",
+          "packageImage": "/uploads/image/20190904/1567589185056074740.png",
+          "marketPrice": 370,
+          "type": 2
+        },
+        {
+          "id": 13,
+          "name": "测试一号6",
+          "packageImage": "/uploads/image/20190904/1567588246625094373.jpg",
+          "marketPrice": 1234,
+          "type": 2
+        }
+      ],
+      "totalRecord": 3,
+      "asc": [],
+      "desc": [
+        "id"
+      ],
+      "totalPage": 1,
+      "searchCount": true,
+      "pages": 1
+    },
+    "errorDetail": ""
+  },
+  "GET /api/user/goods/package/pageList categoryId=7&pageIndex=1": {
+    "timestamp": "2019-09-05 17:10:13",
+    "code": "OK",
+    "message": "",
+    "path": "/api/user/goods/package/pageList",
+    "data": {
+      "pageSize": 20,
+      "pageIndex": 1,
+      "list": [
+        {
+          "id": 16,
+          "name": "胸部护理7",
+          "packageImage": "/uploads/image/20190904/1567589249123014801.png",
+          "marketPrice": 4090,
+          "type": 2
+        },
+        {
+          "id": 15,
+          "name": "减肥强化套餐7",
+          "packageImage": "/uploads/image/20190904/1567589185056074740.png",
+          "marketPrice": 370,
+          "type": 2
+        },
+        {
+          "id": 13,
+          "name": "测试一号7",
+          "packageImage": "/uploads/image/20190904/1567588246625094373.jpg",
+          "marketPrice": 1234,
+          "type": 2
+        }
+      ],
+      "totalRecord": 3,
+      "asc": [],
+      "desc": [
+        "id"
+      ],
+      "totalPage": 1,
+      "searchCount": true,
+      "pages": 1
+    },
+    "errorDetail": ""
+  },
+  "POST /api/user/order/getTrade/affirm": {
+    "timestamp": "2019-09-05 17:12:45",
+    "code": "OK",
+    "message": "",
+    "path": "/api/user/order/getTrade/affirm",
+    "data": {
+      "totalAmount": 4090,
+      "userId": null,
+      "userName": "",
+      "phone": "",
+      "isOneShopping": 2,
+      "source": null,
+      "referrerPhone": "",
+      "goodsResponses": [
+        {
+          "goodsId": 16,
+          "type": 2,
+          "goodsNumber": 1,
+          "goodsName": "胸部护理",
+          "goodsImage": "/uploads/image/20190904/1567589249123014801.png",
+          "price": 4090
+        }
+      ],
+      "payStatus": null,
+      "isInstalment": 2,
+      "payAmount": null,
+      "finalTime": null,
+      "awaitPayAmount": null
+    },
+    "errorDetail": ""
+  }
+}

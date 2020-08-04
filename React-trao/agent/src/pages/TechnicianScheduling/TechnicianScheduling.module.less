@@ -1,0 +1,93 @@
+.TechnicianSchedulingMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .jumpIcon {
+        width: 28rpx;
+        height: 28rpx;
+    }
+    .noDataImg {
+        width: 400rpx;
+        height: 300rpx;
+        display: block;
+        margin: 100rpx auto 0;
+    }
+    .word {
+        color: rgba(153, 153, 153, 1);
+        font-size: 28rpx;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+    }
+    .list {
+        margin-top: 20rpx;
+        background-color: #fff;
+        padding-bottom: 60rpx;
+    }
+    .titleBox {
+        color: rgba(51, 51, 51, 1);
+        font-size: 28rpx;
+        font-family: PingFangSC-Semibold;
+        display: flex;
+        align-items: center;
+        height: 100rpx;
+        border-bottom: 1px solid #eee;
+        padding: 0 30rpx;
+        font-weight: bold;
+    }
+    .infoBox {
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        position: relative;
+        padding: 30rpx 0;
+        margin: 0 30rpx;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            display: block;
+            background-color: #eee;
+            transform: scaleY(0.5);
+        }
+
+        .itemBox {
+            display: flex;
+            margin-bottom: 30rpx;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .key {
+                color: rgba(102, 102, 102, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+            }
+            .val {
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+            }
+        }
+        .cancelButton {
+            position: absolute;
+            right: 30rpx;
+            bottom: 40rpx;
+            width: 160rpx;
+            height: 60rpx;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(179, 101, 183, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28rpx;
+            color: #b365b7;
+            border-radius: 30rpx;
+        }
+    }
+    .calendarBox {
+        overflow: hidden;
+        transition: all 0.3s ease-in;
+    }
+}

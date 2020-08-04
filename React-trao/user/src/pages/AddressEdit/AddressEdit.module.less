@@ -1,0 +1,76 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-12 16:45:56
+* @LastEditTime: 2019-08-13 16:54:26
+ */
+.AddressEditMain {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+.itemsWrapper {
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    padding: 0 40rpx;
+    .itemWrapper {
+        padding: 30rpx 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        &:last-child {
+            border-bottom: none;
+        }
+        .label {
+            font-size: 28rpx;
+            color: #333;
+            flex-shrink: 0;
+            margin-right: 30rpx;
+            width: 140rpx;
+        }
+        .inputWrapper,
+        .pickerWrapper {
+            flex: 1;
+        }
+        .placeholder {
+            font-size: 28rpx;
+            color: #ccc;
+        }
+        .deleteWrapper {
+            width: 100%;
+            text-align: center;
+            color: #df0621;
+            font-size: 28rpx;
+        }
+        .picker {
+            width: 100%;
+        }
+    }
+}
+.buttonWrapper {
+    padding: 20rpx 40rpx;
+    .button {
+        height: 100rpx;
+        line-height: 100rpx;
+        width: 100%;
+        font-size: 32rpx;
+        text-align: center;
+        background-color: #b365b7;
+        border-radius: 50rpx;
+        color: #fff;
+    }
+}
+.checkedIcon {
+    width: 50rpx;
+    height: 50rpx;
+    object-fit: contain;
+}
+.uncheckedIcon {
+    width: 48rpx;
+    height: 48rpx;
+    border-radius: 24rpx;
+    border: 1px solid #b365b7;
+}

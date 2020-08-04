@@ -1,0 +1,122 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-12 15:08:17
+* @LastEditTime: 2019-08-22 15:51:11
+ */
+.AddressManageMain {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 30rpx;
+    background-color: #f9f9f9;
+}
+// 空页面
+.emptyWrapper {
+    width: 100%;
+    padding-top: 200rpx;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    .emptyImg {
+        display: block;
+        width: 400rpx;
+        height: 300rpx;
+        margin: 0 auto;
+    }
+    .emptyWord {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 28rpx;
+        color: #999;
+        margin-top: 20rpx;
+    }
+    .emptyButtonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50rpx;
+        .emptyButton {
+            height: 80rpx;
+            line-height: 80rpx;
+            width: 240rpx;
+            font-size: 32rpx;
+            text-align: center;
+            background-color: #b365b7;
+            border-radius: 40rpx;
+            color: #fff;
+        }
+    }
+}
+.addressWrapper {
+    margin-bottom: 80rpx;
+    .addressItem {
+        box-sizing: border-box;
+        padding: 30rpx;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        margin-bottom: 30rpx;
+        .left,
+        .right {
+            flex-shrink: 0;
+            margin-left: 30rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120rpx;
+            .addressIcon {
+                width: 50rpx;
+                height: 60rpx;
+                object-fit: contain;
+            }
+            .arrowIcon {
+                width: 40rpx;
+                height: 40rpx;
+                object-fit: contain;
+            }
+        }
+        .center {
+            flex: 1;
+            width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: #333;
+            font-size: 28rpx;
+
+            .centerTop {
+                margin-bottom: 20rpx;
+                .light {
+                    margin: 0 20rpx;
+                    color: #999;
+                    font-size: 24rpx;
+                }
+                .default {
+                    display: inline-block;
+                    background-color: #f7ecf7;
+                    color: #b365b7;
+                    padding: 4rpx 8rpx;
+                }
+            }
+            .ellipsis {
+            }
+        }
+    }
+}
+.buttonWrapper {
+    .button {
+        height: 100rpx;
+        line-height: 100rpx;
+        width: 100%;
+        font-size: 32rpx;
+        text-align: center;
+        background-color: #b365b7;
+        border-radius: 50rpx;
+        color: #fff;
+    }
+}

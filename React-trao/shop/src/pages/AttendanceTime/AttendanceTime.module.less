@@ -1,0 +1,109 @@
+.AttendanceTimeMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .todayContent {
+        padding: 30rpx;
+        font-size: 28rpx;
+        height: 40rpx;
+        line-height: 40rpx;
+        color: #333333;
+        margin-bottom: 20rpx;
+        .data {
+            margin-right: 20rpx;
+        }
+    }
+    .recode {
+        margin-bottom: 40rpx;
+        min-height: 60rpx;
+        padding: 0 30rpx;
+        .recodeWrapper {
+            position: relative;
+            .listItem {
+                padding-left: 50rpx;
+                position: relative;
+                z-index: 2;
+                .title {
+                    font-size: 28rpx;
+                    line-height: 40rpx;
+                    color: #999999;
+                    margin-bottom: 16rpx;
+                }
+                .pointTime {
+                    font-size: 32rpx;
+                    line-height: 44rpx;
+                    color: #333333;
+                }
+                & + .listItem {
+                    margin-top: 128rpx;
+                }
+                &::before {
+                    content: '';
+                    width: 30rpx;
+                    height: 30rpx;
+                    border-radius: 100%;
+                    background-color: #cccccc;
+                    position: absolute;
+                    left: 0;
+                    top: 5rpx;
+                }
+            }
+            &::before {
+                content: '';
+                height: 226rpx;
+                border: 2rpx solid #cccccc;
+                position: absolute;
+                left: 14rpx;
+                top: 10rpx;
+            }
+        }
+    }
+    .timeBox {
+        width: 220rpx;
+        height: 220rpx;
+        background-color: #b365b7;
+        border-radius: 100%;
+        margin-left: 266rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #ffffff;
+        font-size: 32rpx;
+        line-height: 44rpx;
+        font-weight: bold;
+        &.disable {
+            background-color: #cccccc;
+            .time {
+                color: #ffffff;
+            }
+        }
+        .time {
+            font-weight: normal;
+            color: #e2abe5;
+            line-height: 40rpx;
+            padding-top: 4rpx;
+        }
+    }
+    .warningTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60rpx 0 0;
+        font-size: 24rpx;
+        color: #999999;
+        line-height: 34rpx;
+        .icon {
+            width: 30rpx;
+            height: 30rpx;
+            background-color: #efefef;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 20rpx;
+            .img {
+                width: 30rpx;
+                height: 30rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-19 14:01:03
+* @LastEditTime: 2019-08-20 10:12:23
+ */
+.GoodListMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.topWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+.listWrapper {
+    padding: 120rpx 30rpx 130rpx;
+    box-sizing: border-box;
+    .itemWrapper {
+        background-color: #fff;
+        border-radius: 8rpx;
+        box-shadow: 0px 2px 6px 0px rgba(230, 230, 230, 0.5);
+        padding: 30rpx;
+        box-sizing: border-box;
+        height: 240rpx;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30rpx;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .cartItemWrapper {
+            flex: 1;
+        }
+    }
+}
+
+.panelHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 32rpx;
+    color: #999;
+    padding: 40rpx 0 40rpx 30rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.panelContent {
+    padding: 120rpx 30rpx 100rpx;
+    box-sizing: border-box;
+    .contentItem {
+        margin-bottom: 50rpx;
+        display: flex;
+        align-items: center;
+        .operate {
+            margin-left: 30rpx;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .amount {
+                font-size: 28rpx;
+                color: #666;
+                width: 66rpx;
+                text-align: center;
+            }
+            .icon {
+                width: 44rpx;
+                height: 44rpx;
+                object-fit: contain;
+            }
+        }
+        .price {
+            flex-shrink: 0;
+        }
+        .name {
+            flex: 1;
+            width: 0;
+            font-size: 30rpx;
+            color: #666;
+            white-space: nowrap;
+            text-emphasis: emphasis;
+            overflow: hidden;
+        }
+    }
+}
+:global {
+    .at-float-layout__container {
+        min-height: 320rpx;
+    }
+    .layout-body {
+        min-height: 300rpx !important;
+    }
+    .at-float-layout {
+        .layout-body__content {
+            min-height: 310rpx;
+        }
+    }
+}

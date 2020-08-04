@@ -1,0 +1,112 @@
+.TechnicianDetailMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 160rpx;
+    .content {
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0 30rpx;
+        background-color: #b365b7;
+        .technicianItem {
+            padding: 30rpx;
+            height: 240rpx;
+            box-sizing: border-box;
+            display: flex;
+            .left {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                & > Image {
+                    flex-shrink: 0;
+                    width: 120rpx;
+                    height: 120rpx;
+                    border-radius: 50%;
+                    margin-right: 30rpx;
+                }
+                .del {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 120rpx;
+                    & > Text:first-child {
+                        font-size: 36rpx;
+                        line-height: 42rpx;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    & > Text:last-child {
+                        font-size: 28rpx;
+                        line-height: 42rpx;
+                        color: #fff;
+                        margin-top: 20rpx;
+                    }
+                }
+            }
+
+            .tag {
+                padding: 0 20rpx;
+                background-color: #945092;
+                display: flex;
+                align-items: center;
+                border-radius: 30rpx;
+                margin-top: 66rpx;
+                height: 48rpx;
+                & > Image {
+                    width: 22rpx;
+                    height: 26rpx;
+                    margin-right: 10rpx;
+                }
+                & > Text {
+                    font-size: 24rpx;
+                    line-height: 34rpx;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .otherInfo {
+        margin: -50rpx 30rpx 0;
+        background-color: #fff;
+        border-radius: 8rpx;
+        padding: 0 30rpx;
+        .infoBlock {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100rpx;
+            position: relative;
+            &:last-child {
+                &:after {
+                    height: 0;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #eee;
+                transform: scaleY((0.5));
+            }
+            & > Text:first-child {
+                flex-shrink: 0;
+                margin-right: 60rpx;
+                color: #666;
+                font-size: 28rpx;
+                line-height: 40rpx;
+            }
+            & > Text:last-child {
+                color: #333;
+                font-size: 28rpx;
+                line-height: 40rpx;
+            }
+        }
+    }
+}

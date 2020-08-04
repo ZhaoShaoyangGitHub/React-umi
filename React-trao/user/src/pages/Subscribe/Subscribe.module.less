@@ -1,0 +1,75 @@
+.SubscribeMain {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 60rpx;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    .noDataImg {
+        width: 400rpx;
+        height: 300rpx;
+        display: block;
+        margin: 100rpx auto 0;
+    }
+    .word {
+        color: rgba(153, 153, 153, 1);
+        font-size: 28rpx;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+    }
+    .infoBox {
+        width: 670rpx;
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+        margin: 30rpx auto 0;
+        padding: 30rpx 38rpx;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-left: 8rpx solid #b365b7;
+        position: relative;
+
+        .titleBox {
+            color: rgba(51, 51, 51, 1);
+            font-size: 32rpx;
+            font-family: PingFangSC-Semibold;
+            margin-bottom: 30rpx;
+        }
+        .keyValBox {
+            .itemBox {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 20rpx;
+                .key {
+                    flex-shrink: 0;
+                    color: rgba(102, 102, 102, 1);
+                    font-size: 28rpx;
+                    font-family: PingFang-SC-Medium;
+                }
+                .val {
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 28rpx;
+                    font-family: PingFang-SC-Medium;
+                }
+            }
+        }
+        .cancelButton {
+            position: absolute;
+            right: 30rpx;
+            bottom: 40rpx;
+            width: 160rpx;
+            height: 60rpx;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(179, 101, 183, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28rpx;
+            color: #b365b7;
+            border-radius: 30rpx;
+        }
+    }
+    .calendarBox {
+        overflow: hidden;
+        transition: all 0.3s ease-in;
+    }
+}

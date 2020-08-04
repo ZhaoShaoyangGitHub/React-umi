@@ -1,0 +1,44 @@
+.searchMain {
+    padding: 30rpx;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    .searchWrapper {
+        display: flex;
+        align-items: center;
+        height: 72rpx;
+        border-radius: 40rpx;
+        background-color: #f9f9f9;
+        padding-left: 10rpx;
+        padding-right: 10rpx;
+        flex: 1;
+        .searchText {
+            color: #333333;
+            flex: 1;
+            font-size: 28rpx;
+            &:placeholder {
+                color: #999;
+            }
+        }
+        .iconWrapper {
+            width: 70rpx;
+            height: 40rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .searchIcon,
+            .deleteIcon {
+                width: 36rpx;
+                height: 36rpx;
+                object-fit: contain;
+            }
+        }
+    }
+    .cancel {
+        height: 40rpx;
+        color: rgba(51, 51, 51, 1);
+        font-size: 28rpx;
+        font-family: PingFangSC-Regular;
+        margin-left: 30rpx;
+    }
+}

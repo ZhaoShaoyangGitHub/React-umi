@@ -1,0 +1,64 @@
+.MemberSearchMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .memberListWrapper {
+        padding-top: 132rpx;
+        .memberList {
+            padding: 30rpx 30rpx 0;
+            .memberListItem {
+                border-radius: 8rpx;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+                margin-bottom: 30rpx;
+                padding: 30rpx;
+                display: flex;
+                align-items: center;
+                .memberAvatar {
+                    width: 88rpx;
+                    height: 88rpx;
+                    border-radius: 100%;
+                    background-color: #eeeeee;
+                    overflow: hidden;
+                    margin-right: 20rpx;
+                    .avatarImg {
+                        width: 88rpx;
+                        height: 88rpx;
+                    }
+                }
+                .memberInfo {
+                    display: flex;
+                    margin-bottom: 10rpx;
+                    align-items: center;
+                    .name {
+                        height: 44rpx;
+                        color: rgba(51, 51, 51, 1);
+                        font-size: 32px;
+                        font-family: PingFang-SC-Bold;
+                        margin-right: 20rpx;
+                    }
+                    .phone {
+                        height: 34rpx;
+                        color: rgba(179, 101, 183, 1);
+                        font-size: 24px;
+                        font-family: PingFang-SC-Bold;
+                        font-weight: bold;
+                    }
+                }
+                .address {
+                    height: 34px;
+                    color: rgba(153, 153, 153, 1);
+                    font-size: 24px;
+                    font-family: PingFang-SC-Medium;
+                    display: flex;
+                    align-items: center;
+                    .addressIcon {
+                        width: 20rpx;
+                        height: 24rpx;
+                        margin-right: 10rpx;
+                    }
+                }
+            }
+        }
+    }
+}

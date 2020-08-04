@@ -1,0 +1,53 @@
+.PersonalDataMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .avatarWrapper {
+        padding-top: 116rpx;
+        text-align: center;
+        font-size: 30rpx;
+        line-height: 42rpx;
+        color: #999999;
+        background-color: #ffffff;
+        .avatarUpdate {
+            width: 120rpx;
+            height: 120rpx;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0 auto 30rpx;
+            background-color: #eeeeee;
+            position: relative;
+            .avatar {
+                width: 120rpx;
+                height: 120rpx;
+            }
+            .cameraIcon {
+                width: 44rpx;
+                height: 38rpx;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -22rpx;
+                margin-top: -19rpx;
+                z-index: 2;
+            }
+        }
+    }
+    .PersonalDataContent {
+        background-color: #ffffff;
+        padding: 30rpx;
+        .infoItem {
+            padding: 30rpx 0;
+            border-bottom: 2rpx solid #eeeeee;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #333333;
+            .title {
+                color: #666666;
+            }
+        }
+    }
+}

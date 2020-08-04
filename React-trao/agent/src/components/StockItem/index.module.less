@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+
+    .info {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        .goodsImgWrapper {
+            flex-shrink: 0;
+            width: 108rpx;
+            height: 108rpx;
+            margin-right: 20rpx;
+            background-color: #eeeeee;
+        }
+        .goodsImg {
+            width: 108rpx;
+            height: 108rpx;
+        }
+        .goodsDel {
+            height: 108rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .goodsTitle {
+                font-size: 32rpx;
+                color: #333;
+                line-height: 44rpx;
+                font-weight: bold;
+            }
+            .storage {
+                font-size: 28rpx;
+                color: #999;
+                // margin-top: 10rpx;
+                line-height: 40rpx;
+            }
+        }
+    }
+
+    .button {
+        margin-left: 40rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160rpx;
+        height: 60rpx;
+        background-color: #b365b7;
+        border-radius: 30rpx;
+        color: #fff;
+        font-size: 28rpx;
+    }
+}

@@ -1,0 +1,120 @@
+.ArticleDetailsMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .detailsImg {
+        position: relative;
+        width: 100%;
+        min-height: 500rpx;
+        .imgBox {
+            width: 100%;
+            image {
+                width: 100%;
+            }
+        }
+        .userFavoriteShare {
+            position: absolute;
+            right: 25rpx;
+            top: 30rpx;
+            z-index: 999;
+            display: flex;
+            .FavoriteIcon {
+                width: 60rpx;
+                height: 60rpx;
+                border-radius: 30rpx;
+            }
+            .shareIcon {
+                margin-left: 30rpx;
+                width: 60rpx;
+                height: 60rpx;
+                border-radius: 30rpx;
+                border: 0;
+                padding: 0;
+            }
+            .ShareIcon {
+                width: 60rpx;
+                height: 60rpx;
+                border-radius: 30rpx;
+            }
+        }
+    }
+    .articleContent {
+        background-color: #ffffff;
+        padding: 30rpx;
+    }
+    .articleTitle {
+        font-size: 32rpx;
+        line-height: 48rpx;
+        color: #333333;
+        font-weight: bold;
+        margin-bottom: 30rpx;
+    }
+    .articleInfo {
+        font-size: 24rpx;
+        line-height: 34rpx;
+        color: #999999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30rpx;
+        .views {
+            display: flex;
+            .lookImg {
+                width: 30rpx;
+                height: 30rpx;
+                margin-top: 5rpx;
+                margin-right: 8rpx;
+            }
+        }
+        .likes {
+            display: flex;
+            margin-left: 40rpx;
+            .lookImg {
+                width: 30rpx;
+                height: 30rpx;
+                margin-top: 5rpx;
+                margin-right: 8rpx;
+            }
+        }
+    }
+    .description {
+        font-size: 28rpx;
+        line-height: 42rpx;
+        color: #333333;
+        word-break: break-all;
+        image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .thumbsUp {
+        width: 100rpx;
+        height: 100rpx;
+        margin: 60rpx auto 10rpx;
+        .icon {
+            width: 100rpx;
+            height: 100rpx;
+        }
+    }
+    .relatedArticles {
+        padding: 30rpx 0;
+        .relatedTitle {
+            position: relative;
+            font-size: 32rpx;
+            padding-left: 60rpx;
+            padding-right: 30rpx;
+            margin-bottom: 30rpx;
+            font-weight: bold;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 30rpx;
+                top: 0;
+                border-radius: 10rpx;
+                width: 10rpx;
+                height: 40rpx;
+                background-color: #b365b7;
+            }
+        }
+    }
+}

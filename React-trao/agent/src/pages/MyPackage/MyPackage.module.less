@@ -1,0 +1,75 @@
+.MyPackageMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .fixedTab {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 9;
+    }
+    .MyPackageWrapper {
+        padding: 120rpx 30rpx 150rpx;
+        .packageList {
+            .packageListItem {
+                border-radius: 8rpx;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 2rpx 12rpx 0px rgba(222, 222, 222, 0.5);
+                margin-bottom: 30rpx;
+                padding: 30rpx;
+                display: flex;
+                .packageImage {
+                    width: 220rpx;
+                    height: 164rpx;
+                    margin-right: 20rpx;
+                    background-color: #eeeeee;
+                    overflow: hidden;
+                    .image {
+                        width: 220rpx;
+                        height: 164rpx;
+                    }
+                }
+                .packageInfo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .packageName {
+                        font-size: 32rpx;
+                        font-weight: bold;
+                        color: #333333;
+                        line-height: 44rpx;
+                        margin-bottom: 10rpx;
+                    }
+                    .packageProject {
+                        font-size: 24rpx;
+                        color: #999999;
+                        line-height: 34rpx;
+                    }
+                    .packagePrice {
+                        font-size: 24rpx;
+                        color: #b365b7;
+                        .price {
+                            font-size: 28rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .addBtn {
+        width: 690rpx;
+        height: 100rpx;
+        border-radius: 50rpx;
+        background-color: rgba(179, 101, 183, 1);
+        box-shadow: 0px 4rpx 12rpx 0px rgba(179, 101, 183, 0.38);
+        text-align: center;
+        font-size: 32rpx;
+        line-height: 100rpx;
+        position: fixed;
+        left: 30rpx;
+        bottom: 30rpx;
+        z-index: 9;
+        color: #ffffff;
+    }
+}

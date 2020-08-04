@@ -1,0 +1,63 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Tiger
+* @Date: 2019-08-07 10:07:34
+* @LastEditTime: 2019-08-08 14:25:30
+ */
+
+.ShopSearchMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    .searchBar {
+        width: 100%;
+        align-items: center;
+        background-color: #fff;
+        height: 132rpx;
+        display: flex;
+        padding: 0 30rpx;
+        box-sizing: border-box;
+    }
+    .tabBarListItem {
+        padding: 30rpx;
+        box-sizing: border-box;
+        height: calc(100vh - 132rpx);
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+}
+.history {
+    padding: 0 30rpx;
+    background-color: #fff;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > Text {
+            color: #333333;
+            font-weight: bold;
+            font-size: 32rpx;
+            line-height: 44rpx;
+        }
+        & > Image {
+            width: 28rpx;
+            height: 28rpx;
+        }
+    }
+    .historyList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20rpx;
+        & > Text {
+            margin-right: 30rpx;
+            padding: 20rpx 32rpx;
+            border-radius: 20px;
+            background-color: rgba(249, 249, 249, 1);
+            color: #666;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            margin-bottom: 20rpx;
+        }
+    }
+}

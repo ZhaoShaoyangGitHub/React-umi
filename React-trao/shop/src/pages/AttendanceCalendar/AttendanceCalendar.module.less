@@ -1,0 +1,72 @@
+.AttendanceCalendarMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .calendarBox {
+        background-color: #ffffff;
+        margin-top: 20rpx;
+        margin-bottom: 20rpx;
+    }
+    .todayContent {
+        position: absolute;
+        right: 30rpx;
+        top: 50%;
+        margin-top: -20rpx;
+        font-size: 28rpx;
+        line-height: 40rpx;
+        color: #333333;
+    }
+    .AttendanceContent {
+        background-color: #ffffff;
+        padding: 0 30rpx;
+        .contentTop {
+            padding: 30rpx 0;
+            display: flex;
+            align-items: center;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            color: #333333;
+            .time {
+                width: 36rpx;
+                height: 36rpx;
+                margin-right: 22rpx;
+            }
+        }
+        .AttendanceList {
+            padding: 30rpx 0;
+            position: relative;
+            border-top: 2rpx solid #eeeeee;
+            .line {
+                height: 100rpx;
+                position: absolute;
+                border-left: 2rpx solid #cccccc;
+                left: 15rpx;
+                top: 60rpx;
+                z-index: 1;
+            }
+            .AttendanceListItem {
+                padding-left: 50rpx;
+                position: relative;
+                margin-bottom: 40rpx;
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #333333;
+                .dot {
+                    width: 32rpx;
+                    height: 32rpx;
+                    position: absolute;
+                    left: 0;
+                    top: 4rpx;
+                }
+                .AttendanceStatus {
+                    margin-top: 8rpx;
+                    padding: 0 20rpx;
+                    color: #ffffff;
+                    border-radius: 20rpx;
+                    background-color: #b365b7;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

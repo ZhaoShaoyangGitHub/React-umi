@@ -1,0 +1,105 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-13 14:32:40
+* @LastEditTime: 2019-08-14 10:18:38
+ */
+.LocateListMain {
+    width: 100%;
+    min-height: 100vh;
+}
+.filterBlock {
+    box-sizing: border-box;
+    font-size: 28rpx;
+    padding: 30rpx;
+    background-color: #fff;
+    .searchBlock {
+        display: flex;
+        align-items: center;
+        height: 72rpx;
+        border-radius: 40rpx;
+        background-color: #f9f9f9;
+        padding-left: 30rpx;
+        padding-right: 30rpx;
+        .searchText {
+            color: #999;
+            flex: 1;
+        }
+        .iconWrapper {
+            width: 70rpx;
+            height: 40rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .searchIcon,
+            .deleteIcon {
+                width: 36rpx;
+                height: 36rpx;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.blockWrapper {
+    // background-color: #f9f9f9;
+    padding: 30rpx 0 0 30rpx;
+    box-sizing: border-box;
+    .blockTitle {
+        color: #999;
+        font-size: 28rpx;
+        margin-bottom: 30rpx;
+    }
+    .blockList {
+        display: flex;
+        flex-wrap: wrap;
+        .blockRadio {
+            margin: 0 30rpx 30rpx 0;
+            width: 200rpx;
+            height: 70rpx;
+            border: 1px solid #eee;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8rpx;
+            .text {
+                font-size: 26rpx;
+                color: #333;
+            }
+        }
+        .activeRadio {
+            width: 206px;
+            height: 72px;
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            border: 2rpx solid rgba(179, 101, 183, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .activeText {
+                font-size: 26rpx;
+                color: #b365b7;
+            }
+            .iconWrapper {
+                .locateIcon {
+                    width: 22rpx;
+                    height: 28rpx;
+                    margin-right: 10rpx;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.resultList {
+    background-color: #f9f9f9;
+    height: calc(100vh - 162rpx);
+    padding: 30rpx;
+    box-sizing: border-box;
+    .resultItem {
+        border-bottom: 1px solid #eee;
+        padding: 30rpx 0;
+        box-sizing: border-box;
+    }
+}

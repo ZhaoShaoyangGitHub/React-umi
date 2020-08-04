@@ -1,0 +1,254 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-19 14:01:03
+* @LastEditTime: 2019-08-20 10:12:23
+ */
+.GoodListMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.jumpIcon {
+    width: 28rpx;
+    height: 28rpx;
+}
+.store {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 88rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40rpx;
+    box-sizing: border-box;
+    z-index: 2;
+    background-color: #fff;
+    & > Text {
+        font-size: 32rpx;
+        line-height: 40rpx;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .searchIcon {
+        width: 40rpx;
+        height: 40rpx;
+    }
+}
+.topWrapper {
+    width: 100%;
+    height: 90rpx;
+    .activeNav {
+        width: 100%;
+        height: 90rpx;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        background-color: #fff;
+    }
+}
+.listWrapper {
+    padding: 30rpx 30rpx 120rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .itemWrapper {
+        background-color: #fff;
+        border-radius: 8rpx;
+        box-shadow: 0px 2px 6px 0px rgba(230, 230, 230, 0.5);
+        // padding: 30rpx;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        width: 336rpx;
+        height: 404rpx;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        margin-bottom: 20rpx;
+
+        .cartItemWrapper {
+            width: 336rpx;
+            height: 404rpx;
+            .packageImage {
+                display: block;
+                width: 100%;
+                height: 250rpx;
+                background-color: #eeeeee;
+            }
+            .title {
+                display: block;
+                padding: 0 20rpx;
+                font-size: 28rpx;
+                line-height: 32rpx;
+                height: 64rpx;
+                color: #333;
+                margin-top: 20rpx;
+            }
+            .price {
+                margin-top: 14rpx;
+                padding: 0 20rpx;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                & > Image {
+                    width: 40rpx;
+                    height: 40rpx;
+                }
+            }
+        }
+    }
+}
+
+.panelHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 32rpx;
+    color: #999;
+    padding: 40rpx 0 40rpx 30rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.panelContent {
+    // padding: 120rpx 30rpx 100rpx;
+    box-sizing: border-box;
+    .contentItem {
+        // margin-bottom: 50rpx;
+        // display: flex;
+        // align-items: center;
+        .goodsInfo {
+            display: flex;
+            align-items: center;
+            .goodsImage {
+                width: 200rpx;
+                height: 148rpx;
+                margin-right: 20rpx;
+                flex-shrink: 0;
+                background-color: #eeeeee;
+                Image {
+                    width: 200rpx;
+                    height: 148rpx;
+                }
+            }
+            .right {
+                height: 148rpx;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .name {
+                    font-size: 28rpx;
+                    line-height: 32rpx;
+                    color: #333;
+                }
+                .storage {
+                    font-size: 24rpx;
+                    line-height: 34rpx;
+                    color: #999;
+                }
+            }
+        }
+        .buyNum {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40rpx;
+        }
+        .operate {
+            margin-left: 30rpx;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .amount {
+                font-size: 28rpx;
+                color: #666;
+                width: 66rpx;
+                text-align: center;
+            }
+            .icon {
+                width: 44rpx;
+                height: 44rpx;
+                object-fit: contain;
+            }
+        }
+        .price {
+            flex-shrink: 0;
+        }
+        .name {
+            flex: 1;
+            width: 0;
+            font-size: 30rpx;
+            color: #666;
+            white-space: nowrap;
+            text-emphasis: emphasis;
+            overflow: hidden;
+        }
+    }
+    .buttonList {
+        margin-top: 100rpx;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > Text {
+            width: 336rpx;
+            height: 80rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 28rpx;
+            background-color: #b365b7;
+            border-radius: 50rpx;
+        }
+    }
+}
+.cart {
+    position: fixed;
+    right: 30rpx;
+    bottom: 40rpx;
+    width: 88rpx;
+    height: 88rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(179, 101, 183, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > Image {
+        width: 50rpx;
+        height: 50rpx;
+    }
+    & > Text {
+        width: 28rpx;
+        height: 28rpx;
+        position: absolute;
+        right: 8rpx;
+        top: 8rpx;
+        border-radius: 50%;
+        background-color: #d22385;
+        color: #fff;
+        font-size: 18rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+:global {
+    .at-float-layout__container {
+        min-height: 320rpx;
+    }
+    .layout-body {
+        min-height: 300rpx !important;
+    }
+    .at-float-layout {
+        .layout-body__content {
+            min-height: 310rpx;
+        }
+    }
+}

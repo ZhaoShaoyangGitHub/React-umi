@@ -1,0 +1,76 @@
+.TechnicianListMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 160rpx;
+    .jumpIcon {
+        width: 28rpx;
+        height: 28rpx;
+    }
+    .content {
+        margin-top: 20rpx;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0 30rpx;
+        .technicianItem {
+            margin-top: 20rpx;
+            padding: 30rpx;
+            background-color: #fff;
+            border-radius: 8rpx;
+            height: 168rpx;
+            box-shadow: 0px 1px 6px 0px rgba(244, 244, 244, 0.5);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            .left {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                & > Image {
+                    flex-shrink: 0;
+                    width: 108rpx;
+                    height: 108rpx;
+                    border-radius: 50%;
+                    margin-right: 20rpx;
+                }
+                .del {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 108rpx;
+                    & > Text:first-child {
+                        font-size: 32rpx;
+                        line-height: 44rpx;
+                        color: #333;
+                        font-weight: bold;
+                    }
+                    & > Text:last-child {
+                        font-size: 28rpx;
+                        line-height: 40rpx;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        position: fixed;
+        bottom: 30rpx;
+        left: 30rpx;
+        right: 30rpx;
+        height: 100rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #b365b7;
+        color: #fff;
+        font-size: 32rpx;
+        line-height: 44rpx;
+        border-radius: 50rpx;
+        box-shadow: 0px 2px 6px 0px rgba(179, 101, 183, 0.38);
+        font-weight: bold;
+    }
+}

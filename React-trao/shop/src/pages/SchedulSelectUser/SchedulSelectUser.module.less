@@ -1,0 +1,121 @@
+.SchedulSelectUserMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .searchBar {
+        width: 100%;
+        align-items: center;
+        background-color: #fff;
+        height: 120rpx;
+        display: flex;
+        padding-right: 30rpx;
+        box-sizing: border-box;
+        .searchBox {
+            margin: 0 30rpx;
+            border-radius: 36rpx;
+            background-color: rgba(249, 249, 249, 1);
+            width: 100%;
+            box-sizing: border-box;
+            height: 72rpx;
+            align-items: center;
+            display: flex;
+            .searchIcon {
+                margin-right: 30rpx;
+                margin-left: 30rpx;
+                width: 22rpx;
+                height: 24rpx;
+            }
+            .searchInput {
+                flex: 1;
+                justify-content: center;
+                // color: rgba(153, 153, 153, 1);
+                color: black;
+                font-size: 28rpx;
+                font-family: PingFangSC-Regular;
+            }
+        }
+        .searchBtn {
+            flex-shrink: 0;
+            margin-left: 30rpx;
+            color: rgba(51, 51, 51, 1);
+            font-size: 28rpx;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+        }
+    }
+    .searchResult {
+        padding-top: 20rpx;
+        .resultItem {
+            width: 690rpx;
+            height: 164rpx;
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            margin: 0 auto 20rpx;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            .userAvatar {
+                width: 120rpx;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 30rpx;
+                // margin-right: 20rpx;
+                .avatar {
+                    width: 88rpx;
+                    height: 88rpx;
+                    border-radius: 44rpx;
+                }
+            }
+            .userInfo {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .top {
+                    display: flex;
+                    align-items: center;
+                    .left {
+                        color: rgba(51, 51, 51, 1);
+                        font-size: 32rpx;
+                        text-align: left;
+                        font-family: PingFang-SC-Bold;
+                        margin-right: 20rpx;
+                    }
+                    .right {
+                        color: rgba(179, 101, 183, 1);
+                        font-size: 24rpx;
+                        text-align: left;
+                        font-family: PingFang-SC-Bold;
+                    }
+                }
+                .bottom {
+                    margin-top: 20rpx;
+                    .location {
+                        color: rgba(102, 102, 102, 1);
+                        font-size: 28rpx;
+                        text-align: left;
+                        font-family: PingFangSC-Regular;
+                    }
+                }
+            }
+        }
+    }
+}
+.NoSearchDataMain {
+    width: 100%;
+    .noData {
+        padding-top: 100rpx;
+        .noShopBgImg {
+            width: 60%;
+            margin: 0 auto 0;
+            height: 300rpx;
+            display: block;
+        }
+        .noDataDesc {
+            color: #999;
+            text-align: center;
+            font-size: 28rpx;
+        }
+    }
+}

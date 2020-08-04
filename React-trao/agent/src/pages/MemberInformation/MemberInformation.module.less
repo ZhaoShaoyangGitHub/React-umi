@@ -1,0 +1,52 @@
+.MemberInformationMain {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-bottom: 30rpx;
+    .baseInfo {
+        background-color: #ffffff;
+        .whiteSpace {
+            height: 30rpx;
+            background-color: #f9f9f9;
+        }
+        .infoListItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 30rpx;
+            padding: 32rpx 0;
+            border-bottom: 2rpx solid #eeeeee;
+        }
+        .info_title {
+            font-size: 28rpx;
+            color: #666;
+        }
+        .info_value {
+            font-size: 28rpx;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .noLine {
+            border-bottom: 0;
+        }
+    }
+    .title {
+        position: relative;
+        font-size: 32rpx;
+        padding-left: 60rpx;
+        padding-top: 50rpx;
+        font-weight: bold;
+        background-color: #ffffff;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 30rpx;
+            top: 50rpx;
+            border-radius: 10rpx;
+            width: 10rpx;
+            height: 40rpx;
+            background-color: #b365b7;
+        }
+    }
+}

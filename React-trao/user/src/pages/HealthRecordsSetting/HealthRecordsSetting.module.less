@@ -1,0 +1,55 @@
+.HealthRecordsSettingMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .weightWrapper {
+        padding: 30rpx;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        .leftTitle {
+            font-size: 28rpx;
+            color: #666666;
+            line-height: 40rpx;
+        }
+        .weightInput {
+            flex: 1;
+            text-align: right;
+            font-size: 28rpx;
+            color: #333333;
+            line-height: 40rpx;
+        }
+    }
+    .dataWrapper {
+        padding: 0 30rpx;
+        background-color: #ffffff;
+        .dataBox {
+            padding: 30rpx 0;
+            + .dataBox {
+                border-top: 2rpx solid #eeeeee;
+            }
+        }
+        .picker {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 28rpx;
+            line-height: 40rpx;
+            color: #666666;
+        }
+    }
+    .buttonWrapper {
+        padding: 40rpx 0;
+        margin: 0 30rpx;
+        .button {
+            height: 100rpx;
+            line-height: 100rpx;
+            width: 100%;
+            font-size: 32rpx;
+            text-align: center;
+            background-color: #b365b7;
+            border-radius: 50rpx;
+            color: #fff;
+        }
+    }
+}

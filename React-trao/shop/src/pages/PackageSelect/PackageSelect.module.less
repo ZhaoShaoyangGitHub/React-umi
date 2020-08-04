@@ -1,0 +1,231 @@
+.PackageSelectMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    .submitBtn {
+        width: 670rpx;
+        height: 100rpx;
+        line-height: 100rpx;
+        margin: 180rpx auto 40rpx;
+        border-radius: 50rpx;
+        background-color: rgba(179, 101, 183, 1);
+        box-shadow: 0px 4rpx 12rpx 0px rgba(179, 101, 183, 0.38);
+        color: rgba(255, 255, 255, 1);
+        font-size: 32rpx;
+        text-align: center;
+        font-family: PingFangSC-Semibold;
+    }
+    .selectTime {
+        padding: 0 30rpx;
+        box-sizing: border-box;
+        width: 670rpx;
+        height: 100rpx;
+        border-radius: 8rpx;
+        margin: 30rpx auto 0;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+            color: rgba(102, 102, 102, 1);
+            font-size: 28rpx;
+            font-family: PingFangSC-Regular;
+        }
+        .right_t {
+            color: #000;
+            font-size: 28rpx;
+            font-family: PingFangSC-Regular;
+        }
+        .right {
+            width: 28rpx;
+            height: 28rpx;
+        }
+    }
+    .scrollBox {
+        display: flex;
+        .scrollItem {
+            flex-shrink: 0;
+            width: 230rpx;
+            height: 264rpx;
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            margin-left: 30rpx;
+            .selectPosi {
+                position: absolute;
+                top: 5rpx;
+                right: 10rpx;
+                z-index: 9;
+                .selected {
+                    width: 48rpx;
+                    height: 48rpx;
+                    display: block;
+                }
+                .empty {
+                    width: 48rpx;
+                    height: 48rpx;
+                    border-radius: 24rpx;
+                    background-color: rgba(249, 249, 249, 1);
+                    border: 2rpx solid rgba(238, 238, 238, 1);
+                }
+            }
+            .avatar {
+                width: 120rpx;
+                height: 120rpx;
+                border-radius: 60rpx;
+                overflow: hidden;
+            }
+            .name {
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+            }
+            .no {
+                color: rgba(153, 153, 153, 1);
+                font-size: 24rpx;
+                font-family: PingFang-SC-Medium;
+            }
+        }
+    }
+
+    .itemBox {
+        height: 120rpx;
+        width: 670rpx;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        .empty {
+            width: 48rpx;
+            height: 48rpx;
+            border-radius: 24rpx;
+            background-color: rgba(249, 249, 249, 1);
+            border: 2rpx solid rgba(238, 238, 238, 1);
+            margin: 0 30rpx;
+            flex-shrink: 0;
+        }
+        .selected {
+            width: 48rpx;
+            height: 48rpx;
+            display: block;
+            margin: 0 30rpx;
+            border: 2rpx solid rgba(238, 238, 238, 1);
+            flex-shrink: 0;
+        }
+        .rightContent {
+            display: flex;
+            padding-right: 30rpx;
+            flex: 1;
+            .imgSrc {
+                width: 205rpx;
+                height: 198rpx;
+            }
+            .rightInfo {
+                // width: 295rpx;
+                width: 100%;
+                margin-left: 18rpx;
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                .top {
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 28rpx;
+                    font-family: PingFang-SC-Medium;
+                }
+                .bot {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .price {
+                        color: rgba(179, 101, 183, 1);
+                        font-size: 36rpx;
+                        font-family: DINAlternate-Bold;
+                    }
+                    .num {
+                        color: rgba(153, 153, 153, 1);
+                        font-size: 26rpx;
+                        font-family: PingFangSC-Regular;
+                    }
+                }
+            }
+        }
+    }
+    .selectBox {
+        width: 670rpx;
+        height: 100rpx;
+        border-top-left-radius: 8rpx;
+        border-top-right-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        border-bottom: 2rpx solid #eee;
+        .empty {
+            width: 48rpx;
+            height: 48rpx;
+            border-radius: 24rpx;
+            background-color: rgba(249, 249, 249, 1);
+            border: 2rpx solid rgba(238, 238, 238, 1);
+            margin: 0 30rpx;
+        }
+        .selected {
+            width: 48rpx;
+            height: 48rpx;
+            display: block;
+            margin: 0 30rpx;
+            border: 2rpx solid rgba(238, 238, 238, 1);
+        }
+        .word {
+            color: rgba(51, 51, 51, 1);
+            font-size: 24rpx;
+            font-family: PingFangSC-Regular;
+        }
+    }
+    .contentBox {
+        width: 670rpx;
+        height: 100rpx;
+        border-radius: 8rpx;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30rpx;
+        box-sizing: border-box;
+        .left {
+            color: rgba(102, 102, 102, 1);
+            font-size: 28rpx;
+            font-family: PingFang-SC-Medium;
+        }
+        .time {
+            color: rgba(51, 51, 51, 1);
+            font-size: 28rpx;
+            font-family: PingFang-SC-Medium;
+        }
+    }
+    .titleBox {
+        height: 100rpx;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .line {
+            height: 40rpx;
+            width: 8rpx;
+            border-radius: 4rpx;
+            margin: 0 20rpx;
+            background-color: rgba(179, 101, 183, 1);
+        }
+        .title {
+            color: rgba(51, 51, 51, 1);
+            font-size: 32rpx;
+            font-family: PingFangSC-Semibold;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Tiger
+* @Date: 2019-08-07 10:30:42
+* @LastEditTime: 2019-08-09 15:18:35
+ */
+.PersonalMain {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    .topUserInfo {
+        width: 100%;
+        height: 165rpx;
+        border-radius: 1px;
+        background-color: #b55fb2;
+        display: flex;
+        margin-bottom: 30rpx;
+        position: relative;
+        padding-top: 40rpx;
+        .userInfoTag {
+            position: absolute;
+            right: 0;
+            bottom: 50rpx;
+            width: 234rpx;
+            height: 80rpx;
+            border-top-left-radius: 40rpx;
+            border-bottom-left-radius: 40rpx;
+            background-color: rgba(148, 80, 146, 1);
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            .userInfoTagImg {
+                margin: 0 12rpx 0 30rpx;
+                width: 40rpx;
+                height: 40rpx;
+            }
+            .userInfoTagWord {
+                color: rgba(255, 255, 255, 1);
+                font-size: 24rpx;
+                text-align: left;
+                font-family: PingFangSC-regular;
+            }
+        }
+        .avatar {
+            width: 120rpx;
+            height: 120rpx;
+            margin-left: 30rpx;
+            background-color: #ffffff;
+            .avatarImg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .userInfo {
+            margin-left: 24rpx;
+            .infoTop {
+                display: flex;
+                align-items: center;
+                height: 42rpx;
+                .name {
+                    line-height: 42rpx;
+                    color: rgba(255, 255, 255, 1);
+                    font-size: 36rpx;
+                    text-align: justify;
+                    font-family: PingFangSC-Semibold;
+                }
+                .userType {
+                    width: 110rpx;
+                    height: 32rpx;
+                    margin-left: 10rpx;
+                    .userTypeImg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .infoBottom {
+                margin-top: 20rpx;
+                .address {
+                    display: flex;
+                    .userAddressIconImg {
+                        width: 33rpx;
+                        height: 28rpx;
+                    }
+                    .addressWord {
+                        color: rgba(249, 249, 249, 1);
+                        font-size: 24rpx;
+                        text-align: left;
+                        font-family: PingFang-SC-Medium;
+                    }
+                }
+            }
+        }
+    }
+    .middleMenu {
+        width: 690rpx;
+        height: 210rpx;
+        margin: 0 auto;
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4rpx 4rpx 0px rgba(196, 196, 196, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30rpx;
+        .middleMenuItem {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            .middleMenuItemImg {
+                width: 80rpx;
+                height: 80rpx;
+                margin-bottom: 10rpx;
+            }
+            .middleMenuItemTitle {
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                text-align: center;
+                font-family: PingFangSC-Regular;
+            }
+        }
+    }
+    .singleMenu {
+        width: 100%;
+        padding-bottom: 50rpx;
+        .singleMenuItem {
+            width: 690rpx;
+            height: 100rpx;
+            margin: 0 auto 30rpx;
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            display: flex;
+            align-items: center;
+            position: relative;
+            .middleMenuItemImg {
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 20rpx;
+                margin-left: 30rpx;
+            }
+            .middleMenuItemTitle {
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                text-align: justify;
+                font-family: PingFang-SC-Medium;
+            }
+            .singleItemArrowImg {
+                position: absolute;
+                top: 24rpx;
+                right: 30rpx;
+                z-index: 99;
+                width: 50rpx;
+                height: 50rpx;
+            }
+        }
+    }
+    .signInWrapper {
+        width: 510rpx;
+        height: 528rpx;
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        .imgTop {
+            width: 100%;
+            height: 215rpx;
+        }
+    }
+}

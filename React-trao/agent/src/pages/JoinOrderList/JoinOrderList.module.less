@@ -1,0 +1,220 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-15 10:58:13
+* @LastEditTime: 2019-08-23 16:39:50
+ */
+.JoinOrderListMain {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f9f9f9;
+}
+// 空页面
+.emptyWrapper {
+    width: 100%;
+    padding-top: 200rpx;
+    box-sizing: border-box;
+    .emptyImg {
+        display: block;
+        width: 400rpx;
+        height: 300rpx;
+        margin: 0 auto;
+    }
+    .emptyWord {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 28rpx;
+        color: #999;
+        margin-top: 20rpx;
+    }
+}
+.topWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+.allGoods {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30rpx;
+}
+.listWrapper {
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    padding: 120rpx 30rpx 10rpx;
+    .itemsWrapper {
+        background: #fff;
+        border-radius: 8rpx;
+        box-sizing: border-box;
+        margin-bottom: 30rpx;
+
+        .itemsTitle {
+            padding: 30rpx;
+            box-sizing: border-box;
+            height: 100rpx;
+            color: #333;
+            font-size: 28rpx;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            .extraButton {
+                position: absolute;
+                right: 30rpx;
+                top: 30rpx;
+                color: #b365b7;
+            }
+        }
+
+        .itemsChildren {
+        }
+        .itemWrapper {
+            padding: 30rpx;
+            box-sizing: border-box;
+            height: 240rpx;
+            display: flex;
+            align-items: center;
+            .checkboxWrapper {
+                margin-right: 20rpx;
+                flex-shrink: 0;
+            }
+            .cartItemWrapper {
+                flex: 1;
+            }
+        }
+        .itemsOperation {
+            padding: 30rpx;
+            box-sizing: border-box;
+            font-size: 24rpx;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .buttonList {
+                display: flex;
+                align-items: center;
+                & > Text {
+                    width: 160rpx;
+                    height: 60rpx;
+                    border-radius: 30rpx;
+                    border: 1px solid #a3a3a3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 28rpx;
+                    line-height: 40rpx;
+                    margin-left: 20rpx;
+                }
+                .grayButton {
+                    color: #999;
+                    border-color: #999;
+                }
+                .lightButton {
+                    color: #bc78c0;
+                    border-color: #bc78c0;
+                }
+            }
+        }
+    }
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999999;
+    .maskInfoBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -270rpx;
+        margin-top: -337rpx;
+        width: 540rpx;
+        height: 674rpx;
+        border-radius: 8rpx;
+        background-color: rgba(255, 255, 255, 1);
+        .closeBtn {
+            position: absolute;
+            bottom: -80rpx;
+            left: 50%;
+            margin-left: -30rpx;
+            width: 60rpx;
+            height: 60rpx;
+        }
+        .maskBgImg {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            width: 100%;
+            height: 21%;
+            left: 98.41px;
+            font-size: 30rpx;
+            text-align: center;
+        }
+        .maskBgword {
+            position: absolute;
+            width: 100%;
+            top: 48rpx;
+            // left: 148rpx;
+            font-size: 46rpx;
+            text-align: center;
+            color: #fff;
+        }
+
+        .selectBox {
+            padding: 0 30rpx 30rpx;
+            & > Input {
+                background-color: #f9f9f9;
+                height: 100rpx;
+                display: flex;
+                align-items: center;
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #333;
+                margin-top: 40rpx;
+                border-radius: 8rpx;
+                padding: 0 30rpx;
+                &:first {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .buttonList {
+            width: 100%;
+            height: 100rpx;
+            // position: absolute;
+            // bottom: 0;
+            // left: 0;
+            border-top: 2rpx solid #eee;
+            display: flex;
+            align-items: center;
+            & > View {
+                flex-basis: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32rpx;
+            }
+            .confirm {
+                text-align: center;
+                line-height: 100rpx;
+                color: rgba(179, 101, 183, 1);
+                font-family: PingFangSC-Medium;
+                border-left: 1px solid #eeeeee;
+            }
+        }
+    }
+}
+.at-switch::after {
+    border-bottom-width: 0;
+}
+.at-switch {
+    padding: 0;
+}

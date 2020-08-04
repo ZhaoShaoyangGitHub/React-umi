@@ -1,0 +1,276 @@
+.PhysicalSelfTestMain {
+    width: 100%;
+    .PhysicalSelfTestWrapper {
+        background-color: #fff9ff;
+        .startPage {
+            min-height: 100vh;
+            padding-top: 68rpx;
+            box-sizing: border-box;
+            .subTittle {
+                line-height: 50rpx;
+                color: rgba(228, 191, 230, 1);
+                font-size: 36rpx;
+                text-align: center;
+                font-family: PingFang-SC-Medium;
+            }
+            .title {
+                line-height: 75px;
+                color: rgba(147, 84, 150, 1);
+                font-size: 56rpx;
+                text-align: center;
+                font-family: PingFangSC-Semibold;
+                font-weight: bold;
+                margin-bottom: 40rpx;
+            }
+            .constitutionResult {
+                width: 100%;
+                height: 120rpx;
+                padding: 0 20rpx;
+                font-size: 28rpx;
+                color: rgba(210, 182, 211, 1);
+                text-align: center;
+            }
+            .titleBtn {
+                width: 160px;
+                height: 42rpx;
+                border: 2rpx solid rgba(210, 182, 211, 1);
+                text-align: center;
+                font-size: 28rpx;
+                color: rgba(210, 182, 211, 1);
+                line-height: 42rpx;
+                margin: 0 auto 80rpx;
+            }
+            .image {
+                width: 512rpx;
+                height: 534rpx;
+                display: block;
+                margin: 0 auto 60rpx;
+            }
+            .startBtn {
+                width: 280rpx;
+                height: 100rpx;
+                line-height: 100rpx;
+                color: rgba(255, 255, 255, 1);
+                font-size: 32rpx;
+                font-family: PingFangSC-Regular;
+                background-color: #b365b7;
+                border-radius: 50rpx;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        .questionBottom {
+            width: 100%;
+            padding: 40rpx 0;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            .prevQuestion {
+                width: 240rpx;
+                height: 80rpx;
+                background-color: rgba(255, 255, 255, 1);
+                border: 2rpx solid rgba(179, 101, 183, 1);
+                text-align: center;
+                color: rgba(179, 101, 183, 1);
+                font-size: 32px;
+                font-family: PingFangSC-Regular;
+                line-height: 80rpx;
+                border-radius: 40rpx;
+            }
+            .nextQuestion {
+                width: 240rpx;
+                height: 80rpx;
+                background-color: rgba(179, 101, 183, 1);
+                border: 2rpx solid rgba(179, 101, 183, 1);
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                font-size: 32px;
+                font-family: PingFangSC-Regular;
+                line-height: 80rpx;
+                border-radius: 40rpx;
+                margin-left: 30rpx;
+                margin-right: 0;
+                &.disable {
+                    background-color: rgba(200, 200, 200, 1);
+                    border: 2rpx solid rgba(200, 200, 200, 1);
+                }
+            }
+        }
+        .questionWrapper {
+            width: 100%;
+            height: 1200rpx;
+            position: relative;
+            .imageBg {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+            .questionTitleRight {
+                width: 100rpx;
+                height: 42rpx;
+                line-height: 42rpx;
+                color: #b365b7;
+                font-size: 36rpx;
+                position: absolute;
+                right: 30rpx;
+                top: 70rpx;
+                z-index: 3;
+                transform: rotate(45deg);
+                font-weight: bold;
+                text-align: center;
+            }
+            .questionMain {
+                position: relative;
+                z-index: 2;
+                padding-top: 148rpx;
+                min-height: 1050rpx;
+                .textTitle {
+                    line-height: 52px;
+                    color: rgba(153, 153, 153, 1);
+                    font-size: 28rpx;
+                    text-align: center;
+                    font-family: PingFang-SC-Medium;
+                    margin-bottom: 28rpx;
+                }
+                .questionContent {
+                    width: 630rpx;
+                    margin: 0 auto;
+                    padding-bottom: 150rpx;
+                }
+                .questionTitle {
+                    display: flex;
+                    line-height: 48rpx;
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 36rpx;
+                    font-family: PingFangSC-Semibold;
+                    margin-bottom: 60rpx;
+                    font-weight: bold;
+                    .questionOrder {
+                        color: #b365b7;
+                        margin-right: 20rpx;
+                    }
+                }
+                .answerListItem {
+                    padding: 30rpx 0;
+                    border-bottom: 2rpx solid #eeeeee;
+                    display: flex;
+                    .dot {
+                        width: 50rpx;
+                        height: 50rpx;
+                        background-color: rgba(249, 249, 249, 1);
+                        border: 2rpx solid rgba(238, 238, 238, 1);
+                        box-sizing: border-box;
+                        margin-right: 30rpx;
+                        border-radius: 100%;
+                        .selectedIcon {
+                            width: 50rpx;
+                            height: 50rpx;
+                            display: block;
+                        }
+                    }
+                    .txt {
+                        font-size: 28rpx;
+                        line-height: 40rpx;
+                        padding: 5rpx 0;
+                    }
+                }
+            }
+            .resultPage {
+                position: relative;
+                z-index: 2;
+                padding-top: 80rpx;
+                padding-bottom: 150rpx;
+                min-height: 100vh;
+                overflow: hidden;
+                box-sizing: border-box;
+                .title {
+                    height: 52rpx;
+                    color: rgba(147, 84, 150, 1);
+                    font-size: 36rpx;
+                    text-align: center;
+                    font-family: PingFangSC-Semibold;
+                    font-weight: bold;
+                    margin-bottom: 80rpx;
+                }
+                .avatar {
+                    width: 120rpx;
+                    height: 120rpx;
+                    margin: 0 auto 20rpx;
+                    border-radius: 8rpx;
+                    background-color: #eeeeee;
+                    overflow: hidden;
+                    .avatarImg {
+                        width: 120rpx;
+                        height: 120rpx;
+                    }
+                }
+                .name {
+                    height: 42rpx;
+                    line-height: 21px;
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 28rpx;
+                    font-family: PingFang-SC-Medium;
+                    margin-bottom: 46rpx;
+                    text-align: center;
+                }
+                .resultContent {
+                    width: 536rpx;
+                    height: 300rpx;
+                    position: relative;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    .imageBg {
+                        width: 536rpx;
+                        height: 300rpx;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }
+                    .resultTxt {
+                        height: 300rpx;
+                        line-height: 50rpx;
+                        color: rgba(255, 255, 255, 1);
+                        font-size: 36rpx;
+                        font-family: PingFangSC-Semibold;
+                        padding: 20rpx 20rpx 20rpx 50rpx;
+                        position: relative;
+                        z-index: 3;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .checkoutDetail {
+                    text-align: center;
+                    margin-top: 40rpx;
+                    text {
+                        height: 42rpx;
+                        color: rgba(179, 101, 183, 1);
+                        font-size: 28rpx;
+                        font-family: PingFang-SC-Medium;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .testDetails {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            box-sizing: border-box;
+            .chart {
+                width: 100%;
+                height: 100vh;
+                padding-bottom: 150rpx;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

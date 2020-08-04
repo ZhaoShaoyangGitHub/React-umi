@@ -1,0 +1,109 @@
+@import '../../assets/common/variables.less';
+.container {
+    padding-top: 30rpx;
+    background-color: #f9f9f9;
+    height: 100vh;
+    box-sizing: border-box;
+    .serviceNum {
+        background-color: #fff;
+        padding: 0 30rpx;
+        margin: 0 30rpx;
+        .numItem {
+            height: 108rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 4rpx;
+            position: relative;
+            border-radius: 8rpx;
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                height: 2rpx;
+                width: 100%;
+                background-color: #eeeeee;
+                transform: scaleY(0.5);
+            }
+            &:last-child {
+                &:after {
+                    height: 0;
+                }
+            }
+            & > Text {
+                color: #666;
+                font-size: 28rpx;
+                line-height: 40rpx;
+                &:last-child {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+.noDataImg {
+    width: 400rpx;
+    height: 300rpx;
+    display: block;
+    margin: 0 auto;
+}
+.word {
+    color: rgba(153, 153, 153, 1);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+}
+
+.TitleSessionMain {
+    width: 100%;
+    .titleSession {
+        width: 100%;
+        height: 120rpx;
+        display: flex;
+        justify-content: space-between;
+        .titleBox {
+            display: flex;
+            .leftBorder {
+                margin-top: 40rpx;
+                margin-left: 28rpx;
+                margin-right: 18rpx;
+                border-radius: 5rpx;
+                width: 8rpx;
+                height: 38rpx;
+                background-color: @theme_color;
+            }
+            .title {
+                height: 120rpx;
+                line-height: 120rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 32rpx;
+                text-align: justify;
+                font-family: PingFangSC-Semibold;
+                padding-left: 5rpx;
+            }
+        }
+        .findMore {
+            display: flex;
+            .findMoreInfo {
+                height: 120rpx;
+                line-height: 120rpx;
+                line-height: 30rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+                margin-top: 45rpx;
+            }
+            .findMoreImg {
+                line-height: 120rpx;
+                width: 28rpx;
+                margin-top: 39rpx;
+                margin-left: 12rpx;
+                margin-right: 38rpx;
+                height: 38rpx;
+            }
+        }
+    }
+}

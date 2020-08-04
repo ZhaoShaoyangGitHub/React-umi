@@ -1,0 +1,149 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Tiger
+* @Date: 2019-08-08 13:52:17
+* @LastEditTime: 2019-08-09 15:56:35
+ */
+.ShopItemMain {
+    width: 100%;
+    .fitShop {
+        width: 690rpx;
+        // height: 255rpx;
+        min-height: 164rpx;
+        border-radius: 8rpx;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 6px 0px rgba(222, 222, 222, 0.5);
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        padding: 30rpx 0;
+        .fitShopImg {
+            margin-left: 30rpx;
+            margin-right: 30rpx;
+            width: 220rpx;
+            height: 164rpx;
+            flex-shrink: 0;
+            overflow: hidden;
+            background-color: #eeeeee;
+            .img {
+                width: 220rpx;
+                height: 164rpx;
+            }
+        }
+        .shopInfo {
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            // justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-right: 30rpx;
+            .shopTitle {
+                width: 100%;
+                color: rgba(51, 51, 51, 1);
+                font-size: 32px;
+                // height: 84rpx;
+                text-align: justify;
+                font-family: PingFangSC-Semibold;
+                overflow: hidden;
+                /* autoprefixer: off */
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on */
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+            }
+            .shopAddress {
+                margin-top: 20rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 24px;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
+            }
+            .efficacy {
+                margin-top: 10rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 24px;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* autoprefixer: ignore next */
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+            }
+            .shopPrice {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                color: rgba(179, 101, 183, 1);
+                text-align: center;
+                font-family: DINAlternate-Bold;
+                display: flex;
+                .money {
+                    font-size: 30rpx;
+                }
+                .moneyIcon {
+                    font-size: 23rpx;
+                    vertical-align: bottom;
+                    line-height: 38rpx;
+                }
+            }
+            .shopPhone {
+                position: absolute;
+                right: 30rpx;
+                bottom: 0;
+                width: 160rpx;
+                height: 60rpx;
+                line-height: 60rpx;
+                background-color: rgba(179, 101, 183, 1);
+                color: rgba(255, 255, 255, 1);
+                font-size: 28rpx;
+                text-align: center;
+                font-family: PingFangSC-Regular;
+                z-index: 999;
+                border-radius: 35rpx;
+            }
+            .select {
+                position: absolute;
+                right: 220rpx;
+                bottom: 0;
+                width: 160rpx;
+                height: 60rpx;
+                line-height: 60rpx;
+                background-color: rgba(179, 101, 183, 1);
+                color: rgba(255, 255, 255, 1);
+                font-size: 28rpx;
+                text-align: center;
+                font-family: PingFangSC-Regular;
+                border-radius: 35rpx;
+                z-index: 999;
+            }
+            .shopDistanceWord {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: rgba(179, 101, 183, 1);
+                font-size: 28rpx;
+                text-align: left;
+                font-family: PingFangSC-regular;
+            }
+        }
+    }
+}
+.originalPrice {
+    font-size: 28rpx;
+    line-height: 44rpx;
+    color: #ccc;
+    text-decoration: line-through;
+    margin-left: 20rpx;
+}

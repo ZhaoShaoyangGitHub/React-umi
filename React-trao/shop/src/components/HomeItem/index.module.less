@@ -1,0 +1,78 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Tiger
+* @Date: 2019-08-08 13:52:17
+* @LastEditTime: 2019-08-09 15:20:51
+ */
+.ShopItemMain {
+    width: 100%;
+    .fitShop {
+        width: 690rpx;
+        height: 220rpx;
+        border-radius: 8rpx;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 6px 0px rgba(222, 222, 222, 0.5);
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        padding-top: 30rpx;
+        .fitShopImg {
+            margin-left: 30rpx;
+            margin-right: 30rpx;
+            width: 230rpx;
+            height: 190rpx;
+        }
+        .shopInfo {
+            position: relative;
+            flex: 1;
+            .shopTitle {
+                color: rgba(51, 51, 51, 1);
+                font-size: 32px;
+                text-align: justify;
+                font-family: PingFangSC-Semibold;
+                margin-bottom: 20rpx;
+            }
+            .shopAddress {
+                color: rgba(153, 153, 153, 1);
+                font-size: 24px;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+            }
+            .botItems {
+                position: absolute;
+                bottom: 30rpx;
+                display: flex;
+                color: rgba(153, 153, 153, 1);
+                justify-content: space-around;
+                font-size: 24rpx;
+                text-align: center;
+                font-family: PingFang-SC-Medium;
+                width: 95%;
+                .views {
+                    display: flex;
+                    .lookImg {
+                        width: 30rpx;
+                        height: 30rpx;
+                        margin-top: 5rpx;
+                        margin-right: 8rpx;
+                    }
+                    .desc {
+                    }
+                }
+                .likes {
+                    display: flex;
+                    .lookImg {
+                        width: 30rpx;
+                        height: 30rpx;
+                        margin-top: 5rpx;
+                        margin-right: 8rpx;
+                    }
+                }
+                .date {
+                }
+            }
+        }
+    }
+}

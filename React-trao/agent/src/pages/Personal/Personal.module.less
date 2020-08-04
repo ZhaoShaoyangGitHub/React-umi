@@ -1,0 +1,69 @@
+.PersonalMain {
+    width: 100%;
+    min-height: 100vh;
+}
+.PersonalMain {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    .personalWrapper {
+        padding: 30rpx 0 30rpx;
+        .personalBox {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            padding: 0 30rpx;
+            position: relative;
+        }
+        .marginBottom {
+            margin-bottom: 20rpx;
+        }
+        .line {
+            position: absolute;
+            left: 30rpx;
+            right: 30rpx;
+            bottom: 0;
+            border-bottom: 2rpx solid #eee;
+        }
+        .listItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24rpx 0;
+            .left {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #333333;
+                display: flex;
+                align-items: center;
+            }
+            .icon {
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 20rpx;
+            }
+            .right {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #999999;
+                display: flex;
+                align-items: center;
+            }
+            .jumpIcon {
+                width: 28rpx;
+                height: 28rpx;
+            }
+        }
+    }
+}
+.SignOut {
+    width: calc(100% - 60rpx);
+    padding: 30rpx;
+    background-color: #ffffff;
+    color: #b365b7;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    position: absolute;
+    bottom: 10rpx;
+    left: 0;
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+.StoreBalanceDetailMain {
+    height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 60rpx;
+    .picker {
+        background-color: #f9f9f9;
+        padding: 22rpx 30rpx;
+        font-size: 32rpx;
+    }
+
+    .emptyWrapper {
+        width: 100%;
+        padding-top: 200rpx;
+        box-sizing: border-box;
+        .emptyImg {
+            display: block;
+            width: 400rpx;
+            height: 300rpx;
+            margin: 0 auto;
+        }
+        .emptyWord {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 28rpx;
+            color: #999;
+            margin-top: 20rpx;
+        }
+    }
+
+    .list {
+        padding: 0 30rpx;
+        box-sizing: border-box;
+        background-color: #fff;
+        height: calc(100vh - 86rpx);
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 36rpx 0;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #eee;
+                transform: scaleY(0.5);
+            }
+            .left {
+                flex: 1;
+                .desc {
+                    display: block;
+                    font-size: 32rpx;
+                    line-height: 44rpx;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .time {
+                    font-size: 24rpx;
+                    line-height: 34rpx;
+                    color: #999;
+                    margin-top: 10rpx;
+                }
+            }
+            & > Text {
+                color: rgba(51, 51, 51, 1);
+                font-size: 36rpx;
+                font-family: DINAlternate-Bold;
+                font-weight: bold;
+            }
+            .light {
+                color: #b365b7;
+            }
+        }
+    }
+}
+::-webkit-scrollbar {
+    height: 0;
+}

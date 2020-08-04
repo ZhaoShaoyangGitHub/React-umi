@@ -1,0 +1,259 @@
+/*
+* @LastEditors: Tiger
+* @Description: In User Settings Edit
+* @Author: Tiger
+* @Date: 2019-08-07 10:31:58
+* @LastEditTime: 2019-08-08 13:53:08
+ */
+@import '../../assets/common/variables.less';
+
+.goodsDetailMain {
+    background-color: #f9f9f9;
+    padding-bottom: 200rpx;
+    .topGoodsSwiper {
+        position: relative;
+        width: 100%;
+        height: 562rpx;
+        // height: 750rpx;
+        .userFavoriteShare {
+            position: absolute;
+            right: 25rpx;
+            top: 30rpx;
+            z-index: 999;
+            display: flex;
+            .FavoriteIcon {
+                width: 60rpx;
+                height: 60rpx;
+                border-radius: 30rpx;
+            }
+            .ShareIcon {
+                margin-left: 30rpx;
+                width: 60rpx;
+                height: 60rpx;
+                border-radius: 30rpx;
+            }
+            & > Button {
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: block;
+                width: 60rpx;
+                height: 60rpx;
+            }
+        }
+        .currentInfo {
+            width: 100rpx;
+            height: 40rpx;
+            position: absolute;
+            right: 25rpx;
+            bottom: 30rpx;
+            z-index: 999;
+            border-radius: 30rpx;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: rgba(255, 255, 255, 1);
+            font-size: 24rpx;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+        }
+        .swiperBox {
+            width: 100%;
+            height: 562rpx;
+            .swiperItem {
+                width: 100%;
+                height: 562rpx;
+                // height: 750rpx;
+                background-color: pink;
+                text-align: center;
+            }
+            .swiperItemImg {
+                width: 100%;
+                height: 562rpx;
+                // height: 750rpx;
+                text-align: center;
+            }
+        }
+    }
+    .priceBox {
+        padding-top: 30rpx;
+        padding-left: 30rpx;
+        display: flex;
+        width: 100%;
+        height: 52rpx;
+        color: rgba(179, 101, 183, 1);
+        text-align: left;
+        font-family: DINAlternate-Bold;
+        background-color: #fff;
+        .priceIcon {
+            font-size: 28rpx;
+            line-height: 68rpx;
+            margin-right: 8rpx;
+        }
+        .priceInfo {
+            line-height: 52rpx;
+            font-size: 40rpx;
+        }
+    }
+    .productDesc {
+        padding: 30rpx;
+        background-color: #fff;
+        .descItem {
+            // display: flex;
+            // height: 48rpx;
+            // flex-wrap: wrap;
+            .descItemKey {
+                display: inline-block;
+                width: 144rpx;
+                height: 48rpx;
+                line-height: 42rpx;
+                color: rgba(102, 102, 102, 1);
+                font-size: 28rpx;
+                text-align: justify;
+                font-family: PingFang-SC-Medium;
+                vertical-align: top;
+            }
+            .descItemValue {
+                display: inline-block;
+                height: 48px;
+                line-height: 42px;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28px;
+                text-align: justify;
+                font-family: PingFang-SC-Medium;
+                left: 87px;
+                width: 546px;
+            }
+        }
+    }
+
+    .serverInfo {
+        padding: 0 32rpx;
+        .serverItem {
+            display: flex;
+            margin-bottom: 20rpx;
+            .title {
+                min-width: 150rpx;
+                line-height: 42px;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28px;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+                padding-left: 24rpx;
+            }
+            .desc {
+                flex: 1;
+                line-height: 42px;
+                color: gray;
+                font-size: 28px;
+                text-align: justify;
+                font-family: PingFang-SC-Medium;
+            }
+        }
+    }
+}
+
+.TitleSessionMain {
+    width: 100%;
+    .titleSession {
+        width: 100%;
+        height: 120rpx;
+        display: flex;
+        justify-content: space-between;
+        .titleBox {
+            display: flex;
+            .leftBorder {
+                margin-top: 40rpx;
+                margin-left: 28rpx;
+                margin-right: 18rpx;
+                border-radius: 5rpx;
+                width: 8rpx;
+                height: 38rpx;
+                background-color: @theme_color;
+            }
+            .title {
+                height: 120rpx;
+                line-height: 120rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 32rpx;
+                text-align: justify;
+                font-family: PingFangSC-Semibold;
+                padding-left: 5rpx;
+            }
+        }
+        .findMore {
+            display: flex;
+            .findMoreInfo {
+                height: 120rpx;
+                line-height: 120rpx;
+                line-height: 30rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+                margin-top: 45rpx;
+            }
+            .findMoreImg {
+                line-height: 120rpx;
+                width: 28rpx;
+                margin-top: 39rpx;
+                margin-left: 12rpx;
+                margin-right: 38rpx;
+                height: 38rpx;
+            }
+        }
+    }
+}
+.modal {
+    // position: relative;
+    .header {
+        padding-top: 60rpx;
+        padding-bottom: 40rpx;
+        font-size: 28rpx;
+        color: #333;
+        font-weight: bold;
+        border-bottom: none;
+        text-align: center;
+    }
+    .content {
+        padding: 0 40rpx 60rpx;
+        .tips {
+            font-size: 28rpx;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+        .projectItem {
+            display: flex;
+            // align-items: center;
+            margin-top: 20rpx;
+            &:first-child {
+                margin-top: 0;
+                min-width: 140rpx;
+            }
+            & > Text {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #666;
+                &:first-child {
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    color: #333;
+                }
+            }
+        }
+    }
+    .button {
+        height: 100rpx;
+        border-top: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 32rpx;
+        line-height: 42rpx;
+        color: #b365b7;
+    }
+}

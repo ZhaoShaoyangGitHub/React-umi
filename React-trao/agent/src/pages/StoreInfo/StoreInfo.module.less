@@ -1,0 +1,151 @@
+.StoreInfoMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .StoreInfoWrapper {
+        padding: 30rpx 0 30rpx;
+        .listItemBox {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            padding: 0 30rpx;
+            position: relative;
+        }
+        .marginBottom {
+            margin-bottom: 20rpx;
+        }
+        .line {
+            position: absolute;
+            left: 30rpx;
+            right: 30rpx;
+            bottom: 0;
+            border-bottom: 2rpx solid #eee;
+        }
+        .listItem {
+            height: 100rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #666666;
+                display: flex;
+                align-items: center;
+            }
+            .icon {
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 20rpx;
+            }
+            .right {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: center;
+                .imageModels {
+                    width: 64rpx;
+                    height: 64rpx;
+                    background-color: #eeeeee;
+                    overflow: hidden;
+                    border-radius: 8rpx;
+                    flex: 0 0 64rpx;
+                    max-width: 64rpx;
+                    .imageUrl {
+                        width: 64rpx;
+                        height: 64rpx;
+                        display: block;
+                    }
+                }
+            }
+            .jumpIcon {
+                width: 28rpx;
+                height: 28rpx;
+                margin-left: 12rpx;
+            }
+        }
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+    .areaWrapper {
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        z-index: 4;
+        .areaMin {
+            padding: 0 30rpx;
+        }
+        .areaTitle {
+            height: 64rpx;
+            color: rgba(51, 51, 51, 1);
+            font-size: 32rpx;
+            font-family: PingFang-SC-Bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20rpx;
+            .titleIcon {
+                width: 40rpx;
+                height: 40rpx;
+            }
+        }
+        .areaNav {
+            display: flex;
+            border-bottom: 2rpx solid #eeeeee;
+            padding: 30rpx 0;
+            .areaNavItem {
+                height: 40rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Bold;
+                position: relative;
+                margin-right: 60rpx;
+                &.active {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        border-bottom: 2rpx solid #b365b7;
+                        left: 0;
+                        top: 44rpx;
+                    }
+                }
+            }
+        }
+        .addressList {
+            width: 100%;
+            height: calc(80vh - 184rpx);
+            overflow-y: auto;
+            .addressListItem {
+                height: 40rpx;
+                color: rgba(102, 102, 102, 1);
+                font-size: 28rpx;
+                padding: 30rpx 0;
+                border-bottom: 2rpx solid #eeeeee;
+                display: flex;
+                align-items: center;
+                &.selected {
+                    color: #b365b7;
+                }
+                .selectedIcon {
+                    width: 30rpx;
+                    height: 30rpx;
+                    margin-left: 50rpx;
+                }
+            }
+        }
+    }
+}

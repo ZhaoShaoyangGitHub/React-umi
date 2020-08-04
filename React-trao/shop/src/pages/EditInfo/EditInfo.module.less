@@ -1,0 +1,98 @@
+.container {
+    .whiteSpace {
+        width: 100%;
+        height: 20rpx;
+        background-color: #f9f9f9;
+    }
+    .picker {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30rpx;
+        padding: 32rpx 18rpx 32rpx 0rpx;
+        border-bottom: 2rpx solid #eeeeee;
+        & > Text {
+            font-size: 28rpx;
+            color: #666;
+        }
+    }
+    .noBorderInput:after {
+        // opacity: 0;
+    }
+    .noBorder {
+        border-bottom: 0;
+    }
+    :global {
+        .at-input {
+            margin: 0 30rpx;
+            padding: 32rpx 0;
+        }
+        .at-input__title {
+            font-size: 28rpx;
+            color: #666;
+        }
+        .at-input__input {
+            font-size: 28rpx;
+            text-align: right;
+            color: #333;
+        }
+    }
+    .infoListItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30rpx;
+        padding: 32rpx 0;
+        border-bottom: 2rpx solid #eeeeee;
+    }
+    .info_title {
+        font-size: 28rpx;
+        color: #666;
+    }
+    .info_value {
+        font-size: 28rpx;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .please_select {
+        color: #cccccc;
+    }
+    .setIcon {
+        width: 16rpx;
+        height: 28rpx;
+        margin: 0 16rpx;
+    }
+}
+.title {
+    position: relative;
+    font-size: 32rpx;
+    padding-left: 30rpx;
+    margin: 0 30rpx;
+    padding-top: 50rpx;
+    font-weight: bold;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50rpx;
+        border-radius: 10rpx;
+        width: 10rpx;
+        height: 40rpx;
+        background-color: #b365b7;
+    }
+}
+.buttonWrapper {
+    padding: 20rpx 40rpx;
+    .button {
+        height: 100rpx;
+        line-height: 100rpx;
+        width: 100%;
+        font-size: 32rpx;
+        text-align: center;
+        background-color: #b365b7;
+        border-radius: 50rpx;
+        color: #fff;
+    }
+}

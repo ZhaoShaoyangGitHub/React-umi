@@ -1,0 +1,96 @@
+.StoreBalanceMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+
+    .balanceBlock {
+        height: 310rpx;
+        background-color: #b365b7;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        position: relative;
+        .title {
+            opacity: 0.8;
+            color: rgba(255, 255, 255, 1);
+            font-size: 24rpx;
+            font-family: PingFang-SC-Medium;
+            margin-top: 36rpx;
+        }
+        .balance {
+            color: rgba(255, 255, 255, 1);
+            font-size: 80rpx;
+            font-family: DINAlternate-Bold;
+            margin-top: 10rpx;
+            margin-bottom: 36rpx;
+        }
+        .giveBalance {
+            font-size: 20rpx;
+            color: #fff;
+            line-height: 26rpx;
+            margin-bottom: 4rpx;
+            & > Text {
+                font-size: 26rpx;
+            }
+        }
+        .detailTag {
+            position: absolute;
+            right: 30rpx;
+            top: 30rpx;
+            color: rgba(255, 255, 255, 1);
+            font-size: 28rpx;
+            font-family: PingFangSC-Regular;
+        }
+    }
+
+    .personalWrapper {
+        padding: 0 0 20rpx;
+        .personalBox {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            padding: 0 30rpx;
+            position: relative;
+        }
+        .marginBottom {
+            margin-bottom: 20rpx;
+        }
+        .line {
+            position: absolute;
+            left: 30rpx;
+            right: 30rpx;
+            bottom: 0;
+            border-bottom: 2rpx solid #eee;
+        }
+        .listItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24rpx 0;
+            .left {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #333333;
+                display: flex;
+                align-items: center;
+            }
+            .icon {
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 20rpx;
+            }
+            .right {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                color: #999999;
+                display: flex;
+                align-items: center;
+            }
+            .jumpIcon {
+                width: 28rpx;
+                height: 28rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.MemberDetailsMain {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    .topUserInfo {
+        padding: 40rpx 30rpx;
+        background-color: #b365b7;
+        display: flex;
+        position: relative;
+        align-items: center;
+        .avatar {
+            width: 120rpx;
+            height: 120rpx;
+            border-radius: 100%;
+            background-color: #ffffff;
+            margin-right: 30rpx;
+            overflow: hidden;
+            .avatarImage {
+                width: 120rpx;
+                height: 120rpx;
+            }
+        }
+        .userInfo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 26rpx;
+            .nickName {
+                height: 42px;
+                line-height: 42px;
+                color: rgba(255, 255, 255, 1);
+                font-size: 36px;
+                font-family: PingFangSC-Semibold;
+                font-weight: bold;
+                margin-right: 24rpx;
+            }
+            .grade {
+                width: 134rpx;
+                height: 40rpx;
+            }
+        }
+        .address {
+            display: flex;
+            align-items: center;
+            height: 34px;
+            color: rgba(249, 249, 249, 1);
+            font-size: 24px;
+            font-family: PingFang-SC-Medium;
+            .addressIcon {
+                width: 20rpx;
+                height: 24rpx;
+            }
+        }
+        .phone {
+            position: absolute;
+            width: 170rpx;
+            height: 60rpx;
+            background-color: rgba(147, 84, 150, 1);
+            right: 0;
+            top: 50%;
+            margin-top: -30rpx;
+            z-index: 2;
+            color: rgba(255, 255, 255, 1);
+            font-size: 28px;
+            text-align: center;
+            line-height: 60rpx;
+            border-radius: 30rpx 0 0 30rpx;
+        }
+    }
+    .MemberDetailsContent {
+        padding: 30rpx;
+        .consumption {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            margin-bottom: 48rpx;
+            padding: 26rpx 30rpx 24rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+                display: flex;
+                align-items: center;
+                height: 40rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+                .icon {
+                    width: 50rpx;
+                    height: 50rpx;
+                    margin-right: 20rpx;
+                }
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+                .jumpIcon {
+                    width: 28rpx;
+                    height: 28rpx;
+                }
+            }
+        }
+        .memberBaseInfo {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            padding: 0 30rpx;
+            margin-bottom: 30rpx;
+            .memberBaseInfoList {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 30rpx;
+                .listItem {
+                    width: 50%;
+                    display: flex;
+                    font-size: 28rpx;
+                    line-height: 40rpx;
+                    color: #333333;
+                    margin-bottom: 30rpx;
+                    .infoTitle {
+                        color: #666666;
+                        width: 140rpx;
+                    }
+                }
+            }
+            .more {
+                text-align: center;
+                padding: 30rpx 0;
+                border-top: 2rpx solid rgba(238, 238, 238, 1);
+                height: 40rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                font-family: PingFang-SC-Medium;
+            }
+        }
+        .recordList {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            padding: 30rpx 0;
+            margin-bottom: 30rpx;
+            .recordTitle {
+                display: flex;
+                align-items: center;
+                height: 40rpx;
+                color: rgba(179, 101, 183, 1);
+                font-size: 28rpx;
+                font-family: PingFangSC-Regular;
+            }
+            .times {
+                padding: 0 30rpx;
+                flex: 0 0 65rpx;
+                white-space: nowrap;
+            }
+            .weight {
+                padding: 0 16rpx;
+                flex: 0 0 100rpx;
+                white-space: nowrap;
+            }
+            .data {
+                flex: 0 0 232rpx;
+                padding: 0 16rpx 0 30rpx;
+                white-space: nowrap;
+            }
+            .recorder {
+                padding: 0 30rpx;
+                flex: 0 0 100rpx;
+            }
+            .recordListItem {
+                margin-top: 30rpx;
+                display: flex;
+                align-items: center;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+                font-family: PingFangSC-Regular;
+            }
+        }
+        .tags {
+            border-radius: 8rpx;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2rpx 12rpx 0px rgba(244, 244, 244, 0.5);
+            margin-bottom: 100rpx;
+            padding: 30rpx 10rpx 10rpx 30rpx;
+            display: flex;
+            .tag {
+                padding: 12rpx 30rpx;
+                border-radius: 8rpx;
+                background-color: rgba(255, 240, 246, 1);
+                border: 2rpx solid rgba(255, 173, 210, 1);
+                margin-right: 20rpx;
+                margin-bottom: 20rpx;
+                font-size: 26rpx;
+                color: #eb2ea3;
+                line-height: 36rpx;
+            }
+        }
+        .startService {
+            margin-left: 530rpx;
+            width: 160rpx;
+            height: 160rpx;
+            background-color: rgba(255, 255, 255, 1);
+            border: 2rpx solid rgba(238, 238, 238, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            flex-direction: column;
+            font-size: 24rpx;
+            line-height: 34rpx;
+            color: #333333;
+            .icon {
+                width: 90rpx;
+                height: 90rpx;
+            }
+        }
+    }
+}

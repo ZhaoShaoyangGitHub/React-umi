@@ -1,0 +1,67 @@
+.pointWrapper {
+    position: relative;
+    padding: 0 30rpx;
+}
+.signInDays {
+    width: 400rpx;
+    height: 60rpx;
+    background-color: #f9f9f9;
+    margin: 30rpx auto 40rpx;
+    border-radius: 30rpx;
+    font-size: 36rpx;
+    line-height: 60rpx;
+    color: #666666;
+    text-align: center;
+    .day {
+        color: #b55fb2;
+    }
+}
+
+.position {
+    position: relative;
+    .line {
+        left: 40rpx;
+        right: 40rpx;
+        border: 2rpx solid #ffa015;
+        position: absolute;
+        z-index: 1;
+        top: 80rpx;
+    }
+}
+
+.signInDaysList {
+    padding-top: 60rpx;
+    height: 100rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    .listItem {
+        flex: 0 0 40rpx;
+        width: 40rpx;
+        // margin-right: 30rpx;
+        position: relative;
+        font-size: 24rpx;
+        line-height: 34rpx;
+        color: #999999;
+        float: left;
+        z-index: 2;
+        white-space: nowrap;
+        &:last-child {
+            margin-right: 0;
+        }
+        .icon {
+            margin-bottom: 10rpx;
+            width: 100%;
+            height: 100%;
+        }
+        .point {
+            width: 100rpx;
+            height: 48rpx;
+            position: absolute;
+            left: 50%;
+            margin-left: -50rpx;
+            top: -60rpx;
+        }
+    }
+}

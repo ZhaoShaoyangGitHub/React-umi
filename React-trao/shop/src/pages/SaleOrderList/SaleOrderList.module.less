@@ -1,0 +1,103 @@
+/*
+* @LastEditors: Fox
+* @Description: In User Settings Edit
+* @Author: Fox
+* @Date: 2019-08-15 10:58:13
+* @LastEditTime: 2019-08-23 16:39:50
+ */
+.OrderListMain {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f9f9f9;
+}
+// 空页面
+.emptyWrapper {
+    width: 100%;
+    padding-top: 200rpx;
+    box-sizing: border-box;
+    .emptyImg {
+        display: block;
+        width: 400rpx;
+        height: 300rpx;
+        margin: 0 auto;
+    }
+    .emptyWord {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 28rpx;
+        color: #999;
+        margin-top: 20rpx;
+    }
+}
+.topWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+.allGoods {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30rpx;
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 30rpx;
+}
+.listWrapper {
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    padding: 120rpx 30rpx 10rpx;
+    .itemsWrapper {
+        background: #fff;
+        border-radius: 8rpx;
+        box-sizing: border-box;
+        margin-bottom: 30rpx;
+
+        .itemsTitle {
+            padding: 30rpx;
+            box-sizing: border-box;
+            height: 100rpx;
+            color: #333;
+            font-size: 28rpx;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            .extraButton {
+                position: absolute;
+                right: 30rpx;
+                top: 30rpx;
+                color: #b365b7;
+            }
+        }
+
+        .itemsChildren {
+        }
+        .itemWrapper {
+            padding: 30rpx;
+            box-sizing: border-box;
+            height: 240rpx;
+            display: flex;
+            align-items: center;
+            .checkboxWrapper {
+                margin-right: 20rpx;
+                flex-shrink: 0;
+            }
+            .cartItemWrapper {
+                flex: 1;
+            }
+        }
+        .itemsOperation {
+            // padding: 30rpx;
+            padding-bottom: 20rpx;
+            box-sizing: border-box;
+            font-size: 24rpx;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}

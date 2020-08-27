@@ -3,16 +3,14 @@ import BottomNav from '@/components/BottomNav/index';
 import { Location, connect, Dispatch } from 'umi';
 import '@/static/iconfont/iconfont.css';
 import styles from './BasicLayout.less';
+import { ConnectProps, ConnectState, UserModelState } from '@/models/connect';
 
-interface BasicLayoutProps {
-  location: Location;
-  dispatch: Dispatch;
-  user: any;
+interface BasicLayoutProps extends ConnectProps {
+  user: UserModelState;
 }
 
-const BasicLayout: React.FC<BasicLayoutProps> = props => {
+const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
   const { children, location, dispatch, user } = props;
-  console.log(props);
   useEffect(() => {
     //获取用户基本信息
     dispatch &&
@@ -21,14 +19,15 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
       });
     return;
   }, []);
+  const showBottomNav = location.pathname !== '/login';
   return (
     <div className={styles.main}>
       <article>{children}</article>
       <footer>
-        <BottomNav pathname={location.pathname} />
+        {showBottomNav && <BottomNav pathname={location.pathname} />}
       </footer>
     </div>
   );
 };
 
-export default connect(({ user }) => ({ user }))(BasicLayout);
+export default connect(({ user }: ConnectState) => ({ user }))(BasicLayout);

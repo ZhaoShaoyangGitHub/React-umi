@@ -4,6 +4,12 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  theme: {
+    'primary-color': 'red',
+    'brand-primary': 'red',
+    'brand-primary-tap': 'red',
+    'border-color-base': '#ddd',
+  },
   extraPostCSSPlugins: [
     require('postcss-px-to-viewport')({
       unitToConvert: 'px', //需要转换的单位，默认为"px"
@@ -28,11 +34,17 @@ export default defineConfig({
       path: '/',
       component: '@/layouts/BasicLayout',
       routes: [
-        { path: '/', component: '@/pages/index' },
-        { path: '/list', component: '@/pages/list/index' },
-        { path: '/cart', component: '@/pages/cart/index' },
-        { path: '/user', component: '@/pages/user/index' },
+        { path: '/', component: '@/pages/home/index' },
         { path: '/login', component: '@/pages/login/index' },
+        {
+          path: '/',
+          component: '@/layouts/SecurityLayout',
+          routes: [
+            { path: '/cart', component: '@/pages/cart/index' },
+            { path: '/user', component: '@/pages/user/index' },
+            { path: '/list', component: '@/pages/list/index' },
+          ],
+        },
       ],
     },
   ],

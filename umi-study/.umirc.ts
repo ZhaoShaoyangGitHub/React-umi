@@ -35,7 +35,10 @@ export default defineConfig({
       component: '@/layouts/BasicLayout',
       routes: [
         { path: '/', component: '@/pages/home/index' },
+        { path: '/search', component: '@/pages/search/index' },
         { path: '/login', component: '@/pages/login/index' },
+        { path: '/product/:id', component: '@/pages/product/[id]' },
+        { path: '/confirmBill', component: '@/pages/confirmBill' },
         {
           path: '/',
           component: '@/layouts/SecurityLayout',

@@ -15,7 +15,7 @@ const menu = [
   },
   {
     title: '订单列表',
-    link: '/olist',
+    link: '/list',
     icon: 'icon-',
   },
   {
